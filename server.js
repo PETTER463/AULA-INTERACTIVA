@@ -8,14 +8,13 @@ const PORT = Number(process.env.PORT || 3000);
 const HOST = process.env.HOST || '0.0.0.0';
 const ROOT = path.join(__dirname, 'public');
 const rooms = new Map();
-const QUESTIONS = [
- {id:1,topic:'Concepto de función y representación gráfica',q:'¿Cuál de las siguientes relaciones NO representa una función de x en y?',options:['{(1,2), (2,3), (3,4)}','{(1,2), (1,3), (2,4)}','y = 2x + 1','y = x²'],answer:1,why:'Una función asigna a cada valor de x una sola imagen. En la segunda relación x = 1 tiene dos imágenes: 2 y 3.'},
- {id:2,topic:'Dominio, rango y tipos de relaciones',q:'¿Cuál es el dominio real de f(x) = √(x − 3)?',options:['x ≤ 3','x > 3','x ≥ 3','Todos los números reales'],answer:2,why:'Para que la raíz sea real, x − 3 ≥ 0; por tanto, x ≥ 3. El dominio es [3, +∞).'},
- {id:3,topic:'Evaluación y notación de funciones',q:'Si f(x) = 2x² − 3x + 1, ¿cuánto vale f(−2)?',options:['3','15','−1','11'],answer:1,why:'f(−2) = 2(−2)² − 3(−2) + 1 = 8 + 6 + 1 = 15.'},
- {id:4,topic:'Funciones lineales',q:'¿Cuál es la pendiente de la recta que pasa por A(1, 2) y B(3, 8)?',options:['2','3','4','6'],answer:1,why:'m = (8 − 2)/(3 − 1) = 6/2 = 3.'},
- {id:5,topic:'Funciones cuadráticas',q:'¿Cuál es el vértice de la parábola f(x) = x² − 4x + 3?',options:['(−2, −1)','(2, 1)','(2, −1)','(4, 3)'],answer:2,why:'x_v = −b/(2a) = 4/2 = 2; f(2) = 4 − 8 + 3 = −1. El vértice es (2, −1).'}
-];
-const safeQuestions = QUESTIONS.map(({id,topic,q,options})=>({id,topic,q,options}));
+const BANK = require('./preguntas.json').preguntas;
+const QUESTION_COUNT = 5;
+function sampleQuestions(n){
+ const pool=[...BANK];for(let i=pool.length-1;i>0;i--){const j=crypto.randomInt(i+1);[pool[i],pool[j]]=[pool[j],pool[i]];}
+ return pool.slice(0,n);
+}
+const publicQuestions = qs => qs.map(({id,topic,q,options})=>({id,topic,q,options}));
 const token = () => crypto.randomBytes(24).toString('hex');
 const respond = (res,status,data) => {res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(data));};
 const fail = (res,status,message) => respond(res,status,{error:message});
@@ -28,10 +27,10 @@ function state(room,role,playerToken){
  const rank=all.map(p=>({id:p.id,name:p.name,answered:Object.keys(p.answers).length,correct:p.correct,submitted:!!p.submittedAt,elapsedMs:p.submittedAt&&room.startedAt?p.submittedAt-room.startedAt:null,joinedAt:p.joinedAt})).sort((a,b)=>b.correct-a.correct||(a.submitted!==b.submitted?(a.submitted?-1:1):0)||(a.elapsedMs??Infinity)-(b.elapsedMs??Infinity)||a.joinedAt-b.joinedAt);
  const your=person(room,playerToken);
  const reveal=room.status==='finished';
- return {code:room.code,status:room.status,durationSec:room.durationSec,startedAt:room.startedAt,deadline:room.deadline,finishedAt:room.finishedAt,serverNow:now,questions:safeQuestions,participants:all.length,ranking:rank.map((p,i)=>({...p,position:i+1,score20:p.correct*4})),your:your?{id:your.id,name:your.name,answers:your.answers,submittedAt:your.submittedAt}:null,solutions:reveal?QUESTIONS.map(({id,answer,why})=>({id,answer,why})):null,role};
+ return {code:room.code,status:room.status,durationSec:room.durationSec,startedAt:room.startedAt,deadline:room.deadline,finishedAt:room.finishedAt,serverNow:now,topic:room.topic,questionCount:room.questions.length,questions:publicQuestions(room.questions),participants:all.length,ranking:rank.map((p,i)=>({...p,position:i+1,score20:p.correct*20/room.questions.length})),your:your?{id:your.id,name:your.name,answers:your.answers,submittedAt:your.submittedAt}:null,solutions:reveal?room.questions.map(({id,answer,why})=>({id,answer,why})):null,role};
 }
-function finish(room){if(room.status!=='running')return;room.status='finished';room.finishedAt=Date.now();for(const p of room.players.values()){if(!p.submittedAt)p.submittedAt=room.deadline;calculate(p);}broadcast(room);}
-function calculate(p){p.correct=QUESTIONS.reduce((n,q)=>n+(p.answers[q.id]===q.answer?1:0),0);}
+function finish(room){if(room.status!=='running')return;room.status='finished';room.finishedAt=Date.now();for(const p of room.players.values()){if(!p.submittedAt)p.submittedAt=room.deadline;calculate(room,p);}broadcast(room);}
+function calculate(room,p){p.correct=room.questions.reduce((n,q)=>n+(p.answers[q.id]===q.answer?1:0),0);}
 function expire(room){if(room.status==='running'&&Date.now()>=room.deadline)finish(room);}
 function broadcast(room){const data='data: '+JSON.stringify({type:'refresh',time:Date.now()})+'\n\n';for(const client of room.clients){try{client.write(data);}catch{room.clients.delete(client);}}}
 function authHost(room,body){return body.hostToken===room.hostToken;}
@@ -55,7 +54,9 @@ const server=http.createServer(async(req,res)=>{
    const b=await bodyJSON(req);
    if(url.pathname==='/api/create'){
     if(!Number.isInteger(b.durationSec)||b.durationSec<30||b.durationSec>3600)return fail(res,400,'Tiempo permitido: 30 a 3600 segundos.');
-    const code=roomCode();const room={code,hostToken:token(),durationSec:b.durationSec,status:'waiting',startedAt:null,deadline:null,finishedAt:null,players:new Map(),clients:new Set(),createdAt:Date.now()};rooms.set(code,room);
+    if(b.topic && b.topic!=='Funciones reales')return fail(res,400,'Tema no disponible.');
+     if(b.count!==undefined && b.count!==QUESTION_COUNT)return fail(res,400,'Esta versión utiliza 5 preguntas.');
+     const code=roomCode();const room={code,topic:'Funciones reales',questions:sampleQuestions(QUESTION_COUNT),hostToken:token(),durationSec:b.durationSec,status:'waiting',startedAt:null,deadline:null,finishedAt:null,players:new Map(),clients:new Set(),createdAt:Date.now()};rooms.set(code,room);
     return respond(res,200,{code,hostToken:room.hostToken});
    }
    const room=lookup(b.code);if(!room)return fail(res,404,'Sala no encontrada.');expire(room);
@@ -78,9 +79,9 @@ const server=http.createServer(async(req,res)=>{
     const p=person(room,b.playerToken);if(!p)return fail(res,403,'Acceso no autorizado.');
     if(room.status!=='running'||p.submittedAt)return fail(res,409,'Esta evaluación ya terminó para ti.');
     if(url.pathname==='/api/answer'){
-     const id=Number(b.id),answer=Number(b.answer);if(!QUESTIONS.some(q=>q.id===id)||!Number.isInteger(answer)||answer<0||answer>3)return fail(res,400,'Respuesta inválida.');
-     p.answers[id]=answer;calculate(p);
-    }else{p.submittedAt=Date.now();calculate(p);}
+     const id=Number(b.id),answer=Number(b.answer);if(!room.questions.some(q=>q.id===id)||!Number.isInteger(answer)||answer<0||answer>3)return fail(res,400,'Respuesta inválida.');
+     p.answers[id]=answer;calculate(room,p);
+    }else{p.submittedAt=Date.now();calculate(room,p);}
     broadcast(room);return respond(res,200,{ok:true});
    }
    return fail(res,404,'Ruta desconocida.');

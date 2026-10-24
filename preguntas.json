@@ -1,0 +1,330 @@
+{
+  "tema": "Funciones reales",
+  "preguntas": [
+    {
+      "id": 1,
+      "topic": "Concepto de función",
+      "q": "¿Cuál relación NO es una función?",
+      "options": [
+        "{(1,2),(2,3),(3,4)}",
+        "{(1,2),(1,3),(2,4)}",
+        "y = 2x + 1",
+        "y = x²"
+      ],
+      "answer": 1,
+      "why": "En una función cada entrada tiene una sola imagen; x=1 tiene dos."
+    },
+    {
+      "id": 2,
+      "topic": "Dominio",
+      "q": "Dominio de f(x)=√(x−3):",
+      "options": [
+        "(−∞,3]",
+        "(3,+∞)",
+        "[3,+∞)",
+        "ℝ"
+      ],
+      "answer": 2,
+      "why": "Para raíz real x−3≥0."
+    },
+    {
+      "id": 3,
+      "topic": "Evaluación",
+      "q": "Si f(x)=2x²−3x+1, ¿f(−2)?",
+      "options": [
+        "3",
+        "15",
+        "−1",
+        "11"
+      ],
+      "answer": 1,
+      "why": "2(4)+6+1=15."
+    },
+    {
+      "id": 4,
+      "topic": "Función lineal",
+      "q": "Pendiente por A(1,2) y B(3,8):",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 1,
+      "why": "(8−2)/(3−1)=3."
+    },
+    {
+      "id": 5,
+      "topic": "Función cuadrática",
+      "q": "Vértice de f(x)=x²−4x+3:",
+      "options": [
+        "(−2,−1)",
+        "(2,1)",
+        "(2,−1)",
+        "(4,3)"
+      ],
+      "answer": 2,
+      "why": "xv=−b/(2a)=2, f(2)=−1."
+    },
+    {
+      "id": 6,
+      "topic": "Concepto de función",
+      "q": "¿Qué prueba determina si una gráfica representa una función y=f(x)?",
+      "options": [
+        "Recta horizontal",
+        "Recta vertical",
+        "Pendiente constante",
+        "Simetría axial"
+      ],
+      "answer": 1,
+      "why": "Toda recta vertical debe cortarla a lo sumo una vez."
+    },
+    {
+      "id": 7,
+      "topic": "Concepto de función",
+      "q": "Para f={(−1,4),(0,2),(2,4)}, ¿cuál es f(0)?",
+      "options": [
+        "−1",
+        "0",
+        "2",
+        "4"
+      ],
+      "answer": 2,
+      "why": "El par con entrada 0 tiene imagen 2."
+    },
+    {
+      "id": 8,
+      "topic": "Concepto de función",
+      "q": "¿Cuál expresión representa una función de ℝ en ℝ?",
+      "options": [
+        "x²+y²=1",
+        "y²=x+1",
+        "y=|x|",
+        "x=y²"
+      ],
+      "answer": 2,
+      "why": "y=|x| asigna una sola salida real por cada x real."
+    },
+    {
+      "id": 9,
+      "topic": "Concepto de función",
+      "q": "En una función, dos entradas diferentes pueden tener:",
+      "options": [
+        "La misma imagen",
+        "Dos imágenes cada una",
+        "Ninguna imagen",
+        "Infinitas imágenes por entrada"
+      ],
+      "answer": 0,
+      "why": "Dos entradas distintas pueden tener una imagen común."
+    },
+    {
+      "id": 10,
+      "topic": "Concepto de función",
+      "q": "Si f(x)=3x−5, ¿qué punto está en su gráfica?",
+      "options": [
+        "(2,2)",
+        "(2,1)",
+        "(1,1)",
+        "(0,5)"
+      ],
+      "answer": 1,
+      "why": "f(2)=6−5=1."
+    },
+    {
+      "id": 11,
+      "topic": "Dominio y rango",
+      "q": "Dominio real de f(x)=1/(x−5):",
+      "options": [
+        "ℝ",
+        "ℝ menos {0}",
+        "ℝ menos {5}",
+        "[5,+∞)"
+      ],
+      "answer": 2,
+      "why": "El denominador no puede anularse: x≠5."
+    },
+    {
+      "id": 12,
+      "topic": "Dominio y rango",
+      "q": "Rango de f(x)=x²+2 para x real:",
+      "options": [
+        "ℝ",
+        "[2,+∞)",
+        "(2,+∞)",
+        "(−∞,2]"
+      ],
+      "answer": 1,
+      "why": "x²≥0 y alcanza 0 cuando x=0."
+    },
+    {
+      "id": 13,
+      "topic": "Dominio y rango",
+      "q": "Dominio de f(x)=√(7−x):",
+      "options": [
+        "[7,+∞)",
+        "(−∞,7]",
+        "(−∞,7)",
+        "ℝ"
+      ],
+      "answer": 1,
+      "why": "7−x≥0 implica x≤7."
+    },
+    {
+      "id": 14,
+      "topic": "Dominio y rango",
+      "q": "Rango de f(x)=−(x−1)²+4:",
+      "options": [
+        "[4,+∞)",
+        "ℝ",
+        "(−∞,4]",
+        "(−∞,4)"
+      ],
+      "answer": 2,
+      "why": "La parábola abre hacia abajo y alcanza el máximo 4."
+    },
+    {
+      "id": 15,
+      "topic": "Dominio y rango",
+      "q": "Dominio real de f(x)=√(x+2)/(x−1):",
+      "options": [
+        "[−2,+∞)",
+        "[−2,+∞) menos {1}",
+        "(−2,+∞) menos {1}",
+        "ℝ menos {1}"
+      ],
+      "answer": 1,
+      "why": "Se requiere x≥−2 y x≠1."
+    },
+    {
+      "id": 16,
+      "topic": "Evaluación y notación",
+      "q": "Si f(x)=x²−2x, ¿cuánto vale f(3)?",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "−3"
+      ],
+      "answer": 0,
+      "why": "f(3)=9−6=3."
+    },
+    {
+      "id": 17,
+      "topic": "Evaluación y notación",
+      "q": "Si f(x)=4−x y g(x)=2x, ¿cuánto vale f(g(3))?",
+      "options": [
+        "2",
+        "−2",
+        "6",
+        "10"
+      ],
+      "answer": 1,
+      "why": "g(3)=6 y f(6)=−2."
+    },
+    {
+      "id": 18,
+      "topic": "Evaluación y notación",
+      "q": "Si f(x)=x+1, ¿cuánto es f(a+2)?",
+      "options": [
+        "a+1",
+        "a+2",
+        "a+3",
+        "2a+1"
+      ],
+      "answer": 2,
+      "why": "Sustituir x por a+2 da a+3."
+    },
+    {
+      "id": 19,
+      "topic": "Evaluación y notación",
+      "q": "Si f(x)=3x², ¿cuánto vale f(−1)+f(2)?",
+      "options": [
+        "9",
+        "12",
+        "15",
+        "−9"
+      ],
+      "answer": 2,
+      "why": "3·1+3·4=15."
+    },
+    {
+      "id": 20,
+      "topic": "Evaluación y notación",
+      "q": "Si f(x)=2x−7 y f(a)=5, ¿cuál es a?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answer": 2,
+      "why": "2a−7=5 implica a=6."
+    },
+    {
+      "id": 21,
+      "topic": "Funciones lineales y cuadráticas",
+      "q": "Para f(x)=−2x+7, ¿cuál es la pendiente?",
+      "options": [
+        "−2",
+        "2",
+        "7",
+        "−7"
+      ],
+      "answer": 0,
+      "why": "La pendiente es el coeficiente de x: −2."
+    },
+    {
+      "id": 22,
+      "topic": "Funciones lineales y cuadráticas",
+      "q": "¿Dónde corta al eje y la recta y=3x−4?",
+      "options": [
+        "(−4,0)",
+        "(0,−4)",
+        "(0,3)",
+        "(4,0)"
+      ],
+      "answer": 1,
+      "why": "En x=0 la ordenada es −4."
+    },
+    {
+      "id": 23,
+      "topic": "Funciones lineales y cuadráticas",
+      "q": "Ceros de f(x)=x²−5x+6:",
+      "options": [
+        "1 y 6",
+        "−2 y −3",
+        "2 y 3",
+        "−1 y −6"
+      ],
+      "answer": 2,
+      "why": "Factorizar (x−2)(x−3)."
+    },
+    {
+      "id": 24,
+      "topic": "Funciones lineales y cuadráticas",
+      "q": "Eje de simetría de y=2x²+8x+1:",
+      "options": [
+        "x=2",
+        "x=−2",
+        "x=−4",
+        "x=4"
+      ],
+      "answer": 1,
+      "why": "x=−b/(2a)=−8/4=−2."
+    },
+    {
+      "id": 25,
+      "topic": "Funciones lineales y cuadráticas",
+      "q": "¿Cuál es la intersección con el eje x de y=2x−6?",
+      "options": [
+        "(0,−6)",
+        "(0,3)",
+        "(3,0)",
+        "(−3,0)"
+      ],
+      "answer": 2,
+      "why": "Con y=0 se obtiene x=3."
+    }
+  ]
+}
