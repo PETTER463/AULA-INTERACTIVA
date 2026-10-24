@@ -1,6 +1,6 @@
 {
   "name": "matematica-challenge",
-  "version": "7.3.0",
+  "version": "7.3.1",
   "private": true,
   "description": "Competencias multijugador multicurso con fondos temáticos y música continua",
   "scripts": {

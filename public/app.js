@@ -21,12 +21,40 @@ function musicNote(freq,when,duration=.19,volume=.022){
  gain.gain.exponentialRampToValueAtTime(volume,when+.015);gain.gain.exponentialRampToValueAtTime(.0001,when+duration);
  osc.connect(gain);gain.connect(musicCtx.destination);osc.start(when);osc.stop(when+duration+.02);
 }
-function stopMusic(){if(musicTimer){clearInterval(musicTimer);musicTimer=null;}if(musicCtx){musicCtx.close().catch(()=>{});musicCtx=null;}}
-function startMusic(){if(!musicEnabled||!soundEnabled||latest?.status!=='running'||musicTimer)return;
- try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return;musicCtx=new C();musicCtx.resume();musicStep=0;
- const melody=[392,440,523.25,440,587.33,523.25,440,349.23,392,523.25,659.25,523.25,440,392,349.23,329.63];
- const beat=()=>{if(!musicCtx)return;const t=musicCtx.currentTime+.02;musicNote(melody[musicStep%melody.length],t,.24,.016);if(musicStep%4===0)musicNote(196,t,.34,.011);musicStep++};beat();musicTimer=setInterval(beat,350);
- }catch(e){stopMusic();}
+function stopMusic(){
+ if(musicTimer){clearInterval(musicTimer);musicTimer=null;}
+ if(musicCtx){const old=musicCtx;musicCtx=null;old.close().catch(()=>{});}
+}
+function startMusic(){
+ if(!musicEnabled||!soundEnabled||latest?.status!=='running'||musicTimer)return;
+ try{
+  const C=window.AudioContext||window.webkitAudioContext;if(!C)return;
+  if(!musicCtx)musicCtx=new C();
+  musicCtx.resume().catch(()=>{});
+  const standard=[392,440,523.25,440,587.33,523.25,440,349.23,392,523.25,659.25,523.25,440,392,349.23,329.63];
+  const final=[659.25,698.46,783.99,880,783.99,698.46,659.25,587.33,659.25,783.99,880,987.77,880,783.99,698.46,659.25];
+  const beat=()=>{
+   if(!musicCtx||latest?.status!=='running'){stopMusic();return;}
+   const urgent=seconds()<=30,notes=urgent?final:standard,t=musicCtx.currentTime+.03;
+   musicNote(notes[musicStep%notes.length],t,urgent?.16:.25,urgent?.023:.015);
+   if(musicStep%4===0)musicNote(urgent?246.94:196,t,.31,.009);
+   musicStep++;
+  };
+  beat();musicTimer=setInterval(beat,330);
+ }catch(err){console.warn('Audio no disponible:',err);stopMusic();}
+}
+function showCountdown(){
+ document.querySelector('.countdown-overlay')?.remove();
+ if(countdownTimer){clearTimeout(countdownTimer);countdownTimer=null;}
+ const overlay=document.createElement('div');overlay.className='countdown-overlay';
+ overlay.setAttribute('role','status');overlay.setAttribute('aria-live','polite');
+ overlay.innerHTML='<div class="countdown-box"><div><div class="countdown-number">3</div><div class="countdown-label">¡Comienza la competencia!</div></div></div>';
+ document.body.appendChild(overlay);
+ const seq=['3','2','1','¡YA!'];let i=0;const display=overlay.querySelector('.countdown-number');
+ const tick=()=>{if(!overlay.isConnected)return;display.textContent=seq[i++];
+  if(i<seq.length)countdownTimer=setTimeout(tick,700);
+  else countdownTimer=setTimeout(()=>{overlay.remove();countdownTimer=null;},650);
+ };tick();
 }
 function toggleRace(){raceFocus=!raceFocus;document.body.classList.toggle('race-focus',raceFocus);
  if(raceFocus && document.documentElement.requestFullscreen){document.documentElement.requestFullscreen().catch(()=>{});}
@@ -51,7 +79,7 @@ async function refresh(){if(!session)return;try{let r=await fetch(`/api/state?co
  }
  latest=data;if(statusChange&&data.status==='running'){currentQuestion=0;chirp(850);}if(data.status!=='running')stopMusic();if(statusChange&&data.status==='finished')chirp(900);draw();}catch(e){if(e.message.includes('no encontrada')||e.message.includes('no autorizado')){clear();return;}document.querySelector('#connection').textContent='Reconectando…';}}
 function connect(){if(!session){home();return;}stream?.close();stream=new EventSource(`/api/events?code=${encodeURIComponent(session.code)}&token=${encodeURIComponent(session.token)}`);stream.onmessage=()=>refresh();stream.onerror=()=>document.querySelector('#connection').textContent='Reconectando…';if(pulse)clearInterval(pulse);pulse=setInterval(()=>{timerUpdate();if(latest?.status==='running'&&Date.now()>latest.deadline+1200)refresh();},250);refresh();}
-function seconds(){if(!latest?.deadline)return latest?.durationSec||300;return Math.max(0,Math.ceil((latest.deadline-(Date.now()+(latest.serverNow-Date.now())))/1000));}
+function seconds(){if(!latest?.deadline)return latest?.durationSec||300;return Math.max(0,Math.ceil((latest.deadline-Date.now()-offset)/1000));}
 // Time offset refreshed with each snapshot: the local display is indicative; the server decides the deadline.
 let offset=0;
 async function sync(){if(!session)return;let r=await fetch(`/api/state?code=${session.code}&token=${session.token}`,{cache:'no-store'});if(r.ok){const d=await r.json();offset=d.serverNow-Date.now();latest=d;draw();}}

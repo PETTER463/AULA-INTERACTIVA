@@ -33,3 +33,7 @@ Los registros del historial almacenados solo en el contenedor de Render gratuito
 - Fondos temáticos con imagen según curso y tema.
 - Música continua durante toda la competencia, con variación en los últimos 30 segundos.
 - Cuenta regresiva visual 3-2-1 al iniciar la actividad.
+
+
+## Corrección 7.3.1
+Se corrigió una función de cuenta regresiva ausente que impedía actualizar la pantalla después de presionar «Iniciar competencia». Se añadió música continua con variación en los últimos 30 segundos. **Antes de iniciar, debe ingresar al menos un estudiante a la sala**. Reemplaza `public/app.js` y los demás archivos de este paquete si no los habías subido.
