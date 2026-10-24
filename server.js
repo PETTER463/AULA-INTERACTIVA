@@ -3,6 +3,8 @@ const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const QRCode = require('./lib/qr');
+const QRErrorCorrectLevel = require('./lib/qr/QRErrorCorrectLevel');
 
 const PORT = Number(process.env.PORT || 3000);
 const HOST = process.env.HOST || '0.0.0.0';
@@ -54,6 +56,23 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8',
 const server=http.createServer(async(req,res)=>{
  const url=new URL(req.url,'http://localhost');
  try{
+  if(url.pathname==='/api/qr' && req.method==='GET') {
+    const code = url.searchParams.get('code') || '';
+    if (!/^\d{6}$/.test(code)) return fail(res,400,'Código de sala inválido.');
+    const forwardedProto = String(req.headers['x-forwarded-proto']||'').split(',')[0];
+    const proto = forwardedProto==='https' ? 'https' : 'http';
+    const host = String(req.headers.host||'').replace(/[^a-zA-Z0-9.:-]/g,'');
+    if (!host) return fail(res,400,'Servidor sin host.');
+    const link = `${proto}://${host}/?sala=${code}`;
+    const qr = new QRCode(0,QRErrorCorrectLevel.M);
+    qr.addData(link); qr.make();
+    const n=qr.getModuleCount(), cell=7, quiet=4, size=(n+quiet*2)*cell;
+    let paths='';
+    for(let y=0;y<n;y++)for(let x=0;x<n;x++) if(qr.isDark(y,x)) paths+=`M${(x+quiet)*cell},${(y+quiet)*cell}h${cell}v${cell}h-${cell}z`;
+    const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}" width="${size}" height="${size}"><rect width="100%" height="100%" fill="#fff"/><path d="${paths}" fill="#101827"/></svg>`;
+    res.writeHead(200,{'Content-Type':'image/svg+xml; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
+    return res.end(svg);
+  }
   if(url.pathname==='/api/history'&&req.method==='GET'){
     const pin=url.searchParams.get('pin')||'';
     if(!admin({pin}))return fail(res,403,'Configura ADMIN_PIN y escribe el PIN docente para consultar el historial.');

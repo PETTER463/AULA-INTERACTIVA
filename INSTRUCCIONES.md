@@ -1,57 +1,30 @@
-# Matemática Challenge 6.0 — instalación, Render y pruebas
+# Instalar Matemática Challenge 6.1 (compartir enlace y QR)
 
-## Contenido
-
-Esta actualización parte de la versión 5 y conserva los **cinco cursos, 46 temas oficiales de los sílabos 2026-2 y el banco existente de 1.011 preguntas**; agrega **36 preguntas de funciones con gráficas SVG interactivas**, para un total de **1.047**. Las gráficas permiten mover un punto con un deslizador y explorar la función. El resto de preguntas continúan con alternativas de opción múltiple, sin gráfica. Se mantienen las salas multijugador, ranking por aciertos y tiempo como desempate, código de seis dígitos y calificaciones sobre 20.
-
-### Nuevas funciones
-- Podio animado para tres primeros puestos al terminar.
-- Rachas de aciertos, indicador 🔥 e insignia 🏅 al alcanzar cinco aciertos consecutivos; **no modifica la nota académica**.
-- Sonido breve al responder e iniciar/finalizar, con botón de silencio 🔊/🔇.
-- Gráficas SVG interactivas en preguntas seleccionadas de Funciones Reales.
-- Solucionario del banco al finalizar con justificación (calidad variable: revisar antes de evaluar oficialmente).
-- Panel docente con entregas, progreso por participante, respuestas y ranking.
-- Exportación a CSV compatible con Excel y un archivo .xls básico (HTML que Excel podría advertir sobre formato; **CSV es el recomendado**).
-- Historial de salas finalizadas y estudiantes, bajo PIN docente; descarga CSV. El historial se guarda en archivo JSON local y se vuelve a leer tras reiniciar si la carpeta sobrevive.
-
-## Advertencia importante sobre la permanencia del historial
-
-**Render Free tiene sistema de archivos efímero.** Los datos del historial creados durante las competencias pueden **perderse con reinicios, actualizaciones y recreación de contenedores**. Para guardar historial con garantía a largo plazo se requiere un almacenamiento externo persistente (por ejemplo, PostgreSQL/Supabase mediante integración adicional) o un disco persistente en un plan que lo permita. `HISTORY_FILE=/ruta/persistente/historial.json` sirve si realmente se monta un volumen durable. Esta versión **no incorpora todavía una base de datos externa**. Descarga los CSV al finalizar cada sesión como respaldo. Las salas activas permanecen solo en memoria y se pierden al reiniciar.
+## Qué contiene
+Todos los archivos para reemplazar la versión 6.0: server.js, preguntas.json, silabos_2026_2.json, package.json, Dockerfile, public/ y lib/qr/. Es importante subir **lib/qr** porque allí está el generador de código QR sin conexión con proveedores externos. Conserva las cinco materias y sus bancos.
 
 ## Actualización en GitHub
+1. Descarga este ZIP y descomprímelo. No lo subas comprimido.
+2. Abre https://github.com/PETTER463/AULA-INTERACTIVA en sesión.
+3. Primero realiza una copia de seguridad con Code → Download ZIP.
+4. Usa Agregar archivo → Cargar archivos para subir **el contenido de la carpeta** Matematica_Challenge_v6_Compartir_QR, no la carpeta contenedora. Permite el reemplazo de rutas existentes y conserva public/ y lib/qr/.
+5. Confirma los cambios en la rama main.
+6. Render debería desplegar automáticamente. Si no, en AULA-INTERACTIVA → Deploys → Manual Deploy → Deploy latest commit. Espera a Live.
 
-1. Descomprimir `MatematicaChallenge_v6_GitHub_Render.zip`.
-2. Abrir https://github.com/PETTER463/AULA-INTERACTIVA y entrar con la cuenta que tiene permisos de escritura.
-3. Antes de actualizar, descargar una copia de la versión actual: botón **Code / Código → Download ZIP**.
-4. **Add file / Agregar archivo → Upload files / Cargar archivos**. Arrastrar **el contenido interior** de la carpeta `Matematica_Challenge_v6` (no la carpeta entera, ni el ZIP).
-5. Asegurarse de que `server.js`, `package.json`, `Dockerfile`, `preguntas.json`, `silabos_2026_2.json` y la carpeta `public/` queden en la raíz del repositorio. GitHub debe identificar los archivos existentes como reemplazos.
-6. Confirmar cambios (**Commit changes**) en la rama principal que utiliza Render (puede mostrarse como `main` si la traducción del navegador está desactivada).
-7. No subir las carpetas `node_modules` ni `data` con resultados de estudiantes. No subir PIN ni secretos.
+## Compartir competencia
+1. Abre https://aula-interactiva-sr9y.onrender.com y crea una sala.
+2. Verás **código de seis dígitos**, **enlace directo**, **QR**, **Compartir invitación** y **Descargar QR**.
+3. Escanea el QR desde el celular usando datos móviles: la página debe abrir con el código de sala ya escrito. El estudiante solo ingresa sus nombres.
+4. Comparte el enlace por WhatsApp o Blackboard; usa el archivo SVG de QR en una diapositiva.
+5. Comprueba que aparezca el participante en panel docente. Inicia la sala y prueba ranking y entrega desde dos equipos.
 
-## Render
+## Precauciones
+- El QR está vinculado a una **sala concreta**. Una sala nueva obtiene código, enlace y QR distintos.
+- El dominio del sitio permanece fijo mientras Render mantenga esa dirección, pero las salas se guardan en memoria y **se pierden al reiniciar el servicio**. Crea nuevas salas después de cada publicación.
+- El enlace/QR sirve para **ingresar como estudiante**, no revela el token del docente.
+- El plan Render Free puede dormir tras inactividad; abre la web antes de clase y comprueba su disponibilidad.
+- El historial JSON local no es almacenamiento persistente en Render gratuito: descarga CSV después de cada competencia y considera base de datos.
+- Para evaluaciones oficiales, protege el acceso al panel docente, limita ingresos duplicados y revisa la exactitud de los bancos.
 
-1. Abrir https://dashboard.render.com → `My project` → `AULA-INTERACTIVA` → `Deploys`.
-2. Normalmente se inicia un Auto-Deploy. De otro modo, usar **Manual Deploy → Deploy latest commit**.
-3. Confirmar que el estado final sea **Live**; el enlace actual es https://aula-interactiva-sr9y.onrender.com .
-4. En **Environment** crear `ADMIN_PIN` con un valor secreto de 8 o más caracteres. Nunca publicarlo en GitHub ni compartirlo con estudiantes. Este PIN protege el editor y el historial (no las salas; el anfitrión usa token de sala).
-5. Opcional `HISTORY_FILE` solo si dispone de volumen realmente persistente. No configurar una ruta arbitraria creyendo que será persistente en Render Free.
-6. Durante la clase, abrir la página antes de compartir el enlace para reactivar el servicio del plan gratuito si está suspendido.
-
-## Prueba funcional recomendada
-
-1. Entrar a la web desde Chrome en PC y crear una sala de 5 preguntas, 5 minutos, en Cálculo → Función real de variable real → Intermedio.
-2. Entrar como estudiante en otra computadora/celular usando el código y enlace público.
-3. Verificar que aparece en la lista de participantes y pulsa **Iniciar competencia**.
-4. Contestar preguntas, probar una gráfica cuando salga (son aleatorias: quizá debas crear otra sala), barra de avance, botones de sonido y racha.
-5. Entregar antes del tiempo y comprobar que aparecen las entregas y la posición.
-6. Terminar desde el panel docente para comprobar podio, soluciones, puntuación y exportación CSV/Excel.
-7. Volver al inicio, abrir **Historial y estadísticas**, escribir el `ADMIN_PIN`, comprobar registro de la sala y descargar el CSV completo.
-8. Hacer copia de los informes. Para pruebas de reconexión, no reiniciar el servicio durante una competencia real.
-
-## Windows local
-
-Instala Node.js 18 o posterior. En una terminal situada junto a `server.js`, ejecuta `node server.js` (o doble clic en `INICIAR_WINDOWS.bat`). Abre http://localhost:3000 . Para probar el historial local con PIN: `set ADMIN_PIN=12345678` antes de iniciar el servidor desde la misma consola. No utilices ese PIN de ejemplo en Internet.
-
-## Notas pedagógicas
-
-Los 1.011 ítems anteriores se conservan tal cual. Las 36 preguntas gráficas nuevas usan representaciones de rectas y parábolas y cuentan con respuestas y sustituciones numéricas. Se recomienda auditar la exactitud y riqueza didáctica de todos los ítems antes de usar la plataforma para evaluaciones oficiales.
+## Prueba local
+En una terminal dentro de la carpeta del proyecto: `node server.js`. En Chrome: http://localhost:3000. El QR local usa localhost, por tanto **no se comparte por Internet** hasta desplegar en Render.

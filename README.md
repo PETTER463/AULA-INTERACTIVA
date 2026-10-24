@@ -1,9 +1,5 @@
-# MATEMÁTICA CHALLENGE 6.0
+# Matemática Challenge 6.1 — Invitación por enlace y QR
 
-Competencias multijugador de matemática, cinco cursos y 46 temas de sílabos 2026-2.
+Conserva los cinco cursos, 46 temas, banco de 1047 preguntas, multijugador, ranking, gráficos, podio, historial temporal e informes de la versión 6.0.
 
-**Cambios:** podio animado, rachas/medallas y sonido opcional, 36 preguntas de gráficos interactivos, panel docente ampliado, solucionarios, CSV compatible con Excel, resumen de historial por estudiantes protegido por ADMIN_PIN.
-
-**Limitación:** el historial se conserva en un JSON local pero Render gratuito utiliza almacenamiento efímero, por tanto no garantiza retención tras reinicio o redespliegue. Descarga las exportaciones y evalúa conectar una base de datos externa para persistencia real.
-
-Lee `INSTRUCCIONES.md` antes de actualizar GitHub y Render.
+Novedad: al crear sala, el panel docente muestra un QR local generado por el servidor, el enlace directo con código de sala precargado, botón Compartir y Descargar QR (SVG). No depende de páginas externas para generar QR.
