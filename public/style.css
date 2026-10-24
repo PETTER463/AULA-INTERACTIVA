@@ -5,3 +5,13 @@
 .soundbtn{cursor:pointer;border:1px solid #3c557a;background:#1b3052;border-radius:8px;color:white;padding:5px 9px;margin-left:8px}
 
 .qrshare{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:16px 0;padding:16px;border:1px solid #395377;border-radius:14px;background:#142443}.qrshare img{background:#fff;padding:8px;border-radius:12px;width:215px;height:215px;max-width:100%}.qrshare>div{flex:1;min-width:180px}.qrshare small{color:#aebddb}
+
+/* Fondos temáticos sin descargas ni APIs */
+body{background-attachment:fixed;transition:background .5s ease}
+body[data-math-theme="inicio"]{background:radial-gradient(circle at 12% 15%,#284479 0%,transparent 45%),#0c1429}
+body[data-math-theme="funciones"]{background:repeating-linear-gradient(0deg,transparent 0 65px,#4ba8c312 66px 67px),repeating-linear-gradient(90deg,transparent 0 65px,#4ba8c312 66px 67px),radial-gradient(circle at 20% 4%,#234c64,#0b1428 70%)}
+body[data-math-theme="numerico"]{background:radial-gradient(circle at 18% 12%,#47415b,transparent 50%),repeating-linear-gradient(45deg,transparent 0 100px,#fac5660c 101px 103px),#0d1428}
+body[data-math-theme="discreta"]{background:radial-gradient(circle at 18% 22%,#244d52,transparent 52%),radial-gradient(circle at 85% 38%,#203f65,transparent 40%),#081528}
+body[data-math-theme="geometria"]{background:repeating-linear-gradient(45deg,transparent 0 75px,#8e91fc13 76px 78px),radial-gradient(circle at 10% 0%,#343b73,transparent 53%),#111427}
+body[data-math-theme="multivariable"]{background:repeating-radial-gradient(ellipse at 12% 3%,transparent 0 34px,#62bfe015 35px 37px,transparent 39px 75px),radial-gradient(circle at 90% 10%,#235578,transparent 48%),#0b152e}
+.helpbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0}.helpbar .btn{padding:8px 12px;font-size:13px}.hintbox{padding:15px;border-left:4px solid #f5d27b;background:#473b205c;border-radius:8px}.muted-option{opacity:.27!important;pointer-events:none}.teamboard{border:1px solid #466885;background:#142848;padding:13px;border-radius:14px;margin:10px 0 22px}.teamline{display:flex;justify-content:space-between;gap:8px;background:#24395b;border-radius:8px;padding:10px;margin:7px 0;flex-wrap:wrap}
