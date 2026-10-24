@@ -1,4 +1,4 @@
-# Matemática Challenge 7.2 — Pantalla completa y música
+# Matemática Challenge 7.3 — Pantalla completa y música
 
 ## Actualizar GitHub / Render
 
@@ -27,3 +27,9 @@ Cuando el docente pulsa **Iniciar competencia** se habilita una melodía instrum
 ## Limitaciones
 
 Los registros del historial almacenados solo en el contenedor de Render gratuito pueden perderse después de reinicios. Para guardar resultados de manera permanente es necesaria una base de datos externa. Antes de usarlo para notas oficiales hay que hacer una prueba con participantes reales.
+
+
+## Novedades 7.3
+- Fondos temáticos con imagen según curso y tema.
+- Música continua durante toda la competencia, con variación en los últimos 30 segundos.
+- Cuenta regresiva visual 3-2-1 al iniciar la actividad.

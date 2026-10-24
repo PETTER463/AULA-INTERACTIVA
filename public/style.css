@@ -7,13 +7,13 @@
 .qrshare{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:16px 0;padding:16px;border:1px solid #395377;border-radius:14px;background:#142443}.qrshare img{background:#fff;padding:8px;border-radius:12px;width:215px;height:215px;max-width:100%}.qrshare>div{flex:1;min-width:180px}.qrshare small{color:#aebddb}
 
 /* Fondos temáticos sin descargas ni APIs */
-body{background-attachment:fixed;transition:background .5s ease}
-body[data-math-theme="inicio"]{background:radial-gradient(circle at 12% 15%,#284479 0%,transparent 45%),#0c1429}
-body[data-math-theme="funciones"]{background:repeating-linear-gradient(0deg,transparent 0 65px,#4ba8c312 66px 67px),repeating-linear-gradient(90deg,transparent 0 65px,#4ba8c312 66px 67px),radial-gradient(circle at 20% 4%,#234c64,#0b1428 70%)}
-body[data-math-theme="numerico"]{background:radial-gradient(circle at 18% 12%,#47415b,transparent 50%),repeating-linear-gradient(45deg,transparent 0 100px,#fac5660c 101px 103px),#0d1428}
-body[data-math-theme="discreta"]{background:radial-gradient(circle at 18% 22%,#244d52,transparent 52%),radial-gradient(circle at 85% 38%,#203f65,transparent 40%),#081528}
-body[data-math-theme="geometria"]{background:repeating-linear-gradient(45deg,transparent 0 75px,#8e91fc13 76px 78px),radial-gradient(circle at 10% 0%,#343b73,transparent 53%),#111427}
-body[data-math-theme="multivariable"]{background:repeating-radial-gradient(ellipse at 12% 3%,transparent 0 34px,#62bfe015 35px 37px,transparent 39px 75px),radial-gradient(circle at 90% 10%,#235578,transparent 48%),#0b152e}
+body{background-attachment:fixed;background-position:center;background-size:cover;background-repeat:no-repeat;transition:background .5s ease}
+body[data-math-theme="inicio"]{background-image:linear-gradient(rgba(8,13,28,.76),rgba(8,13,28,.82)),url('/backgrounds/inicio.svg')}
+body[data-math-theme="funciones"]{background-image:linear-gradient(rgba(7,15,34,.70),rgba(7,15,34,.82)),url('/backgrounds/funciones.svg')}
+body[data-math-theme="numerico"]{background-image:linear-gradient(rgba(18,11,28,.72),rgba(14,18,40,.84)),url('/backgrounds/numerico.svg')}
+body[data-math-theme="discreta"]{background-image:linear-gradient(rgba(7,17,28,.70),rgba(7,17,28,.84)),url('/backgrounds/discreta.svg')}
+body[data-math-theme="geometria"]{background-image:linear-gradient(rgba(15,12,29,.68),rgba(15,12,29,.82)),url('/backgrounds/geometria.svg')}
+body[data-math-theme="multivariable"]{background-image:linear-gradient(rgba(5,18,36,.70),rgba(5,18,36,.84)),url('/backgrounds/multivariable.svg')}
 .helpbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0}.helpbar .btn{padding:8px 12px;font-size:13px}.hintbox{padding:15px;border-left:4px solid #f5d27b;background:#473b205c;border-radius:8px}.muted-option{opacity:.27!important;pointer-events:none}.teamboard{border:1px solid #466885;background:#142848;padding:13px;border-radius:14px;margin:10px 0 22px}.teamline{display:flex;justify-content:space-between;gap:8px;background:#24395b;border-radius:8px;padding:10px;margin:7px 0;flex-wrap:wrap}
 
 /* 7.1: pista visual del progreso del docente */
@@ -41,3 +41,5 @@ body.race-focus .teacher-live .race-track{height:clamp(25px,3.5vh,38px)}
 body.race-focus .teacher-live .race-icon{font-size:24px}
 body.race-focus .teacher-live .metric strong{font-size:clamp(20px,3vw,37px)}
 @media(max-width:800px){.race-toolbar{flex-wrap:wrap}.race-toolbar .btn{font-size:12px;padding:8px}.teacher-live{padding:12px}}
+
+.countdown-overlay{position:fixed;inset:0;display:grid;place-items:center;background:rgba(4,10,22,.72);backdrop-filter:blur(4px);z-index:10000;animation:fadeIn .25s ease}.countdown-box{display:grid;place-items:center;width:min(320px,80vw);aspect-ratio:1/1;border-radius:50%;background:radial-gradient(circle,#2a4f89 0%,#112447 68%,#0b1934 100%);box-shadow:0 0 0 14px rgba(160,210,255,.08),0 0 0 30px rgba(160,210,255,.04);color:#fff}.countdown-number{font-size:clamp(70px,16vw,150px);font-weight:900;line-height:1}.countdown-label{margin-top:8px;color:#dbe8ff;font-size:clamp(14px,2vw,24px);letter-spacing:.6px;text-transform:uppercase}.music-badge{display:inline-flex;gap:6px;align-items:center;margin-left:8px}.music-badge small{color:#cbd9ef}@keyframes fadeIn{from{opacity:0}to{opacity:1}}
