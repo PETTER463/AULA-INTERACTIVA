@@ -1,1 +1,13 @@
-{"name":"matematica-challenge","version":"1.0.0","private":true,"description":"Competencia multijugador de funciones reales con ranking en vivo","scripts":{"start":"node server.js"},"engines":{"node":">=18"},"license":"UNLICENSED"}
+{
+  "name": "matematica-challenge",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Competencias multijugador multicurso con banco de preguntas",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}

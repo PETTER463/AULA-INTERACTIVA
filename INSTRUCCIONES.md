@@ -1,31 +1,25 @@
-# MATEMÁTICA CHALLENGE V2 — Instalación y actualización
+# Matemática Challenge 3.0 — AULA INTERACTIVA
 
-## Qué cambia
-- **25 preguntas revisadas** de Funciones reales (5 áreas temáticas, 5 preguntas por área).
-- Cada vez que el docente crea una sala, el servidor **selecciona 5 preguntas diferentes al azar, sin repetición dentro de esa sala**. Entre dos salas puede coincidir alguna pregunta, lo cual es normal.
-- Tiempo predeterminado de **5 minutos**, nota sobre **20**, ranking de mayor cantidad de aciertos; el tiempo transcurrido desempata a participantes que hayan entregado.
-- Los estudiantes de una misma sala reciben las mismas 5 preguntas, para una competencia comparable. El avance y ranking se actualizan en vivo.
-- Se conservan código de sala, panel docente, modo individual, enlaces para compartir, entrega, CSV y solucionario final.
+## Novedades
+- Cursos: Matemática Básica, Cálculo I, Cálculo II, Cálculo III, Álgebra Lineal y Matemática Discreta.
+- Selección de temas y entre 5, 10, 15 o 20 preguntas según banco disponible.
+- Cinco niveles/opciones de duración y filtro de dificultad. Los temas precargados contienen niveles Básico e Intermedio; el nivel Avanzado se puede incorporar desde el editor.
+- Multijugador, salas de 6 dígitos, ranking en vivo, cronómetro y reporte CSV conservados.
+- Editor web para agregar preguntas con PIN del docente (variable de entorno ADMIN_PIN).
 
-## Actualizar el GitHub PETTER463/AULA-INTERACTIVA
-1. Descarga `Matematica_Challenge_v2_GitHub_Render.zip` y **extrae** su contenido en Windows.
-2. Entra a https://github.com/PETTER463/AULA-INTERACTIVA e inicia sesión.
-3. Abre **Agregar archivo → Cargar archivos**.
-4. Abre la carpeta **Matematica_Challenge_v2** descomprimida y arrastra **los archivos que contiene**, no la carpeta contenedora ni el ZIP. La raíz del repositorio debe mostrar `server.js`, `package.json`, `preguntas.json`, `Dockerfile` y `public/`.
-5. GitHub puede pedir confirmar la sustitución de archivos existentes. Debes **reemplazar** `server.js` y `public/app.js` por las nuevas versiones. Asegúrate de que `public/index.html` y `public/style.css` sigan bajo la carpeta `public`.
-6. Presiona **Commit changes** en la rama principal (`main`). Si el navegador traduce los nombres del código, elige «Mostrar original» antes de revisarlos.
-7. En Render → AULA-INTERACTIVA → Deploys revisa el nuevo despliegue automático o usa **Manual Deploy → Deploy latest commit**. Debe indicar **Live**.
-8. Abre https://aula-interactiva-sr9y.onrender.com y usa `Ctrl+Shift+R` para actualizar la caché. Si tenías una sala abierta de la versión antigua, pulsa **Salir de la sala** y crea una nueva; no es posible recuperar salas anteriores al reinicio.
+## Actualizar GitHub y Render
+1. Descomprime el ZIP.
+2. En GitHub, repositorio PETTER463/AULA-INTERACTIVA, **Add file > Upload files**.
+3. Arrastra **el contenido de la carpeta Matematica_Challenge_v3**, no la carpeta externa. Deben quedar en la raíz `server.js`, `package.json`, `preguntas.json`, `Dockerfile` y dentro de `public`: `app.js`, `index.html`, `style.css`.
+4. Confirma los cambios. Render debería iniciar automáticamente el despliegue, o ejecuta **Manual Deploy > Deploy latest commit**.
+5. Verifica **Live** y abre https://aula-interactiva-sr9y.onrender.com. Actualiza con Ctrl+F5.
+6. Para habilitar **Administrar preguntas**, en Render > tu servicio > **Environment**, agrega `ADMIN_PIN` con una clave privada de **6 o más caracteres**, guarda y redepliega. No compartas el PIN con estudiantes.
 
-## Prueba de dos dispositivos
-1. En la computadora del docente: crea una sala, tema «Funciones reales», 5 preguntas aleatorias y 5 minutos.
-2. En un celular con datos móviles: abre el enlace de la sala y registra un nombre de prueba.
-3. Verifica que el docente vea el participante y pulsa «Iniciar competencia».
-4. Responde preguntas desde el celular; confirma avance, ranking, entrega y el resultado final.
-5. Crea una **segunda sala**: debería aparecer una selección diferente de cinco preguntas en la mayoría de los intentos.
+## Advertencia esencial sobre persistencia
+En Render Free, los cambios que agregues con el editor se guardan en `preguntas.json` del contenedor **temporal**. Pueden desaparecer al reiniciar el servicio o publicar una nueva versión. Para uso prolongado, copia regularmente las preguntas al `preguntas.json` de GitHub o incorpora base de datos persistente (la edición web actual es demostrativa, no almacenamiento duradero). Las salas y respuestas también están en memoria. Usa una sola instancia del servidor.
 
-## Desarrollo local
-Con Node.js 18+ ejecuta `npm start` en la carpeta que contiene `server.js`; abre http://localhost:3000.
-
-## Importante
-El servidor guarda salas y respuestas **solo en memoria**, por lo que un reinicio de Render puede borrar la sesión. No se recomienda usar la edición gratuita para exámenes oficiales sin respaldo de resultados. El banco `preguntas.json` está incluido en un repositorio público y contiene claves de respuesta: es apropiado para práctica, no es un examen seguro. El panel docente se autentica con el token privado que recibe al crear la sala; no hay aún cuenta institucional ni persistencia de notas.
+## Consejos
+- Cada sala recibe una selección aleatoria; todos los participantes de esa sala reciben las mismas preguntas.
+- Si eliges más preguntas de las disponibles en un tema/nivel, el programa informa el límite.
+- Para una prueba local: `node server.js` y visita http://localhost:3000.
+- El banco inicial tiene ejercicios comprobables de nivel básico/intermedio. Revisa y adapta el material antes de usarlo en evaluaciones oficiales.
