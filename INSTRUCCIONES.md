@@ -1,39 +1,15 @@
-# Matemática Challenge 7.3 — Pantalla completa y música
+# Matemática Challenge 8.0 — GitHub y Render
 
-## Actualizar GitHub / Render
+1. Descarga una copia de seguridad de tu repositorio actual.
+2. Descomprime este ZIP. En GitHub reemplaza `server.js`, `package.json`, `public/app.js`, `public/index.html`, `public/style.css` y conserva/sube `public/backgrounds/`, `lib/qr/`, `preguntas.json`, `silabos_2026_2.json`, `Dockerfile`.
+3. Confirma el commit en `main`. En Render verifica `Live` y actualiza con Ctrl+F5.
+4. Prueba en dos navegadores diferentes: docente crea sala, estudiante entra con enlace/QR y avatar, docente inicia, pausa y reanuda, responde, activa ronda sorpresa y finaliza.
+5. Torneos: el campo «Torneo / sección» etiqueta las salas y el historial; agrupa salas archivadas dentro del historial docente y muestra promedio por sección. No es un sistema permanente de ligas, y requiere conservar el historial.
+6. Las preguntas con gráfica permiten explorar puntos; la respuesta evaluada sigue siendo de opción múltiple.
+7. Los premios no cambian la nota académica de 20; las preguntas sorpresa son anuncios visuales, no preguntas extra.
+8. Las soluciones se muestran por bloques tras finalizar, según las explicaciones existentes.
+9. Render Free guarda salas en memoria e historial local efímero. Descarga el CSV al finalizar; para conservar historial permanente necesitarás base de datos.
+10. Chrome puede exigir pulsar «Activar música» antes de reproducirla; el navegador del docente puede entrar en pantalla completa.
 
-1. Realiza copia de seguridad de tu repositorio actual (GitHub → Code → Download ZIP).
-2. Extrae este paquete. Carga los archivos y carpetas a la **raíz** del repositorio, conservando `public`, `lib` y `data`. GitHub debe reemplazar `server.js`, `public/app.js` y `public/style.css`; no coloques una carpeta adicional alrededor.
-3. Confirma los cambios y observa el despliegue automático en Render, hasta que indique **Live**.
-4. Entra a la página y crea una sala de prueba, preferentemente con al menos dos participantes en navegadores distintos.
-
-## Carrera a pantalla completa
-
-En el panel docente pulsa **⛶ Carrera a pantalla completa**. El tablero ocupa toda la pantalla; si el navegador lo permite también activa el modo fullscreen del sistema. Para salir usa el botón **Salir de pantalla completa** o Escape. Se actualiza mediante los eventos enviados por el servidor, y las filas cambian según la clasificación por aciertos y tiempo. Las barras muestran el número de respuestas contestadas, **no** el lugar del ranking.
-
-## Música
-
-Cuando el docente pulsa **Iniciar competencia** se habilita una melodía instrumental sintetizada y repetitiva. Se controla desde **Música ON/OFF** y **Activar música**. No consume créditos ni usa pistas comerciales. El navegador puede bloquear la reproducción si aún no hubo interacción con el botón; por ello existe **Activar música**. La melodía se reproduce en el dispositivo del docente que inicia la competencia, no en todos los teléfonos automáticamente, debido a restricciones de reproducción del navegador.
-
-## Pruebas
-
-- Crear sala de 5 preguntas y 5 minutos, abrir en otra computadora o celular.
-- Confirmar actualización del número de aciertos y barras después de cada respuesta.
-- Confirmar las flechas de subidas y bajadas al cambiar de posición.
-- Probar modo pantalla completa, botón Salir y Escape.
-- Probar música, silenciar y detener al finalizar.
-- Probar clasificación final y exportación CSV.
-
-## Limitaciones
-
-Los registros del historial almacenados solo en el contenedor de Render gratuito pueden perderse después de reinicios. Para guardar resultados de manera permanente es necesaria una base de datos externa. Antes de usarlo para notas oficiales hay que hacer una prueba con participantes reales.
-
-
-## Novedades 7.3
-- Fondos temáticos con imagen según curso y tema.
-- Música continua durante toda la competencia, con variación en los últimos 30 segundos.
-- Cuenta regresiva visual 3-2-1 al iniciar la actividad.
-
-
-## Corrección 7.3.1
-Se corrigió una función de cuenta regresiva ausente que impedía actualizar la pantalla después de presionar «Iniciar competencia». Se añadió música continua con variación en los últimos 30 segundos. **Antes de iniciar, debe ingresar al menos un estudiante a la sala**. Reemplaza `public/app.js` y los demás archivos de este paquete si no los habías subido.
+## Comprobación
+`node --check server.js` y `node --check public/app.js`, después `node server.js` y visita `http://localhost:3000`.

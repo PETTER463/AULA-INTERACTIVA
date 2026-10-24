@@ -1,5 +1,194 @@
 [
   {
+    "id": "b7c7caf7-4ddb-45cb-bfe2-dc71119c98a7",
+    "code": "978914",
+    "course": "Cálculo (CIIN1030P)",
+    "topic": "Función real de variable real",
+    "difficulty": "Todos",
+    "startedAt": 1792885116863,
+    "finishedAt": 1792885116873,
+    "questionCount": 5,
+    "mode": "individual",
+    "tournament": "Torneo prueba",
+    "teams": [],
+    "questions": [
+      {
+        "id": 1008,
+        "topic": "Función real de variable real",
+        "q": "En una función, dos entradas diferentes pueden tener:",
+        "options": [
+          "La misma imagen",
+          "Dos imágenes cada una",
+          "Ninguna imagen",
+          "Infinitas imágenes por entrada"
+        ],
+        "answer": 0,
+        "why": "Dos entradas distintas pueden tener una imagen común."
+      },
+      {
+        "id": 1201,
+        "topic": "Función real de variable real",
+        "q": "Si f(x)=4x+5, determina f(3).",
+        "options": [
+          "17",
+          "7",
+          "9",
+          "8"
+        ],
+        "answer": 0,
+        "why": "f(3)=4·3+5=17."
+      },
+      {
+        "id": 1003,
+        "topic": "Función real de variable real",
+        "q": "Pendiente por A(1,2) y B(3,8):",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "6"
+        ],
+        "answer": 1,
+        "why": "(8−2)/(3−1)=3."
+      },
+      {
+        "id": 2014,
+        "topic": "Representación gráfica interactiva",
+        "q": "Explora la gráfica de f(x) = 2x +1. ¿Cuál es el valor de f(-2)?",
+        "options": [
+          "-1",
+          "-5",
+          "-3",
+          "-2"
+        ],
+        "answer": 2,
+        "why": "Sustituimos x=-2: f(-2)=2×(-2)+1=-3."
+      },
+      {
+        "id": 1002,
+        "topic": "Función real de variable real",
+        "q": "Si f(x)=2x²−3x+1, ¿f(−2)?",
+        "options": [
+          "3",
+          "15",
+          "−1",
+          "11"
+        ],
+        "answer": 1,
+        "why": "2(4)+6+1=15."
+      }
+    ],
+    "players": [
+      {
+        "name": "Alumno Prueba",
+        "avatar": "🚀",
+        "badges": [
+          "✅ Finalizó"
+        ],
+        "team": null,
+        "position": 1,
+        "answered": 1,
+        "correct": 1,
+        "score20": 4,
+        "elapsedMs": 300002,
+        "answers": {
+          "1008": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "272f00ff-df23-4677-90bb-81e8d7682642",
+    "code": "852827",
+    "course": "Cálculo (CIIN1030P)",
+    "topic": "Conjuntos y lógica proposicional",
+    "difficulty": "Todos",
+    "startedAt": 1792883982105,
+    "finishedAt": 1792883982107,
+    "questionCount": 5,
+    "mode": "individual",
+    "teams": [],
+    "questions": [
+      {
+        "id": 1130,
+        "topic": "Conjuntos y lógica proposicional",
+        "q": "Si A tiene 12 elementos y B tiene 8 elementos, y A∩B tiene 1 elementos, ¿cuántos elementos tiene A∪B?",
+        "options": [
+          "20",
+          "22",
+          "19",
+          "21"
+        ],
+        "answer": 2,
+        "why": "Por inclusión-exclusión: 12+8−1=19."
+      },
+      {
+        "id": 1134,
+        "topic": "Conjuntos y lógica proposicional",
+        "q": "Si A tiene 16 elementos y B tiene 7 elementos, y A∩B tiene 2 elementos, ¿cuántos elementos tiene A∪B?",
+        "options": [
+          "23",
+          "22",
+          "21",
+          "25"
+        ],
+        "answer": 2,
+        "why": "Por inclusión-exclusión: 16+7−2=21."
+      },
+      {
+        "id": 1133,
+        "topic": "Conjuntos y lógica proposicional",
+        "q": "Si A tiene 15 elementos y B tiene 6 elementos, y A∩B tiene 1 elementos, ¿cuántos elementos tiene A∪B?",
+        "options": [
+          "22",
+          "20",
+          "23",
+          "21"
+        ],
+        "answer": 1,
+        "why": "Por inclusión-exclusión: 15+6−1=20."
+      },
+      {
+        "id": 1125,
+        "topic": "Conjuntos y lógica proposicional",
+        "q": "Si A tiene 5 elementos y B tiene 6 elementos, y A∩B tiene 1 elementos, ¿cuántos elementos tiene A∪B?",
+        "options": [
+          "13",
+          "12",
+          "11",
+          "10"
+        ],
+        "answer": 3,
+        "why": "Por inclusión-exclusión: 5+6−1=10."
+      },
+      {
+        "id": 1139,
+        "topic": "Conjuntos y lógica proposicional",
+        "q": "Si A tiene 23 elementos y B tiene 9 elementos, y A∩B tiene 2 elementos, ¿cuántos elementos tiene A∪B?",
+        "options": [
+          "31",
+          "32",
+          "34",
+          "30"
+        ],
+        "answer": 3,
+        "why": "Por inclusión-exclusión: 23+9−2=30."
+      }
+    ],
+    "players": [
+      {
+        "name": "Participante de prueba",
+        "team": null,
+        "position": 1,
+        "answered": 0,
+        "correct": 0,
+        "score20": 0,
+        "elapsedMs": 300000,
+        "answers": {}
+      }
+    ]
+  },
+  {
     "id": "f19329ee-4374-4d13-852d-3da823e318ea",
     "code": "449555",
     "course": "Cálculo (CIIN1030P)",
