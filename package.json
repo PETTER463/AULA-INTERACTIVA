@@ -1,6 +1,6 @@
 {
   "name": "matematica-challenge",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "private": true,
   "description": "Competencias multijugador multicurso con banco de preguntas",
   "scripts": {

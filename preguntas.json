@@ -17003,6 +17003,406 @@
         "c": 1,
         "targetX": 3
       }
+    },
+    {
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Geometría analítica",
+      "topic": "Geometría analítica",
+      "difficulty": "Básico",
+      "q": "Halla la distancia entre A(−2,1) y B(4,9).",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "answer": 1,
+      "why": "d=√((4+2)²+(9−1)²)=√(36+64)=10.",
+      "id": 2047
+    },
+    {
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Cónicas",
+      "topic": "Cónicas",
+      "difficulty": "Intermedio",
+      "q": "¿Cuál es el centro de (x−3)²+(y+2)²=25?",
+      "options": [
+        "(−3,2)",
+        "(3,−2)",
+        "(3,2)",
+        "(−3,−2)"
+      ],
+      "answer": 1,
+      "why": "En la ecuación (x−h)²+(y−k)²=r², centro (h,k)=(3,−2).",
+      "id": 2048
+    },
+    {
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Fundamentos de trigonometría",
+      "topic": "Fundamentos de trigonometría",
+      "difficulty": "Básico",
+      "q": "Si sen θ = 3/5 y θ es agudo, calcula cos θ.",
+      "options": [
+        "4/5",
+        "3/4",
+        "5/4",
+        "2/5"
+      ],
+      "answer": 0,
+      "why": "Por sen²θ+cos²θ=1 y cos θ>0, cos θ=√(1−9/25)=4/5.",
+      "id": 2049
+    },
+    {
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Funciones polinómicas y racionales",
+      "topic": "Funciones polinómicas y racionales",
+      "difficulty": "Intermedio",
+      "q": "Para f(x)=(x−2)(x+3), ¿cuáles son sus ceros?",
+      "options": [
+        "2 y 3",
+        "−2 y 3",
+        "2 y −3",
+        "−2 y −3"
+      ],
+      "answer": 2,
+      "why": "Igualando cada factor a cero: x=2 y x=−3.",
+      "id": 2050
+    },
+    {
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Funciones exponenciales y logarítmicas",
+      "topic": "Funciones exponenciales y logarítmicas",
+      "difficulty": "Avanzado",
+      "q": "Resuelve 2^(x+1)=32.",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 1,
+      "why": "32=2^5, por lo tanto x+1=5 y x=4.",
+      "id": 2051
+    },
+    {
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Productos notables (semana 1)",
+      "topic": "Productos notables (semana 1)",
+      "difficulty": "Básico",
+      "q": "Desarrolla (2x−3)².",
+      "options": [
+        "4x²−9",
+        "4x²−12x+9",
+        "2x²−12x+9",
+        "4x²+12x+9"
+      ],
+      "answer": 1,
+      "why": "(a−b)²=a²−2ab+b², con a=2x, b=3.",
+      "id": 2052
+    },
+    {
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Factorización (semana 2)",
+      "topic": "Factorización (semana 2)",
+      "difficulty": "Intermedio",
+      "q": "Factoriza x²+7x+12.",
+      "options": [
+        "(x+2)(x+6)",
+        "(x−3)(x−4)",
+        "(x+3)(x+4)",
+        "(x−2)(x−6)"
+      ],
+      "answer": 2,
+      "why": "3+4=7 y 3×4=12; queda (x+3)(x+4).",
+      "id": 2053
+    },
+    {
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Sistemas de ecuaciones lineales (semana 7)",
+      "topic": "Sistemas de ecuaciones lineales (semana 7)",
+      "difficulty": "Intermedio",
+      "q": "Resuelve x+y=7, x−y=1. ¿Cuánto vale x?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 2,
+      "why": "Al sumar ecuaciones, 2x=8; x=4 y y=3.",
+      "id": 2054
+    },
+    {
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Matrices (semana 6)",
+      "topic": "Matrices (semana 6)",
+      "difficulty": "Intermedio",
+      "q": "Si A=[[1,2],[0,3]] y B=[[2,0],[1,1]], ¿cuál es la entrada (1,1) de AB?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 2,
+      "why": "La primera fila de A por la primera columna de B: 1·2+2·1=4.",
+      "id": 2055
+    },
+    {
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "topic": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "difficulty": "Avanzado",
+      "q": "Resuelve (x−1)(x−4)<0.",
+      "options": [
+        "x<1",
+        "1<x<4",
+        "x>4",
+        "x<1 o x>4"
+      ],
+      "answer": 1,
+      "why": "El producto de factores lineales es negativo entre las raíces 1 y 4.",
+      "id": 2056
+    },
+    {
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de conjuntos",
+      "topic": "Teoría de conjuntos",
+      "difficulty": "Intermedio",
+      "q": "Si A={1,2,3,4} y B={3,4,5}, ¿cuántos elementos tiene A∪B?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "answer": 2,
+      "why": "A∪B={1,2,3,4,5}; tiene cinco elementos.",
+      "id": 2057
+    },
+    {
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Relaciones",
+      "topic": "Relaciones",
+      "difficulty": "Intermedio",
+      "q": "En A={1,2}, la relación R={(1,1),(2,2)} es:",
+      "options": [
+        "simétrica y reflexiva",
+        "solo simétrica",
+        "solo transitiva",
+        "ninguna"
+      ],
+      "answer": 0,
+      "why": "Contiene todos los pares (a,a), luego es reflexiva; y es simétrica al ser la identidad.",
+      "id": 2058
+    },
+    {
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de Grafos",
+      "topic": "Teoría de Grafos",
+      "difficulty": "Intermedio",
+      "q": "Un grafo simple completo con 6 vértices tiene ¿cuántas aristas?",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "30"
+      ],
+      "answer": 1,
+      "why": "K₆ tiene n(n−1)/2=6·5/2=15 aristas.",
+      "id": 2059
+    },
+    {
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Coordenadas y vectores en R2 y R3",
+      "topic": "Coordenadas y vectores en R2 y R3",
+      "difficulty": "Intermedio",
+      "q": "Dados u=(2,−1,3) y v=(1,4,−2), calcula u·v.",
+      "options": [
+        "−8",
+        "−5",
+        "4",
+        "8"
+      ],
+      "answer": 0,
+      "why": "Producto escalar: 2·1+(−1)·4+3·(−2)=2−4−6=−8.",
+      "id": 2060
+    },
+    {
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Lógica y Álgebra de Boole",
+      "topic": "Lógica y Álgebra de Boole",
+      "difficulty": "Avanzado",
+      "q": "Simplifica A+(A·B) en álgebra booleana.",
+      "options": [
+        "A",
+        "B",
+        "A·B",
+        "A+B"
+      ],
+      "answer": 0,
+      "why": "Ley de absorción: A+A·B=A.",
+      "id": 2061
+    },
+    {
+      "course": "Taller de Pensamiento Numérico (UAEG1008P)",
+      "subject": "Aplicaciones de la potenciación y radicación en contextos reales",
+      "topic": "Aplicaciones de la potenciación y radicación en contextos reales",
+      "difficulty": "Básico",
+      "q": "Simplifica √144 + 2³.",
+      "options": [
+        "16",
+        "18",
+        "20",
+        "24"
+      ],
+      "answer": 2,
+      "why": "√144=12 y 2³=8, suma 20.",
+      "id": 2062
+    },
+    {
+      "course": "Taller de Pensamiento Numérico (UAEG1008P)",
+      "subject": "Análisis de razones y proporciones en situaciones cuantitativas",
+      "topic": "Análisis de razones y proporciones en situaciones cuantitativas",
+      "difficulty": "Básico",
+      "q": "En una mezcla la razón agua:concentrado es 3:2. Con 12 L de agua, ¿cuánto concentrado se usa?",
+      "options": [
+        "6 L",
+        "8 L",
+        "10 L",
+        "18 L"
+      ],
+      "answer": 1,
+      "why": "3 partes equivalen a 12 L; una parte es 4 L, por eso 2 partes son 8 L.",
+      "id": 2063
+    },
+    {
+      "course": "Taller de Pensamiento Numérico (UAEG1008P)",
+      "subject": "Resolución de problemas con regla de tres simple y compuesta",
+      "topic": "Resolución de problemas con regla de tres simple y compuesta",
+      "difficulty": "Intermedio",
+      "q": "Si 4 máquinas producen 120 piezas en 3 horas, ¿cuántas hacen 6 máquinas en 3 horas al mismo ritmo?",
+      "options": [
+        "160",
+        "180",
+        "200",
+        "240"
+      ],
+      "answer": 1,
+      "why": "A tiempo fijo, la producción es proporcional a máquinas: 120×6/4=180.",
+      "id": 2064
+    },
+    {
+      "course": "Taller de Pensamiento Numérico (UAEG1008P)",
+      "subject": "Análisis y solución de problemas con porcentajes",
+      "topic": "Análisis y solución de problemas con porcentajes",
+      "difficulty": "Intermedio",
+      "q": "Un artículo de S/ 250 recibe un descuento de 12%. ¿Cuál es el precio final?",
+      "options": [
+        "S/ 200",
+        "S/ 215",
+        "S/ 220",
+        "S/ 238"
+      ],
+      "answer": 2,
+      "why": "Descuento: 250×0.12=30; precio final 250−30=220.",
+      "id": 2065
+    },
+    {
+      "course": "Taller de Pensamiento Numérico (UAEG1008P)",
+      "subject": "Resolución de inecuaciones en la toma de decisiones",
+      "topic": "Resolución de inecuaciones en la toma de decisiones",
+      "difficulty": "Avanzado",
+      "q": "Tienes S/ 80 y cada entrada cuesta S/ 15. ¿Máximo cuántas entradas completas puedes comprar?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answer": 1,
+      "why": "15n≤80, luego n≤5.33; máximo entero 5.",
+      "id": 2066
+    },
+    {
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Funciones de varias variables (semana 1)",
+      "topic": "Funciones de varias variables (semana 1)",
+      "difficulty": "Intermedio",
+      "q": "Para f(x,y)=x²+3y, calcula f(2,−1).",
+      "options": [
+        "−1",
+        "1",
+        "4",
+        "7"
+      ],
+      "answer": 1,
+      "why": "f(2,−1)=2²+3(−1)=4−3=1.",
+      "id": 2067
+    },
+    {
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Gradiente (semana 4)",
+      "topic": "Gradiente (semana 4)",
+      "difficulty": "Intermedio",
+      "q": "Para f(x,y)=x²y+2y, calcula ∇f(1,2).",
+      "options": [
+        "(2,3)",
+        "(4,3)",
+        "(4,4)",
+        "(3,4)"
+      ],
+      "answer": 1,
+      "why": "∂f/∂x=2xy=4, ∂f/∂y=x²+2=3.",
+      "id": 2068
+    },
+    {
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Integrales dobles y áreas (semana 9)",
+      "topic": "Integrales dobles y áreas (semana 9)",
+      "difficulty": "Intermedio",
+      "q": "Calcula ∫ de x=0 a 2 ∫ de y=0 a 3 de 1 dy dx.",
+      "options": [
+        "5",
+        "6",
+        "8",
+        "9"
+      ],
+      "answer": 1,
+      "why": "La integral de 1 sobre el rectángulo 2×3 representa área 6.",
+      "id": 2069
+    },
+    {
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Optimización sin restricciones (semana 7)",
+      "topic": "Optimización sin restricciones (semana 7)",
+      "difficulty": "Avanzado",
+      "q": "¿Dónde tiene mínimo f(x,y)=(x−2)²+(y+1)²?",
+      "options": [
+        "(−2,1)",
+        "(2,1)",
+        "(2,−1)",
+        "(−2,−1)"
+      ],
+      "answer": 2,
+      "why": "La suma de cuadrados es mínima (0) en x=2, y=−1.",
+      "id": 2070
+    },
+    {
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Integrales triples (semana 14)",
+      "topic": "Integrales triples (semana 14)",
+      "difficulty": "Intermedio",
+      "q": "Evalúa ∭ de 1 sobre [0,2]×[0,3]×[0,4].",
+      "options": [
+        "9",
+        "12",
+        "18",
+        "24"
+      ],
+      "answer": 3,
+      "why": "La integral del 1 sobre la caja es su volumen: 2×3×4=24.",
+      "id": 2071
     }
   ]
 }

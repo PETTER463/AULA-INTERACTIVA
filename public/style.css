@@ -15,3 +15,16 @@ body[data-math-theme="discreta"]{background:radial-gradient(circle at 18% 22%,#2
 body[data-math-theme="geometria"]{background:repeating-linear-gradient(45deg,transparent 0 75px,#8e91fc13 76px 78px),radial-gradient(circle at 10% 0%,#343b73,transparent 53%),#111427}
 body[data-math-theme="multivariable"]{background:repeating-radial-gradient(ellipse at 12% 3%,transparent 0 34px,#62bfe015 35px 37px,transparent 39px 75px),radial-gradient(circle at 90% 10%,#235578,transparent 48%),#0b152e}
 .helpbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0}.helpbar .btn{padding:8px 12px;font-size:13px}.hintbox{padding:15px;border-left:4px solid #f5d27b;background:#473b205c;border-radius:8px}.muted-option{opacity:.27!important;pointer-events:none}.teamboard{border:1px solid #466885;background:#142848;padding:13px;border-radius:14px;margin:10px 0 22px}.teamline{display:flex;justify-content:space-between;gap:8px;background:#24395b;border-radius:8px;padding:10px;margin:7px 0;flex-wrap:wrap}
+
+/* 7.1: pista visual del progreso del docente */
+.teacher-live{background:#102546;border:1px solid #5075a8;border-radius:18px;padding:17px;margin:0 0 22px}
+.teacher-live h3{margin:0}.track-list{display:grid;gap:10px;max-height:65vh;overflow-y:auto;padding-right:5px}
+.race-row{background:#1b3356;padding:12px;border-radius:12px;animation:raceEnter .4s ease}
+.race-top{display:flex;align-items:center;gap:9px;justify-content:space-between;flex-wrap:wrap;font-size:13px;margin-bottom:8px}
+.race-place{display:inline-flex;background:#355986;border-radius:8px;padding:5px 8px}
+.race-change{min-width:38px;text-align:center;color:#aabedc}.race-change.up{color:#74e5af}.race-change.down{color:#ffb07c}
+.race-track{height:25px;background:repeating-linear-gradient(90deg,#213d66 0 19%,#527098 19.5% 20%);position:relative;border-radius:15px;margin:8px 0;overflow:hidden}
+.race-fill{height:100%;border-radius:15px;background:linear-gradient(90deg,#398ed3,#40cba9);transition:width .65s ease}
+.race-icon{position:absolute;top:1px;font-size:18px;transition:left .65s ease}
+@keyframes raceEnter{from{opacity:.4;transform:translateX(8px)}to{opacity:1;transform:translateX(0)}}
+@media(prefers-reduced-motion:reduce){.race-fill,.race-icon,.race-row{transition:none;animation:none}}

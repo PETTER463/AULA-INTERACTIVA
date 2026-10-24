@@ -1,0 +1,103 @@
+[
+  {
+    "id": "f19329ee-4374-4d13-852d-3da823e318ea",
+    "code": "449555",
+    "course": "Cálculo (CIIN1030P)",
+    "topic": "Conjuntos y lógica proposicional",
+    "difficulty": "Todos",
+    "startedAt": 1792879539413,
+    "finishedAt": 1792879539418,
+    "questionCount": 5,
+    "mode": "teams",
+    "teams": [
+      {
+        "team": "Equipo Azul",
+        "members": 1,
+        "correct": 0,
+        "answered": 1,
+        "score": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": 1126,
+        "topic": "Conjuntos y lógica proposicional",
+        "q": "Si A tiene 6 elementos y B tiene 7 elementos, y A∩B tiene 2 elementos, ¿cuántos elementos tiene A∪B?",
+        "options": [
+          "13",
+          "11",
+          "15",
+          "12"
+        ],
+        "answer": 1,
+        "why": "Por inclusión-exclusión: 6+7−2=11."
+      },
+      {
+        "id": 1137,
+        "topic": "Conjuntos y lógica proposicional",
+        "q": "Si A tiene 21 elementos y B tiene 7 elementos, y A∩B tiene 3 elementos, ¿cuántos elementos tiene A∪B?",
+        "options": [
+          "31",
+          "26",
+          "25",
+          "28"
+        ],
+        "answer": 2,
+        "why": "Por inclusión-exclusión: 21+7−3=25."
+      },
+      {
+        "id": 1132,
+        "topic": "Conjuntos y lógica proposicional",
+        "q": "Si A tiene 14 elementos y B tiene 5 elementos, y A∩B tiene 3 elementos, ¿cuántos elementos tiene A∪B?",
+        "options": [
+          "19",
+          "16",
+          "17",
+          "22"
+        ],
+        "answer": 1,
+        "why": "Por inclusión-exclusión: 14+5−3=16."
+      },
+      {
+        "id": 1127,
+        "topic": "Conjuntos y lógica proposicional",
+        "q": "Si A tiene 7 elementos y B tiene 3 elementos, y A∩B tiene 3 elementos, ¿cuántos elementos tiene A∪B?",
+        "options": [
+          "7",
+          "13",
+          "8",
+          "10"
+        ],
+        "answer": 0,
+        "why": "Por inclusión-exclusión: 7+3−3=7."
+      },
+      {
+        "id": 1123,
+        "topic": "Conjuntos y lógica proposicional",
+        "q": "Si A tiene 3 elementos y B tiene 4 elementos, y A∩B tiene 2 elementos, ¿cuántos elementos tiene A∪B?",
+        "options": [
+          "7",
+          "5",
+          "6",
+          "9"
+        ],
+        "answer": 1,
+        "why": "Por inclusión-exclusión: 3+4−2=5."
+      }
+    ],
+    "players": [
+      {
+        "name": "Estudiante Uno",
+        "team": "Equipo Azul",
+        "position": 1,
+        "answered": 1,
+        "correct": 0,
+        "score20": 0,
+        "elapsedMs": 4,
+        "answers": {
+          "1126": 0
+        }
+      }
+    ]
+  }
+]
