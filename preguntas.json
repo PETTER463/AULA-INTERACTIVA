@@ -16175,6 +16175,834 @@
       ],
       "answer": 2,
       "why": "V=πr²h=π(26)²(7)=4732π."
+    },
+    {
+      "id": 2011,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "1",
+        "-3",
+        "0",
+        "-1"
+      ],
+      "answer": 3,
+      "why": "Sustituimos x=-2: f(-2)=1×(-2)+1=-1.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 1,
+        "b": 1,
+        "c": 0,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2012,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "2",
+        "4",
+        "0",
+        "3"
+      ],
+      "answer": 0,
+      "why": "Sustituimos x=1: f(1)=1×(1)+1=2.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 1,
+        "b": 1,
+        "c": 0,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2013,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "6",
+        "4",
+        "2",
+        "5"
+      ],
+      "answer": 1,
+      "why": "Sustituimos x=3: f(3)=1×(3)+1=4.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 1,
+        "b": 1,
+        "c": 0,
+        "targetX": 3
+      }
+    },
+    {
+      "id": 2014,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "-1",
+        "-5",
+        "-3",
+        "-2"
+      ],
+      "answer": 2,
+      "why": "Sustituimos x=-2: f(-2)=2×(-2)+1=-3.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 2,
+        "b": 1,
+        "c": 0,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2015,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "5",
+        "1",
+        "4",
+        "3"
+      ],
+      "answer": 3,
+      "why": "Sustituimos x=1: f(1)=2×(1)+1=3.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 2,
+        "b": 1,
+        "c": 0,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2016,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "7",
+        "9",
+        "5",
+        "8"
+      ],
+      "answer": 0,
+      "why": "Sustituimos x=3: f(3)=2×(3)+1=7.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 2,
+        "b": 1,
+        "c": 0,
+        "targetX": 3
+      }
+    },
+    {
+      "id": 2017,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "5",
+        "3",
+        "1",
+        "4"
+      ],
+      "answer": 1,
+      "why": "Sustituimos x=-2: f(-2)=-1×(-2)+1=3.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": -1,
+        "b": 1,
+        "c": 0,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2018,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "2",
+        "-2",
+        "0",
+        "1"
+      ],
+      "answer": 2,
+      "why": "Sustituimos x=1: f(1)=-1×(1)+1=0.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": -1,
+        "b": 1,
+        "c": 0,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2019,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "0",
+        "-4",
+        "-1",
+        "-2"
+      ],
+      "answer": 3,
+      "why": "Sustituimos x=3: f(3)=-1×(3)+1=-2.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": -1,
+        "b": 1,
+        "c": 0,
+        "targetX": 3
+      }
+    },
+    {
+      "id": 2020,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x² -2x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "9",
+        "11",
+        "7",
+        "10"
+      ],
+      "answer": 0,
+      "why": "Sustituimos x=-2: f(-2)=1×(-2)²-2×(-2)+1=9.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 1,
+        "b": -2,
+        "c": 1,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2021,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x² -2x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "2",
+        "0",
+        "-2",
+        "1"
+      ],
+      "answer": 1,
+      "why": "Sustituimos x=1: f(1)=1×(1)²-2×(1)+1=0.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 1,
+        "b": -2,
+        "c": 1,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2022,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x² -2x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "6",
+        "2",
+        "4",
+        "5"
+      ],
+      "answer": 2,
+      "why": "Sustituimos x=3: f(3)=1×(3)²-2×(3)+1=4.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 1,
+        "b": -2,
+        "c": 1,
+        "targetX": 3
+      }
+    },
+    {
+      "id": 2023,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x² -2x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "15",
+        "11",
+        "14",
+        "13"
+      ],
+      "answer": 3,
+      "why": "Sustituimos x=-2: f(-2)=2×(-2)²-2×(-2)+1=13.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 2,
+        "b": -2,
+        "c": 1,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2024,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x² -2x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "1",
+        "3",
+        "-1",
+        "2"
+      ],
+      "answer": 0,
+      "why": "Sustituimos x=1: f(1)=2×(1)²-2×(1)+1=1.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 2,
+        "b": -2,
+        "c": 1,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2025,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x² -2x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "15",
+        "13",
+        "11",
+        "14"
+      ],
+      "answer": 1,
+      "why": "Sustituimos x=3: f(3)=2×(3)²-2×(3)+1=13.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 2,
+        "b": -2,
+        "c": 1,
+        "targetX": 3
+      }
+    },
+    {
+      "id": 2026,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x² -2x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "3",
+        "-1",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "why": "Sustituimos x=-2: f(-2)=-1×(-2)²-2×(-2)+1=1.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": -1,
+        "b": -2,
+        "c": 1,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2027,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x² -2x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "0",
+        "-4",
+        "-1",
+        "-2"
+      ],
+      "answer": 3,
+      "why": "Sustituimos x=1: f(1)=-1×(1)²-2×(1)+1=-2.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": -1,
+        "b": -2,
+        "c": 1,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2028,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x² -2x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "-14",
+        "-12",
+        "-16",
+        "-13"
+      ],
+      "answer": 0,
+      "why": "Sustituimos x=3: f(3)=-1×(3)²-2×(3)+1=-14.",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": -1,
+        "b": -2,
+        "c": 1,
+        "targetX": 3
+      }
+    },
+    {
+      "id": 2029,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "1",
+        "-1",
+        "-3",
+        "0"
+      ],
+      "answer": 1,
+      "why": "Sustituimos x=-2: f(-2)=1×(-2)+1=-1.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 1,
+        "b": 1,
+        "c": 0,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2030,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "4",
+        "0",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "why": "Sustituimos x=1: f(1)=1×(1)+1=2.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 1,
+        "b": 1,
+        "c": 0,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2031,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "6",
+        "2",
+        "5",
+        "4"
+      ],
+      "answer": 3,
+      "why": "Sustituimos x=3: f(3)=1×(3)+1=4.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 1,
+        "b": 1,
+        "c": 0,
+        "targetX": 3
+      }
+    },
+    {
+      "id": 2032,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "-3",
+        "-1",
+        "-5",
+        "-2"
+      ],
+      "answer": 0,
+      "why": "Sustituimos x=-2: f(-2)=2×(-2)+1=-3.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 2,
+        "b": 1,
+        "c": 0,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2033,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "5",
+        "3",
+        "1",
+        "4"
+      ],
+      "answer": 1,
+      "why": "Sustituimos x=1: f(1)=2×(1)+1=3.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 2,
+        "b": 1,
+        "c": 0,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2034,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "9",
+        "5",
+        "7",
+        "8"
+      ],
+      "answer": 2,
+      "why": "Sustituimos x=3: f(3)=2×(3)+1=7.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": 2,
+        "b": 1,
+        "c": 0,
+        "targetX": 3
+      }
+    },
+    {
+      "id": 2035,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "5",
+        "1",
+        "4",
+        "3"
+      ],
+      "answer": 3,
+      "why": "Sustituimos x=-2: f(-2)=-1×(-2)+1=3.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": -1,
+        "b": 1,
+        "c": 0,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2036,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "0",
+        "2",
+        "-2",
+        "1"
+      ],
+      "answer": 0,
+      "why": "Sustituimos x=1: f(1)=-1×(1)+1=0.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": -1,
+        "b": 1,
+        "c": 0,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2037,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "0",
+        "-2",
+        "-4",
+        "-1"
+      ],
+      "answer": 1,
+      "why": "Sustituimos x=3: f(3)=-1×(3)+1=-2.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "line",
+        "a": -1,
+        "b": 1,
+        "c": 0,
+        "targetX": 3
+      }
+    },
+    {
+      "id": 2038,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x² -2x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "11",
+        "7",
+        "9",
+        "10"
+      ],
+      "answer": 2,
+      "why": "Sustituimos x=-2: f(-2)=1×(-2)²-2×(-2)+1=9.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 1,
+        "b": -2,
+        "c": 1,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2039,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x² -2x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "2",
+        "-2",
+        "1",
+        "0"
+      ],
+      "answer": 3,
+      "why": "Sustituimos x=1: f(1)=1×(1)²-2×(1)+1=0.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 1,
+        "b": -2,
+        "c": 1,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2040,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 1x² -2x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "4",
+        "6",
+        "2",
+        "5"
+      ],
+      "answer": 0,
+      "why": "Sustituimos x=3: f(3)=1×(3)²-2×(3)+1=4.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 1,
+        "b": -2,
+        "c": 1,
+        "targetX": 3
+      }
+    },
+    {
+      "id": 2041,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x² -2x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "15",
+        "13",
+        "11",
+        "14"
+      ],
+      "answer": 1,
+      "why": "Sustituimos x=-2: f(-2)=2×(-2)²-2×(-2)+1=13.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 2,
+        "b": -2,
+        "c": 1,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2042,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x² -2x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "3",
+        "-1",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "why": "Sustituimos x=1: f(1)=2×(1)²-2×(1)+1=1.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 2,
+        "b": -2,
+        "c": 1,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2043,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = 2x² -2x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "15",
+        "11",
+        "14",
+        "13"
+      ],
+      "answer": 3,
+      "why": "Sustituimos x=3: f(3)=2×(3)²-2×(3)+1=13.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": 2,
+        "b": -2,
+        "c": 1,
+        "targetX": 3
+      }
+    },
+    {
+      "id": 2044,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x² -2x +1. ¿Cuál es el valor de f(-2)?",
+      "options": [
+        "1",
+        "3",
+        "-1",
+        "2"
+      ],
+      "answer": 0,
+      "why": "Sustituimos x=-2: f(-2)=-1×(-2)²-2×(-2)+1=1.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": -1,
+        "b": -2,
+        "c": 1,
+        "targetX": -2
+      }
+    },
+    {
+      "id": 2045,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x² -2x +1. ¿Cuál es el valor de f(1)?",
+      "options": [
+        "0",
+        "-2",
+        "-4",
+        "-1"
+      ],
+      "answer": 1,
+      "why": "Sustituimos x=1: f(1)=-1×(1)²-2×(1)+1=-2.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": -1,
+        "b": -2,
+        "c": 1,
+        "targetX": 1
+      }
+    },
+    {
+      "id": 2046,
+      "topic": "Representación gráfica interactiva",
+      "q": "Explora la gráfica de f(x) = -1x² -2x +1. ¿Cuál es el valor de f(3)?",
+      "options": [
+        "-12",
+        "-16",
+        "-14",
+        "-13"
+      ],
+      "answer": 2,
+      "why": "Sustituimos x=3: f(3)=-1×(3)²-2×(3)+1=-14.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio",
+      "graph": {
+        "type": "parabola",
+        "a": -1,
+        "b": -2,
+        "c": 1,
+        "targetX": 3
+      }
     }
   ]
 }

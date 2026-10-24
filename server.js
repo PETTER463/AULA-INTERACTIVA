@@ -8,6 +8,14 @@ const PORT = Number(process.env.PORT || 3000);
 const HOST = process.env.HOST || '0.0.0.0';
 const ROOT = path.join(__dirname, 'public');
 const rooms = new Map();
+const HISTORY_FILE = process.env.HISTORY_FILE || path.join(__dirname,'data','historial.json');
+let HISTORY=[];
+try { HISTORY=JSON.parse(fs.readFileSync(HISTORY_FILE,'utf8')); if(!Array.isArray(HISTORY)) HISTORY=[]; } catch { HISTORY=[]; }
+function persistHistory(){try{fs.mkdirSync(path.dirname(HISTORY_FILE),{recursive:true});const tmp=HISTORY_FILE+'.tmp';fs.writeFileSync(tmp,JSON.stringify(HISTORY,null,2));fs.renameSync(tmp,HISTORY_FILE);}catch(e){console.error('Historial no persistido:',e.message);}}
+function archiveRoom(room){if(room.archived)return;room.archived=true;const players=[...room.players.values()];for(const p of players)calculate(room,p);const sorted=players.slice().sort((a,b)=>b.correct-a.correct||(a.submittedAt-room.startedAt)-(b.submittedAt-room.startedAt));
+HISTORY.unshift({id:crypto.randomUUID(),code:room.code,course:room.course,topic:room.topic,difficulty:room.difficulty,startedAt:room.startedAt,finishedAt:room.finishedAt,questionCount:room.questions.length,questions:room.questions.map(q=>({id:q.id,topic:q.topic,q:q.q,options:q.options,answer:q.answer,why:q.why})),players:sorted.map((p,i)=>({name:p.name,position:i+1,answered:Object.keys(p.answers).length,correct:p.correct,score20:+(20*p.correct/room.questions.length).toFixed(2),elapsedMs:p.submittedAt-room.startedAt,answers:p.answers}))});
+HISTORY=HISTORY.slice(0,2000);persistHistory();}
+
 const BANKFILE=path.join(__dirname,'preguntas.json');
 let BANK=JSON.parse(fs.readFileSync(BANKFILE,'utf8')).preguntas;
 const SYLLABI=JSON.parse(fs.readFileSync(path.join(__dirname,'silabos_2026_2.json'),'utf8'));
@@ -20,7 +28,7 @@ function syllabusDetails(){const details={};for(const [course,topics] of Object.
 
 function admin(b){return ADMIN_PIN.length>=6&&b.pin===ADMIN_PIN;}
 
-const publicQuestions = qs => qs.map(({id,topic,q,options})=>({id,topic,q,options}));
+const publicQuestions = qs => qs.map(({id,topic,q,options,graph})=>({id,topic,q,options,graph:graph||null}));
 const token = () => crypto.randomBytes(24).toString('hex');
 const respond = (res,status,data) => {res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(data));};
 const fail = (res,status,message) => respond(res,status,{error:message});
@@ -30,12 +38,12 @@ function person(room,participantToken){return [...room.players.values()].find(x=
 function state(room,role,playerToken){
  const now=Date.now();
  const all=[...room.players.values()];
- const rank=all.map(p=>({id:p.id,name:p.name,answered:Object.keys(p.answers).length,correct:p.correct,submitted:!!p.submittedAt,elapsedMs:p.submittedAt&&room.startedAt?p.submittedAt-room.startedAt:null,joinedAt:p.joinedAt})).sort((a,b)=>b.correct-a.correct||(a.submitted!==b.submitted?(a.submitted?-1:1):0)||(a.elapsedMs??Infinity)-(b.elapsedMs??Infinity)||a.joinedAt-b.joinedAt);
+ const rank=all.map(p=>({id:p.id,name:p.name,answered:Object.keys(p.answers).length,correct:p.correct,submitted:!!p.submittedAt,elapsedMs:p.submittedAt&&room.startedAt?p.submittedAt-room.startedAt:null,streak:p.streak||0,bestStreak:p.bestStreak||0,joinedAt:p.joinedAt})).sort((a,b)=>b.correct-a.correct||(a.submitted!==b.submitted?(a.submitted?-1:1):0)||(a.elapsedMs??Infinity)-(b.elapsedMs??Infinity)||a.joinedAt-b.joinedAt);
  const your=person(room,playerToken);
  const reveal=room.status==='finished';
- return {code:room.code,status:room.status,durationSec:room.durationSec,startedAt:room.startedAt,deadline:room.deadline,finishedAt:room.finishedAt,serverNow:now,topic:room.topic,course:room.course,difficulty:room.difficulty,questionCount:room.questions.length,questions:publicQuestions(room.questions),participants:all.length,ranking:rank.map((p,i)=>({...p,position:i+1,score20:p.correct*20/room.questions.length})),your:your?{id:your.id,name:your.name,answers:your.answers,submittedAt:your.submittedAt}:null,solutions:reveal?room.questions.map(({id,answer,why})=>({id,answer,why})):null,role};
+ return {streaks:rank.map(p=>({id:p.id,streak:all.find(x=>x.id===p.id)?.streak||0})),code:room.code,status:room.status,durationSec:room.durationSec,startedAt:room.startedAt,deadline:room.deadline,finishedAt:room.finishedAt,serverNow:now,topic:room.topic,course:room.course,difficulty:room.difficulty,questionCount:room.questions.length,questions:publicQuestions(room.questions),participants:all.length,ranking:rank.map((p,i)=>({...p,position:i+1,score20:p.correct*20/room.questions.length})),your:your?{id:your.id,name:your.name,answers:your.answers,submittedAt:your.submittedAt}:null,solutions:reveal?room.questions.map(({id,answer,why})=>({id,answer,why})):null,role};
 }
-function finish(room){if(room.status!=='running')return;room.status='finished';room.finishedAt=Date.now();for(const p of room.players.values()){if(!p.submittedAt)p.submittedAt=room.deadline;calculate(room,p);}broadcast(room);}
+function finish(room){if(room.status!=='running')return;room.status='finished';room.finishedAt=Date.now();for(const p of room.players.values()){if(!p.submittedAt)p.submittedAt=room.deadline;calculate(room,p);}archiveRoom(room);broadcast(room);}
 function calculate(room,p){p.correct=room.questions.reduce((n,q)=>n+(p.answers[q.id]===q.answer?1:0),0);}
 function expire(room){if(room.status==='running'&&Date.now()>=room.deadline)finish(room);}
 function broadcast(room){const data='data: '+JSON.stringify({type:'refresh',time:Date.now()})+'\n\n';for(const client of room.clients){try{client.write(data);}catch{room.clients.delete(client);}}}
@@ -46,7 +54,12 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8',
 const server=http.createServer(async(req,res)=>{
  const url=new URL(req.url,'http://localhost');
  try{
-  if(url.pathname==='/api/catalog'&&req.method==='GET')return respond(res,200,{catalog:catalog(),details:syllabusDetails(),editorEnabled:ADMIN_PIN.length>=6});
+  if(url.pathname==='/api/history'&&req.method==='GET'){
+    const pin=url.searchParams.get('pin')||'';
+    if(!admin({pin}))return fail(res,403,'Configura ADMIN_PIN y escribe el PIN docente para consultar el historial.');
+    return respond(res,200,{history:HISTORY.map(({questions,...r})=>r),stored:HISTORY.length,persistent:!!process.env.HISTORY_FILE});
+  }
+  if(url.pathname==='/api/catalog' &&req.method==='GET')return respond(res,200,{catalog:catalog(),details:syllabusDetails(),editorEnabled:ADMIN_PIN.length>=6});
   if(url.pathname==='/api/events'&&req.method==='GET'){
    const room=lookup(url.searchParams.get('code'));if(!room)return fail(res,404,'Sala no encontrada.');
    const key=url.searchParams.get('token');if(key!==room.hostToken&&!person(room,key))return fail(res,403,'Acceso no autorizado.');
@@ -84,7 +97,7 @@ const server=http.createServer(async(req,res)=>{
     if(!validateName(b.name))return fail(res,400,'Escribe un nombre de 2 a 45 caracteres.');
     if(room.players.size>=150)return fail(res,409,'Sala llena (150 estudiantes).');
     const name=b.name.trim();if([...room.players.values()].some(p=>p.name.toLowerCase()===name.toLowerCase()))return fail(res,409,'Este nombre ya está en uso en la sala.');
-    const p={id:crypto.randomUUID(),token:token(),name,answers:{},correct:0,submittedAt:null,joinedAt:Date.now()};room.players.set(p.id,p);broadcast(room);return respond(res,200,{code:room.code,playerToken:p.token});
+    const p={id:crypto.randomUUID(),token:token(),name,answers:{},correct:0,streak:0,bestStreak:0,submittedAt:null,joinedAt:Date.now()};room.players.set(p.id,p);broadcast(room);return respond(res,200,{code:room.code,playerToken:p.token});
    }
    if(url.pathname==='/api/start'||url.pathname==='/api/close'){
     if(!authHost(room,b))return fail(res,403,'Solo el docente puede controlar la sala.');
@@ -100,6 +113,7 @@ const server=http.createServer(async(req,res)=>{
     if(url.pathname==='/api/answer'){
      const id=Number(b.id),answer=Number(b.answer);if(!room.questions.some(q=>q.id===id)||!Number.isInteger(answer)||answer<0||answer>3)return fail(res,400,'Respuesta inválida.');
      p.answers[id]=answer;calculate(room,p);
+     const order=room.questions.map(q=>q.id);let current=0,best=0;for(const qid of order){const sq=room.questions.find(q=>q.id===qid);if(p.answers[qid]===sq.answer)current++;else current=0;best=Math.max(best,current);}p.streak=current;p.bestStreak=best;
     }else{p.submittedAt=Date.now();calculate(room,p);}
     broadcast(room);return respond(res,200,{ok:true});
    }

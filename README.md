@@ -1,14 +1,9 @@
-# Matemática Challenge 5.0 — bancos completos por curso
+# MATEMÁTICA CHALLENGE 6.0
 
-Se conserva el sistema multijugador y los 5 cursos / 46 temas provenientes de los sílabos 2026-2.
+Competencias multijugador de matemática, cinco cursos y 46 temas de sílabos 2026-2.
 
-## Banco de preguntas
+**Cambios:** podio animado, rachas/medallas y sonido opcional, 36 preguntas de gráficos interactivos, panel docente ampliado, solucionarios, CSV compatible con Excel, resumen de historial por estudiantes protegido por ADMIN_PIN.
 
-- 1011 preguntas en total, incluyendo 889 preguntas nuevas generadas con parámetros numéricos.
-- **Como mínimo 7 preguntas por tema y por nivel** (Básico, Intermedio, Avanzado).
-- **Como mínimo 21 preguntas por tema** al seleccionar «Todos».
-- Las preguntas nuevas son principalmente ejercicios de cálculo y reconocimiento con variaciones numéricas de modelos por tema; no equivalen a 21 competencias conceptualmente diferentes. Revisa su pertinencia pedagógica antes de una evaluación calificada.
-- Las salas siguen compartiendo la misma selección aleatoria entre sus estudiantes.
+**Limitación:** el historial se conserva en un JSON local pero Render gratuito utiliza almacenamiento efímero, por tanto no garantiza retención tras reinicio o redespliegue. Descarga las exportaciones y evalúa conectar una base de datos externa para persistencia real.
 
-## Advertencia
-El banco no se guarda automáticamente de manera permanente si se edita desde el sitio en Render Free. Para persistencia real se requiere una base de datos.
+Lee `INSTRUCCIONES.md` antes de actualizar GitHub y Render.
