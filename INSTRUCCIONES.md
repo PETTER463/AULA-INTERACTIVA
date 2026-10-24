@@ -1,24 +1,17 @@
-# MATEMÁTICA CHALLENGE 4.0 — SÍLABOS 2026-2
+# Cómo actualizar AULA INTERACTIVA a Matemática Challenge 5.0
 
-## Cambios
-- Incluye **los cinco cursos** de los sílabos PDF suministrados.
-- El selector **Curso → Tema** presenta la estructura académica, y muestra los subtemas correspondientes.
-- Preserva las salas multijugador, cronómetro, respuestas, ranking en vivo, resultado sobre 20 y descarga de CSV.
-- Reutiliza preguntas de la versión 3 solo en temas compatibles. La incorporación de un tema al sílabo **no implica** que tenga un banco suficiente.
-- Temas sin cinco preguntas quedan visibles, pero impiden crear competencias hasta completar el banco.
-- En `silabos_2026_2.json` están los cursos, temas, subtemas y el documento fuente; en `preguntas.json` los ejercicios existentes asignados.
+1. Descarga y descomprime el ZIP.
+2. Abre GitHub: https://github.com/PETTER463/AULA-INTERACTIVA y entra con tu cuenta.
+3. En «Agregar archivo → Cargar archivos», sube el **contenido** de esta carpeta, no el ZIP ni la carpeta externa; conserva `public/`.
+4. GitHub debe mostrar, en la raíz, `server.js`, `package.json`, `preguntas.json`, `silabos_2026_2.json`, `Dockerfile` y `public/`.
+5. Confirma los cambios en la rama principal.
+6. Render → AULA-INTERACTIVA → Deploys. Comprueba que la última publicación termine con «Live».
+7. Abre https://aula-interactiva-sr9y.onrender.com y recarga con Ctrl+F5.
+8. En el panel docente selecciona cualquier curso, tema, dificultad (Básico / Intermedio / Avanzado / Todos), 5 a 20 preguntas y 5 minutos.
+9. Crea una sala y prueba el ingreso desde un segundo dispositivo.
 
-## Para actualizar GitHub y Render
-1. Guarda una copia de tu repositorio actual.
-2. Descomprime este ZIP.
-3. En GitHub, repositorio `PETTER463/AULA-INTERACTIVA`, reemplaza `server.js`, `package.json`, `preguntas.json`, `Dockerfile`, y los archivos de `public/`; **agrega `silabos_2026_2.json`**.
-4. Usa **Agregar archivo → Cargar archivos** en la raíz (no subas la carpeta contenedora). Haz **Commit changes**.
-5. En Render, verifica el despliegue automático o **Manual Deploy → Deploy latest commit**. Espera estado **Live**.
-6. Abre `https://aula-interactiva-sr9y.onrender.com` y pulsa Ctrl+F5. Verifica selector de los cinco cursos.
-
-## Importante
-- El sílabo de Cálculo 3 es de **16 semanas**; el de Taller de Pensamiento Numérico corresponde a **8 semanas**.
-- El banco existente se reutiliza como material de práctica, no como preguntas emitidas por la universidad. Revisar su pertinencia matemática antes de evaluaciones oficiales.
-- Editor requiere variable `ADMIN_PIN` de 6+ caracteres en Render. Persistencia en disco local **no durable** en Render Free; exporta o incorpora los cambios al archivo JSON de GitHub.
-- Las salas y resultados en memoria desaparecen al reiniciar; no lo uses como registro oficial de notas.
-- No reemplaza las rúbricas ni evaluaciones institucionales del sílabo.
+### Importante
+- Los cambios se hacen en GitHub y se publican mediante Render; este ZIP no actualiza automáticamente la página.
+- Se preservan las preguntas originales, y se agregan variantes paramétricas por tema (mínimo 7 por nivel).
+- Para 10 o 20 preguntas de un nivel individual se necesitarán más preguntas por nivel: el mínimo garantizado por nivel es 7; para «Todos» se garantiza al menos 21.
+- Confirma la exactitud de los ejercicios antes de emplearlos para calificación oficial.
