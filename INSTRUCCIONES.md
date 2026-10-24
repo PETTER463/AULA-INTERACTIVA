@@ -1,23 +1,29 @@
-# Matemática Challenge 7.1 — actualización GitHub y Render
+# Matemática Challenge 7.2 — Pantalla completa y música
 
-## Incluye
-- Panel docente de carreras con puestos que cambian en tiempo real, flechas de subida/bajada, barras de avance, número de respuestas, aciertos y entregas. Usa las notificaciones SSE ya existentes.
-- 25 ejercicios nuevos, revisados matemáticamente, sobre temas distintos de los cinco sílabos: banco total 1072. No usa ninguna API de IA ni genera cargos por IA.
-- Conserva salas, código QR, fondos temáticos, comodines, equipos, soluciones, reportes y el PIN docente.
-- **No incluye** cobros, registro con contraseña ni generación automática con IA; esas serán fases posteriores con base de datos, autenticación y proveedor de pagos.
+## Actualizar GitHub / Render
 
-## Instalación
-1. Descarga y guarda copia del repositorio anterior de GitHub (Code > Download ZIP). No subas archivos privados de estudiantes.
-2. Descomprime este ZIP y sube el CONTENIDO de la carpeta Matematica_Challenge_v7_1 a la RAÍZ de PETTER463/AULA-INTERACTIVA, reemplazando server.js, package.json, preguntas.json, public/app.js, public/style.css y conservando public/index.html, Dockerfile, silabos_2026_2.json, lib y otros archivos. No subas una carpeta extra anidada.
-3. En GitHub pulsa Commit changes. En Render comprueba que Deploys quede Live; si no se inicia, Manual Deploy > Deploy latest commit.
-4. Abre https://aula-interactiva-sr9y.onrender.com y crea sala. Deja abierta la pantalla docente; desde dos celulares con datos móviles ingresa con el QR. Responde preguntas en momentos distintos: comprobarás que los puestos y el corredor se mueven en directo.
-5. Comprueba que el banco muestre la cifra nueva y que la sala se cierre; descarga CSV de resultados.
+1. Realiza copia de seguridad de tu repositorio actual (GitHub → Code → Download ZIP).
+2. Extrae este paquete. Carga los archivos y carpetas a la **raíz** del repositorio, conservando `public`, `lib` y `data`. GitHub debe reemplazar `server.js`, `public/app.js` y `public/style.css`; no coloques una carpeta adicional alrededor.
+3. Confirma los cambios y observa el despliegue automático en Render, hasta que indique **Live**.
+4. Entra a la página y crea una sala de prueba, preferentemente con al menos dos participantes en navegadores distintos.
 
-## Pruebas locales
-Node.js 18 o superior: `node server.js` y abrir http://localhost:3000. El servicio usa el puerto PORT de Render.
+## Carrera a pantalla completa
 
-## Pendiente para monetización futura
-Registro/autenticación docente-alumno, persistencia real (por ejemplo PostgreSQL), planes y roles, pasarela de pagos con confirmación webhook del servidor y HTTPS, tratamiento de datos, términos y privacidad, panel administrador y límites de uso. La IA puede añadirse en una versión posterior bajo demanda, usando clave API solo del lado del servidor. **No se almacenan datos de tarjetas en la aplicación.**
+En el panel docente pulsa **⛶ Carrera a pantalla completa**. El tablero ocupa toda la pantalla; si el navegador lo permite también activa el modo fullscreen del sistema. Para salir usa el botón **Salir de pantalla completa** o Escape. Se actualiza mediante los eventos enviados por el servidor, y las filas cambian según la clasificación por aciertos y tiempo. Las barras muestran el número de respuestas contestadas, **no** el lugar del ranking.
 
-## Advertencia sobre Render gratis
-Los datos de salas e historial JSON local se pueden perder al reiniciar el servicio. Exporta resultados; antes de vender acceso, añade una base de datos persistente y protección de acceso de estudiantes.
+## Música
+
+Cuando el docente pulsa **Iniciar competencia** se habilita una melodía instrumental sintetizada y repetitiva. Se controla desde **Música ON/OFF** y **Activar música**. No consume créditos ni usa pistas comerciales. El navegador puede bloquear la reproducción si aún no hubo interacción con el botón; por ello existe **Activar música**. La melodía se reproduce en el dispositivo del docente que inicia la competencia, no en todos los teléfonos automáticamente, debido a restricciones de reproducción del navegador.
+
+## Pruebas
+
+- Crear sala de 5 preguntas y 5 minutos, abrir en otra computadora o celular.
+- Confirmar actualización del número de aciertos y barras después de cada respuesta.
+- Confirmar las flechas de subidas y bajadas al cambiar de posición.
+- Probar modo pantalla completa, botón Salir y Escape.
+- Probar música, silenciar y detener al finalizar.
+- Probar clasificación final y exportación CSV.
+
+## Limitaciones
+
+Los registros del historial almacenados solo en el contenedor de Render gratuito pueden perderse después de reinicios. Para guardar resultados de manera permanente es necesaria una base de datos externa. Antes de usarlo para notas oficiales hay que hacer una prueba con participantes reales.

@@ -28,3 +28,16 @@ body[data-math-theme="multivariable"]{background:repeating-radial-gradient(ellip
 .race-icon{position:absolute;top:1px;font-size:18px;transition:left .65s ease}
 @keyframes raceEnter{from{opacity:.4;transform:translateX(8px)}to{opacity:1;transform:translateX(0)}}
 @media(prefers-reduced-motion:reduce){.race-fill,.race-icon,.race-row{transition:none;animation:none}}
+
+/* 7.2: tablero proyectable de pantalla completa, conserva el orden del servidor. */
+body.race-focus{overflow:hidden}
+body.race-focus .teacher-live{position:fixed;z-index:9999;inset:0;width:100vw;height:100dvh;margin:0;padding:clamp(12px,2.5vw,36px);background:#0b1831;border:0;border-radius:0;display:flex;flex-direction:column;overflow:hidden}
+body.race-focus .teacher-live .race-toolbar h3{font-size:clamp(18px,2.7vw,38px)}
+body.race-focus .teacher-live .grid3{margin:10px 0}
+body.race-focus .teacher-live .track-list{flex:1;min-height:0;max-height:none;overflow-y:auto;display:block}
+body.race-focus .teacher-live .race-row{margin-bottom:12px;padding:clamp(12px,1.5vw,23px);transition:transform .4s ease, background .4s ease}
+body.race-focus .teacher-live .race-top{font-size:clamp(14px,1.7vw,23px)}
+body.race-focus .teacher-live .race-track{height:clamp(25px,3.5vh,38px)}
+body.race-focus .teacher-live .race-icon{font-size:24px}
+body.race-focus .teacher-live .metric strong{font-size:clamp(20px,3vw,37px)}
+@media(max-width:800px){.race-toolbar{flex-wrap:wrap}.race-toolbar .btn{font-size:12px;padding:8px}.teacher-live{padding:12px}}
