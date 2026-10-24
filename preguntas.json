@@ -1,8 +1,8 @@
 {
   "preguntas": [
     {
-      "id": 1,
-      "topic": "Concepto de función",
+      "id": 1000,
+      "topic": "Función real de variable real",
       "q": "¿Cuál relación NO es una función?",
       "options": [
         "{(1,2),(2,3),(3,4)}",
@@ -12,13 +12,13 @@
       ],
       "answer": 1,
       "why": "En una función cada entrada tiene una sola imagen; x=1 tiene dos.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 2,
-      "topic": "Dominio",
+      "id": 1001,
+      "topic": "Función real de variable real",
       "q": "Dominio de f(x)=√(x−3):",
       "options": [
         "(−∞,3]",
@@ -28,13 +28,13 @@
       ],
       "answer": 2,
       "why": "Para raíz real x−3≥0.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 3,
-      "topic": "Evaluación",
+      "id": 1002,
+      "topic": "Función real de variable real",
       "q": "Si f(x)=2x²−3x+1, ¿f(−2)?",
       "options": [
         "3",
@@ -44,13 +44,13 @@
       ],
       "answer": 1,
       "why": "2(4)+6+1=15.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 4,
-      "topic": "Función lineal",
+      "id": 1003,
+      "topic": "Función real de variable real",
       "q": "Pendiente por A(1,2) y B(3,8):",
       "options": [
         "2",
@@ -60,13 +60,13 @@
       ],
       "answer": 1,
       "why": "(8−2)/(3−1)=3.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 5,
-      "topic": "Función cuadrática",
+      "id": 1004,
+      "topic": "Función real de variable real",
       "q": "Vértice de f(x)=x²−4x+3:",
       "options": [
         "(−2,−1)",
@@ -76,13 +76,13 @@
       ],
       "answer": 2,
       "why": "xv=−b/(2a)=2, f(2)=−1.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 6,
-      "topic": "Concepto de función",
+      "id": 1005,
+      "topic": "Función real de variable real",
       "q": "¿Qué prueba determina si una gráfica representa una función y=f(x)?",
       "options": [
         "Recta horizontal",
@@ -92,13 +92,13 @@
       ],
       "answer": 1,
       "why": "Toda recta vertical debe cortarla a lo sumo una vez.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 7,
-      "topic": "Concepto de función",
+      "id": 1006,
+      "topic": "Función real de variable real",
       "q": "Para f={(−1,4),(0,2),(2,4)}, ¿cuál es f(0)?",
       "options": [
         "−1",
@@ -108,13 +108,13 @@
       ],
       "answer": 2,
       "why": "El par con entrada 0 tiene imagen 2.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 8,
-      "topic": "Concepto de función",
+      "id": 1007,
+      "topic": "Función real de variable real",
       "q": "¿Cuál expresión representa una función de ℝ en ℝ?",
       "options": [
         "x²+y²=1",
@@ -124,13 +124,13 @@
       ],
       "answer": 2,
       "why": "y=|x| asigna una sola salida real por cada x real.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 9,
-      "topic": "Concepto de función",
+      "id": 1008,
+      "topic": "Función real de variable real",
       "q": "En una función, dos entradas diferentes pueden tener:",
       "options": [
         "La misma imagen",
@@ -140,13 +140,13 @@
       ],
       "answer": 0,
       "why": "Dos entradas distintas pueden tener una imagen común.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 10,
-      "topic": "Concepto de función",
+      "id": 1009,
+      "topic": "Función real de variable real",
       "q": "Si f(x)=3x−5, ¿qué punto está en su gráfica?",
       "options": [
         "(2,2)",
@@ -156,13 +156,13 @@
       ],
       "answer": 1,
       "why": "f(2)=6−5=1.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 11,
-      "topic": "Dominio y rango",
+      "id": 1010,
+      "topic": "Función real de variable real",
       "q": "Dominio real de f(x)=1/(x−5):",
       "options": [
         "ℝ",
@@ -172,13 +172,13 @@
       ],
       "answer": 2,
       "why": "El denominador no puede anularse: x≠5.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 12,
-      "topic": "Dominio y rango",
+      "id": 1011,
+      "topic": "Función real de variable real",
       "q": "Rango de f(x)=x²+2 para x real:",
       "options": [
         "ℝ",
@@ -188,13 +188,13 @@
       ],
       "answer": 1,
       "why": "x²≥0 y alcanza 0 cuando x=0.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 13,
-      "topic": "Dominio y rango",
+      "id": 1012,
+      "topic": "Función real de variable real",
       "q": "Dominio de f(x)=√(7−x):",
       "options": [
         "[7,+∞)",
@@ -204,13 +204,13 @@
       ],
       "answer": 1,
       "why": "7−x≥0 implica x≤7.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 14,
-      "topic": "Dominio y rango",
+      "id": 1013,
+      "topic": "Función real de variable real",
       "q": "Rango de f(x)=−(x−1)²+4:",
       "options": [
         "[4,+∞)",
@@ -220,13 +220,13 @@
       ],
       "answer": 2,
       "why": "La parábola abre hacia abajo y alcanza el máximo 4.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 15,
-      "topic": "Dominio y rango",
+      "id": 1014,
+      "topic": "Función real de variable real",
       "q": "Dominio real de f(x)=√(x+2)/(x−1):",
       "options": [
         "[−2,+∞)",
@@ -236,13 +236,13 @@
       ],
       "answer": 1,
       "why": "Se requiere x≥−2 y x≠1.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 16,
-      "topic": "Evaluación y notación",
+      "id": 1015,
+      "topic": "Función real de variable real",
       "q": "Si f(x)=x²−2x, ¿cuánto vale f(3)?",
       "options": [
         "3",
@@ -252,13 +252,13 @@
       ],
       "answer": 0,
       "why": "f(3)=9−6=3.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 17,
-      "topic": "Evaluación y notación",
+      "id": 1016,
+      "topic": "Función real de variable real",
       "q": "Si f(x)=4−x y g(x)=2x, ¿cuánto vale f(g(3))?",
       "options": [
         "2",
@@ -268,13 +268,13 @@
       ],
       "answer": 1,
       "why": "g(3)=6 y f(6)=−2.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 18,
-      "topic": "Evaluación y notación",
+      "id": 1017,
+      "topic": "Función real de variable real",
       "q": "Si f(x)=x+1, ¿cuánto es f(a+2)?",
       "options": [
         "a+1",
@@ -284,13 +284,13 @@
       ],
       "answer": 2,
       "why": "Sustituir x por a+2 da a+3.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 19,
-      "topic": "Evaluación y notación",
+      "id": 1018,
+      "topic": "Función real de variable real",
       "q": "Si f(x)=3x², ¿cuánto vale f(−1)+f(2)?",
       "options": [
         "9",
@@ -300,13 +300,13 @@
       ],
       "answer": 2,
       "why": "3·1+3·4=15.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 20,
-      "topic": "Evaluación y notación",
+      "id": 1019,
+      "topic": "Función real de variable real",
       "q": "Si f(x)=2x−7 y f(a)=5, ¿cuál es a?",
       "options": [
         "4",
@@ -316,13 +316,13 @@
       ],
       "answer": 2,
       "why": "2a−7=5 implica a=6.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 21,
-      "topic": "Funciones lineales y cuadráticas",
+      "id": 1020,
+      "topic": "Función real de variable real",
       "q": "Para f(x)=−2x+7, ¿cuál es la pendiente?",
       "options": [
         "−2",
@@ -332,13 +332,13 @@
       ],
       "answer": 0,
       "why": "La pendiente es el coeficiente de x: −2.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 22,
-      "topic": "Funciones lineales y cuadráticas",
+      "id": 1021,
+      "topic": "Función real de variable real",
       "q": "¿Dónde corta al eje y la recta y=3x−4?",
       "options": [
         "(−4,0)",
@@ -348,13 +348,13 @@
       ],
       "answer": 1,
       "why": "En x=0 la ordenada es −4.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 23,
-      "topic": "Funciones lineales y cuadráticas",
+      "id": 1022,
+      "topic": "Función real de variable real",
       "q": "Ceros de f(x)=x²−5x+6:",
       "options": [
         "1 y 6",
@@ -364,13 +364,13 @@
       ],
       "answer": 2,
       "why": "Factorizar (x−2)(x−3).",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 24,
-      "topic": "Funciones lineales y cuadráticas",
+      "id": 1023,
+      "topic": "Función real de variable real",
       "q": "Eje de simetría de y=2x²+8x+1:",
       "options": [
         "x=2",
@@ -380,13 +380,13 @@
       ],
       "answer": 1,
       "why": "x=−b/(2a)=−8/4=−2.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 25,
-      "topic": "Funciones lineales y cuadráticas",
+      "id": 1024,
+      "topic": "Función real de variable real",
       "q": "¿Cuál es la intersección con el eje x de y=2x−6?",
       "options": [
         "(0,−6)",
@@ -396,272 +396,16 @@
       ],
       "answer": 2,
       "why": "Con y=0 se obtiene x=3.",
-      "course": "Matemática Básica",
-      "subject": "Funciones reales",
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Función real de variable real",
       "difficulty": "Intermedio"
     },
     {
-      "id": 26,
-      "course": "Matemática Básica",
-      "subject": "Ecuaciones",
+      "id": 1025,
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Fundamentos de trigonometría",
       "difficulty": "Básico",
-      "topic": "Ecuaciones",
-      "q": "Resuelve 2x + 5 = 9.",
-      "options": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "answer": 1,
-      "why": "2x = 4; por tanto x = 2."
-    },
-    {
-      "id": 27,
-      "course": "Matemática Básica",
-      "subject": "Ecuaciones",
-      "difficulty": "Básico",
-      "topic": "Ecuaciones",
-      "q": "Resuelve 3x + 6 = 12.",
-      "options": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "answer": 1,
-      "why": "3x = 6; por tanto x = 2."
-    },
-    {
-      "id": 28,
-      "course": "Matemática Básica",
-      "subject": "Ecuaciones",
-      "difficulty": "Básico",
-      "topic": "Ecuaciones",
-      "q": "Resuelve 4x + 7 = 15.",
-      "options": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "answer": 1,
-      "why": "4x = 8; por tanto x = 2."
-    },
-    {
-      "id": 29,
-      "course": "Matemática Básica",
-      "subject": "Ecuaciones",
-      "difficulty": "Básico",
-      "topic": "Ecuaciones",
-      "q": "Resuelve 5x + 8 = 18.",
-      "options": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "answer": 1,
-      "why": "5x = 10; por tanto x = 2."
-    },
-    {
-      "id": 30,
-      "course": "Matemática Básica",
-      "subject": "Ecuaciones",
-      "difficulty": "Básico",
-      "topic": "Ecuaciones",
-      "q": "Resuelve 6x + 9 = 21.",
-      "options": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "answer": 1,
-      "why": "6x = 12; por tanto x = 2."
-    },
-    {
-      "id": 31,
-      "course": "Matemática Básica",
-      "subject": "Ecuaciones",
-      "difficulty": "Básico",
-      "topic": "Ecuaciones",
-      "q": "Resuelve 7x + 10 = 24.",
-      "options": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "answer": 1,
-      "why": "7x = 14; por tanto x = 2."
-    },
-    {
-      "id": 32,
-      "course": "Matemática Básica",
-      "subject": "Ecuaciones",
-      "difficulty": "Básico",
-      "topic": "Ecuaciones",
-      "q": "Resuelve 8x + 11 = 27.",
-      "options": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "answer": 1,
-      "why": "8x = 16; por tanto x = 2."
-    },
-    {
-      "id": 33,
-      "course": "Matemática Básica",
-      "subject": "Ecuaciones",
-      "difficulty": "Básico",
-      "topic": "Ecuaciones",
-      "q": "Resuelve 9x + 12 = 30.",
-      "options": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "answer": 1,
-      "why": "9x = 18; por tanto x = 2."
-    },
-    {
-      "id": 34,
-      "course": "Matemática Básica",
-      "subject": "Inecuaciones",
-      "difficulty": "Intermedio",
-      "topic": "Inecuaciones",
-      "q": "Si 2x + 2 > 8, ¿qué condición debe cumplir x?",
-      "options": [
-        "x < 3",
-        "x ≥ 3",
-        "x > 3",
-        "x ≤ 3"
-      ],
-      "answer": 2,
-      "why": "Al restar 2 y dividir entre 2 positivo: x > 3."
-    },
-    {
-      "id": 35,
-      "course": "Matemática Básica",
-      "subject": "Inecuaciones",
-      "difficulty": "Intermedio",
-      "topic": "Inecuaciones",
-      "q": "Si 3x + 2 > 11, ¿qué condición debe cumplir x?",
-      "options": [
-        "x < 3",
-        "x ≥ 3",
-        "x > 3",
-        "x ≤ 3"
-      ],
-      "answer": 2,
-      "why": "Al restar 2 y dividir entre 3 positivo: x > 3."
-    },
-    {
-      "id": 36,
-      "course": "Matemática Básica",
-      "subject": "Inecuaciones",
-      "difficulty": "Intermedio",
-      "topic": "Inecuaciones",
-      "q": "Si 4x + 2 > 14, ¿qué condición debe cumplir x?",
-      "options": [
-        "x < 3",
-        "x ≥ 3",
-        "x > 3",
-        "x ≤ 3"
-      ],
-      "answer": 2,
-      "why": "Al restar 2 y dividir entre 4 positivo: x > 3."
-    },
-    {
-      "id": 37,
-      "course": "Matemática Básica",
-      "subject": "Inecuaciones",
-      "difficulty": "Intermedio",
-      "topic": "Inecuaciones",
-      "q": "Si 5x + 2 > 17, ¿qué condición debe cumplir x?",
-      "options": [
-        "x < 3",
-        "x ≥ 3",
-        "x > 3",
-        "x ≤ 3"
-      ],
-      "answer": 2,
-      "why": "Al restar 2 y dividir entre 5 positivo: x > 3."
-    },
-    {
-      "id": 38,
-      "course": "Matemática Básica",
-      "subject": "Inecuaciones",
-      "difficulty": "Intermedio",
-      "topic": "Inecuaciones",
-      "q": "Si 6x + 2 > 20, ¿qué condición debe cumplir x?",
-      "options": [
-        "x < 3",
-        "x ≥ 3",
-        "x > 3",
-        "x ≤ 3"
-      ],
-      "answer": 2,
-      "why": "Al restar 2 y dividir entre 6 positivo: x > 3."
-    },
-    {
-      "id": 39,
-      "course": "Matemática Básica",
-      "subject": "Inecuaciones",
-      "difficulty": "Intermedio",
-      "topic": "Inecuaciones",
-      "q": "Si 7x + 2 > 23, ¿qué condición debe cumplir x?",
-      "options": [
-        "x < 3",
-        "x ≥ 3",
-        "x > 3",
-        "x ≤ 3"
-      ],
-      "answer": 2,
-      "why": "Al restar 2 y dividir entre 7 positivo: x > 3."
-    },
-    {
-      "id": 40,
-      "course": "Matemática Básica",
-      "subject": "Inecuaciones",
-      "difficulty": "Intermedio",
-      "topic": "Inecuaciones",
-      "q": "Si 8x + 2 > 26, ¿qué condición debe cumplir x?",
-      "options": [
-        "x < 3",
-        "x ≥ 3",
-        "x > 3",
-        "x ≤ 3"
-      ],
-      "answer": 2,
-      "why": "Al restar 2 y dividir entre 8 positivo: x > 3."
-    },
-    {
-      "id": 41,
-      "course": "Matemática Básica",
-      "subject": "Inecuaciones",
-      "difficulty": "Intermedio",
-      "topic": "Inecuaciones",
-      "q": "Si 9x + 2 > 29, ¿qué condición debe cumplir x?",
-      "options": [
-        "x < 3",
-        "x ≥ 3",
-        "x > 3",
-        "x ≤ 3"
-      ],
-      "answer": 2,
-      "why": "Al restar 2 y dividir entre 9 positivo: x > 3."
-    },
-    {
-      "id": 42,
-      "course": "Matemática Básica",
-      "subject": "Trigonometría",
-      "difficulty": "Básico",
-      "topic": "Trigonometría",
+      "topic": "Fundamentos de trigonometría",
       "q": "En un triángulo rectángulo, si cateto opuesto = 3 e hipotenusa = 5, ¿cuál es el seno del ángulo?",
       "options": [
         "3/5",
@@ -673,11 +417,11 @@
       "why": "sen θ = cateto opuesto / hipotenusa = 3/5."
     },
     {
-      "id": 43,
-      "course": "Matemática Básica",
-      "subject": "Trigonometría",
+      "id": 1026,
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Fundamentos de trigonometría",
       "difficulty": "Básico",
-      "topic": "Trigonometría",
+      "topic": "Fundamentos de trigonometría",
       "q": "En un triángulo rectángulo, si cateto opuesto = 6 e hipotenusa = 10, ¿cuál es el seno del ángulo?",
       "options": [
         "3/5",
@@ -689,11 +433,11 @@
       "why": "sen θ = cateto opuesto / hipotenusa = 3/5."
     },
     {
-      "id": 44,
-      "course": "Matemática Básica",
-      "subject": "Trigonometría",
+      "id": 1027,
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Fundamentos de trigonometría",
       "difficulty": "Básico",
-      "topic": "Trigonometría",
+      "topic": "Fundamentos de trigonometría",
       "q": "En un triángulo rectángulo, si cateto opuesto = 9 e hipotenusa = 15, ¿cuál es el seno del ángulo?",
       "options": [
         "3/5",
@@ -705,11 +449,11 @@
       "why": "sen θ = cateto opuesto / hipotenusa = 3/5."
     },
     {
-      "id": 45,
-      "course": "Matemática Básica",
-      "subject": "Trigonometría",
+      "id": 1028,
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Fundamentos de trigonometría",
       "difficulty": "Básico",
-      "topic": "Trigonometría",
+      "topic": "Fundamentos de trigonometría",
       "q": "En un triángulo rectángulo, si cateto opuesto = 12 e hipotenusa = 20, ¿cuál es el seno del ángulo?",
       "options": [
         "3/5",
@@ -721,11 +465,11 @@
       "why": "sen θ = cateto opuesto / hipotenusa = 3/5."
     },
     {
-      "id": 46,
-      "course": "Matemática Básica",
-      "subject": "Trigonometría",
+      "id": 1029,
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Fundamentos de trigonometría",
       "difficulty": "Básico",
-      "topic": "Trigonometría",
+      "topic": "Fundamentos de trigonometría",
       "q": "En un triángulo rectángulo, si cateto opuesto = 15 e hipotenusa = 25, ¿cuál es el seno del ángulo?",
       "options": [
         "3/5",
@@ -737,11 +481,11 @@
       "why": "sen θ = cateto opuesto / hipotenusa = 3/5."
     },
     {
-      "id": 47,
-      "course": "Matemática Básica",
-      "subject": "Trigonometría",
+      "id": 1030,
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Fundamentos de trigonometría",
       "difficulty": "Básico",
-      "topic": "Trigonometría",
+      "topic": "Fundamentos de trigonometría",
       "q": "En un triángulo rectángulo, si cateto opuesto = 18 e hipotenusa = 30, ¿cuál es el seno del ángulo?",
       "options": [
         "3/5",
@@ -753,11 +497,11 @@
       "why": "sen θ = cateto opuesto / hipotenusa = 3/5."
     },
     {
-      "id": 48,
-      "course": "Matemática Básica",
-      "subject": "Trigonometría",
+      "id": 1031,
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Fundamentos de trigonometría",
       "difficulty": "Básico",
-      "topic": "Trigonometría",
+      "topic": "Fundamentos de trigonometría",
       "q": "En un triángulo rectángulo, si cateto opuesto = 21 e hipotenusa = 35, ¿cuál es el seno del ángulo?",
       "options": [
         "3/5",
@@ -769,11 +513,11 @@
       "why": "sen θ = cateto opuesto / hipotenusa = 3/5."
     },
     {
-      "id": 49,
-      "course": "Matemática Básica",
-      "subject": "Trigonometría",
+      "id": 1032,
+      "course": "Cálculo (CIIN1030P)",
+      "subject": "Fundamentos de trigonometría",
       "difficulty": "Básico",
-      "topic": "Trigonometría",
+      "topic": "Fundamentos de trigonometría",
       "q": "En un triángulo rectángulo, si cateto opuesto = 24 e hipotenusa = 40, ¿cuál es el seno del ángulo?",
       "options": [
         "3/5",
@@ -785,1035 +529,667 @@
       "why": "sen θ = cateto opuesto / hipotenusa = 3/5."
     },
     {
-      "id": 50,
-      "course": "Cálculo I",
-      "subject": "Límites",
+      "id": 1033,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "difficulty": "Básico",
+      "topic": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "q": "Resuelve 2x + 5 = 9.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "why": "2x = 4; por tanto x = 2."
+    },
+    {
+      "id": 1034,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "difficulty": "Básico",
+      "topic": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "q": "Resuelve 3x + 6 = 12.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "why": "3x = 6; por tanto x = 2."
+    },
+    {
+      "id": 1035,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "difficulty": "Básico",
+      "topic": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "q": "Resuelve 4x + 7 = 15.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "why": "4x = 8; por tanto x = 2."
+    },
+    {
+      "id": 1036,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "difficulty": "Básico",
+      "topic": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "q": "Resuelve 5x + 8 = 18.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "why": "5x = 10; por tanto x = 2."
+    },
+    {
+      "id": 1037,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "difficulty": "Básico",
+      "topic": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "q": "Resuelve 6x + 9 = 21.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "why": "6x = 12; por tanto x = 2."
+    },
+    {
+      "id": 1038,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "difficulty": "Básico",
+      "topic": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "q": "Resuelve 7x + 10 = 24.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "why": "7x = 14; por tanto x = 2."
+    },
+    {
+      "id": 1039,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "difficulty": "Básico",
+      "topic": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "q": "Resuelve 8x + 11 = 27.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "why": "8x = 16; por tanto x = 2."
+    },
+    {
+      "id": 1040,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "difficulty": "Básico",
+      "topic": "Ecuaciones lineales y cuadráticas (semana 3)",
+      "q": "Resuelve 9x + 12 = 30.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "why": "9x = 18; por tanto x = 2."
+    },
+    {
+      "id": 1041,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Inecuaciones lineales y cuadráticas (semana 4)",
       "difficulty": "Intermedio",
-      "topic": "Límites",
-      "q": "Calcula lim(x→2) (x²−4)/(x−2).",
+      "topic": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "q": "Si 2x + 2 > 8, ¿qué condición debe cumplir x?",
+      "options": [
+        "x < 3",
+        "x ≥ 3",
+        "x > 3",
+        "x ≤ 3"
+      ],
+      "answer": 2,
+      "why": "Al restar 2 y dividir entre 2 positivo: x > 3."
+    },
+    {
+      "id": 1042,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "difficulty": "Intermedio",
+      "topic": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "q": "Si 3x + 2 > 11, ¿qué condición debe cumplir x?",
+      "options": [
+        "x < 3",
+        "x ≥ 3",
+        "x > 3",
+        "x ≤ 3"
+      ],
+      "answer": 2,
+      "why": "Al restar 2 y dividir entre 3 positivo: x > 3."
+    },
+    {
+      "id": 1043,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "difficulty": "Intermedio",
+      "topic": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "q": "Si 4x + 2 > 14, ¿qué condición debe cumplir x?",
+      "options": [
+        "x < 3",
+        "x ≥ 3",
+        "x > 3",
+        "x ≤ 3"
+      ],
+      "answer": 2,
+      "why": "Al restar 2 y dividir entre 4 positivo: x > 3."
+    },
+    {
+      "id": 1044,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "difficulty": "Intermedio",
+      "topic": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "q": "Si 5x + 2 > 17, ¿qué condición debe cumplir x?",
+      "options": [
+        "x < 3",
+        "x ≥ 3",
+        "x > 3",
+        "x ≤ 3"
+      ],
+      "answer": 2,
+      "why": "Al restar 2 y dividir entre 5 positivo: x > 3."
+    },
+    {
+      "id": 1045,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "difficulty": "Intermedio",
+      "topic": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "q": "Si 6x + 2 > 20, ¿qué condición debe cumplir x?",
+      "options": [
+        "x < 3",
+        "x ≥ 3",
+        "x > 3",
+        "x ≤ 3"
+      ],
+      "answer": 2,
+      "why": "Al restar 2 y dividir entre 6 positivo: x > 3."
+    },
+    {
+      "id": 1046,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "difficulty": "Intermedio",
+      "topic": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "q": "Si 7x + 2 > 23, ¿qué condición debe cumplir x?",
+      "options": [
+        "x < 3",
+        "x ≥ 3",
+        "x > 3",
+        "x ≤ 3"
+      ],
+      "answer": 2,
+      "why": "Al restar 2 y dividir entre 7 positivo: x > 3."
+    },
+    {
+      "id": 1047,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "difficulty": "Intermedio",
+      "topic": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "q": "Si 8x + 2 > 26, ¿qué condición debe cumplir x?",
+      "options": [
+        "x < 3",
+        "x ≥ 3",
+        "x > 3",
+        "x ≤ 3"
+      ],
+      "answer": 2,
+      "why": "Al restar 2 y dividir entre 8 positivo: x > 3."
+    },
+    {
+      "id": 1048,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "difficulty": "Intermedio",
+      "topic": "Inecuaciones lineales y cuadráticas (semana 4)",
+      "q": "Si 9x + 2 > 29, ¿qué condición debe cumplir x?",
+      "options": [
+        "x < 3",
+        "x ≥ 3",
+        "x > 3",
+        "x ≤ 3"
+      ],
+      "answer": 2,
+      "why": "Al restar 2 y dividir entre 9 positivo: x > 3."
+    },
+    {
+      "id": 1049,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "¿Cuál relación NO es una función?",
+      "options": [
+        "{(1,2),(2,3),(3,4)}",
+        "{(1,2),(1,3),(2,4)}",
+        "y = 2x + 1",
+        "y = x²"
+      ],
+      "answer": 1,
+      "why": "En una función cada entrada tiene una sola imagen; x=1 tiene dos.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1050,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Dominio de f(x)=√(x−3):",
+      "options": [
+        "(−∞,3]",
+        "(3,+∞)",
+        "[3,+∞)",
+        "ℝ"
+      ],
+      "answer": 2,
+      "why": "Para raíz real x−3≥0.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1051,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Si f(x)=2x²−3x+1, ¿f(−2)?",
+      "options": [
+        "3",
+        "15",
+        "−1",
+        "11"
+      ],
+      "answer": 1,
+      "why": "2(4)+6+1=15.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1052,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Pendiente por A(1,2) y B(3,8):",
       "options": [
         "2",
         "3",
         "4",
-        "5"
-      ],
-      "answer": 2,
-      "why": "Se factoriza (x−2)(x+2); el límite es 4."
-    },
-    {
-      "id": 51,
-      "course": "Cálculo I",
-      "subject": "Límites",
-      "difficulty": "Intermedio",
-      "topic": "Límites",
-      "q": "Calcula lim(x→3) (x²−9)/(x−3).",
-      "options": [
-        "4",
-        "5",
-        "6",
-        "7"
-      ],
-      "answer": 2,
-      "why": "Se factoriza (x−3)(x+3); el límite es 6."
-    },
-    {
-      "id": 52,
-      "course": "Cálculo I",
-      "subject": "Límites",
-      "difficulty": "Intermedio",
-      "topic": "Límites",
-      "q": "Calcula lim(x→4) (x²−16)/(x−4).",
-      "options": [
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
-      "answer": 2,
-      "why": "Se factoriza (x−4)(x+4); el límite es 8."
-    },
-    {
-      "id": 53,
-      "course": "Cálculo I",
-      "subject": "Límites",
-      "difficulty": "Intermedio",
-      "topic": "Límites",
-      "q": "Calcula lim(x→5) (x²−25)/(x−5).",
-      "options": [
-        "8",
-        "9",
-        "10",
-        "11"
-      ],
-      "answer": 2,
-      "why": "Se factoriza (x−5)(x+5); el límite es 10."
-    },
-    {
-      "id": 54,
-      "course": "Cálculo I",
-      "subject": "Límites",
-      "difficulty": "Intermedio",
-      "topic": "Límites",
-      "q": "Calcula lim(x→6) (x²−36)/(x−6).",
-      "options": [
-        "10",
-        "11",
-        "12",
-        "13"
-      ],
-      "answer": 2,
-      "why": "Se factoriza (x−6)(x+6); el límite es 12."
-    },
-    {
-      "id": 55,
-      "course": "Cálculo I",
-      "subject": "Límites",
-      "difficulty": "Intermedio",
-      "topic": "Límites",
-      "q": "Calcula lim(x→7) (x²−49)/(x−7).",
-      "options": [
-        "12",
-        "13",
-        "14",
-        "15"
-      ],
-      "answer": 2,
-      "why": "Se factoriza (x−7)(x+7); el límite es 14."
-    },
-    {
-      "id": 56,
-      "course": "Cálculo I",
-      "subject": "Límites",
-      "difficulty": "Intermedio",
-      "topic": "Límites",
-      "q": "Calcula lim(x→8) (x²−64)/(x−8).",
-      "options": [
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "answer": 2,
-      "why": "Se factoriza (x−8)(x+8); el límite es 16."
-    },
-    {
-      "id": 57,
-      "course": "Cálculo I",
-      "subject": "Límites",
-      "difficulty": "Intermedio",
-      "topic": "Límites",
-      "q": "Calcula lim(x→9) (x²−81)/(x−9).",
-      "options": [
-        "16",
-        "17",
-        "18",
-        "19"
-      ],
-      "answer": 2,
-      "why": "Se factoriza (x−9)(x+9); el límite es 18."
-    },
-    {
-      "id": 58,
-      "course": "Cálculo I",
-      "subject": "Derivadas",
-      "difficulty": "Básico",
-      "topic": "Derivadas",
-      "q": "Si f(x)=2x³, entonces f′(x) es: ",
-      "options": [
-        "2x²",
-        "4x²",
-        "6x²",
-        "6x³"
-      ],
-      "answer": 2,
-      "why": "Regla de potencia: 3·2x²=6x²."
-    },
-    {
-      "id": 59,
-      "course": "Cálculo I",
-      "subject": "Derivadas",
-      "difficulty": "Básico",
-      "topic": "Derivadas",
-      "q": "Si f(x)=3x³, entonces f′(x) es: ",
-      "options": [
-        "3x²",
-        "6x²",
-        "9x²",
-        "9x³"
-      ],
-      "answer": 2,
-      "why": "Regla de potencia: 3·3x²=9x²."
-    },
-    {
-      "id": 60,
-      "course": "Cálculo I",
-      "subject": "Derivadas",
-      "difficulty": "Básico",
-      "topic": "Derivadas",
-      "q": "Si f(x)=4x³, entonces f′(x) es: ",
-      "options": [
-        "4x²",
-        "8x²",
-        "12x²",
-        "12x³"
-      ],
-      "answer": 2,
-      "why": "Regla de potencia: 3·4x²=12x²."
-    },
-    {
-      "id": 61,
-      "course": "Cálculo I",
-      "subject": "Derivadas",
-      "difficulty": "Básico",
-      "topic": "Derivadas",
-      "q": "Si f(x)=5x³, entonces f′(x) es: ",
-      "options": [
-        "5x²",
-        "10x²",
-        "15x²",
-        "15x³"
-      ],
-      "answer": 2,
-      "why": "Regla de potencia: 3·5x²=15x²."
-    },
-    {
-      "id": 62,
-      "course": "Cálculo I",
-      "subject": "Derivadas",
-      "difficulty": "Básico",
-      "topic": "Derivadas",
-      "q": "Si f(x)=6x³, entonces f′(x) es: ",
-      "options": [
-        "6x²",
-        "12x²",
-        "18x²",
-        "18x³"
-      ],
-      "answer": 2,
-      "why": "Regla de potencia: 3·6x²=18x²."
-    },
-    {
-      "id": 63,
-      "course": "Cálculo I",
-      "subject": "Derivadas",
-      "difficulty": "Básico",
-      "topic": "Derivadas",
-      "q": "Si f(x)=7x³, entonces f′(x) es: ",
-      "options": [
-        "7x²",
-        "14x²",
-        "21x²",
-        "21x³"
-      ],
-      "answer": 2,
-      "why": "Regla de potencia: 3·7x²=21x²."
-    },
-    {
-      "id": 64,
-      "course": "Cálculo I",
-      "subject": "Derivadas",
-      "difficulty": "Básico",
-      "topic": "Derivadas",
-      "q": "Si f(x)=8x³, entonces f′(x) es: ",
-      "options": [
-        "8x²",
-        "16x²",
-        "24x²",
-        "24x³"
-      ],
-      "answer": 2,
-      "why": "Regla de potencia: 3·8x²=24x²."
-    },
-    {
-      "id": 65,
-      "course": "Cálculo I",
-      "subject": "Derivadas",
-      "difficulty": "Básico",
-      "topic": "Derivadas",
-      "q": "Si f(x)=9x³, entonces f′(x) es: ",
-      "options": [
-        "9x²",
-        "18x²",
-        "27x²",
-        "27x³"
-      ],
-      "answer": 2,
-      "why": "Regla de potencia: 3·9x²=27x²."
-    },
-    {
-      "id": 66,
-      "course": "Cálculo II",
-      "subject": "Integrales indefinidas",
-      "difficulty": "Intermedio",
-      "topic": "Integrales indefinidas",
-      "q": "Calcula ∫ 4x dx.",
-      "options": [
-        "2x² + C",
-        "4x² + C",
-        "2x + C",
-        "4 + C"
-      ],
-      "answer": 0,
-      "why": "∫ 4x dx = 2x² + C."
-    },
-    {
-      "id": 67,
-      "course": "Cálculo II",
-      "subject": "Integrales indefinidas",
-      "difficulty": "Intermedio",
-      "topic": "Integrales indefinidas",
-      "q": "Calcula ∫ 6x dx.",
-      "options": [
-        "3x² + C",
-        "6x² + C",
-        "3x + C",
-        "6 + C"
-      ],
-      "answer": 0,
-      "why": "∫ 6x dx = 3x² + C."
-    },
-    {
-      "id": 68,
-      "course": "Cálculo II",
-      "subject": "Integrales indefinidas",
-      "difficulty": "Intermedio",
-      "topic": "Integrales indefinidas",
-      "q": "Calcula ∫ 8x dx.",
-      "options": [
-        "4x² + C",
-        "8x² + C",
-        "4x + C",
-        "8 + C"
-      ],
-      "answer": 0,
-      "why": "∫ 8x dx = 4x² + C."
-    },
-    {
-      "id": 69,
-      "course": "Cálculo II",
-      "subject": "Integrales indefinidas",
-      "difficulty": "Intermedio",
-      "topic": "Integrales indefinidas",
-      "q": "Calcula ∫ 10x dx.",
-      "options": [
-        "5x² + C",
-        "10x² + C",
-        "5x + C",
-        "10 + C"
-      ],
-      "answer": 0,
-      "why": "∫ 10x dx = 5x² + C."
-    },
-    {
-      "id": 70,
-      "course": "Cálculo II",
-      "subject": "Integrales indefinidas",
-      "difficulty": "Intermedio",
-      "topic": "Integrales indefinidas",
-      "q": "Calcula ∫ 12x dx.",
-      "options": [
-        "6x² + C",
-        "12x² + C",
-        "6x + C",
-        "12 + C"
-      ],
-      "answer": 0,
-      "why": "∫ 12x dx = 6x² + C."
-    },
-    {
-      "id": 71,
-      "course": "Cálculo II",
-      "subject": "Integrales indefinidas",
-      "difficulty": "Intermedio",
-      "topic": "Integrales indefinidas",
-      "q": "Calcula ∫ 14x dx.",
-      "options": [
-        "7x² + C",
-        "14x² + C",
-        "7x + C",
-        "14 + C"
-      ],
-      "answer": 0,
-      "why": "∫ 14x dx = 7x² + C."
-    },
-    {
-      "id": 72,
-      "course": "Cálculo II",
-      "subject": "Integrales indefinidas",
-      "difficulty": "Intermedio",
-      "topic": "Integrales indefinidas",
-      "q": "Calcula ∫ 16x dx.",
-      "options": [
-        "8x² + C",
-        "16x² + C",
-        "8x + C",
-        "16 + C"
-      ],
-      "answer": 0,
-      "why": "∫ 16x dx = 8x² + C."
-    },
-    {
-      "id": 73,
-      "course": "Cálculo II",
-      "subject": "Integrales indefinidas",
-      "difficulty": "Intermedio",
-      "topic": "Integrales indefinidas",
-      "q": "Calcula ∫ 18x dx.",
-      "options": [
-        "9x² + C",
-        "18x² + C",
-        "9x + C",
-        "18 + C"
-      ],
-      "answer": 0,
-      "why": "∫ 18x dx = 9x² + C."
-    },
-    {
-      "id": 74,
-      "course": "Cálculo II",
-      "subject": "Integrales definidas",
-      "difficulty": "Básico",
-      "topic": "Integrales definidas",
-      "q": "Calcula ∫₀¹ 2x² dx.",
-      "options": [
-        "2",
-        "2/2",
-        "2/3",
         "6"
       ],
-      "answer": 2,
-      "why": "La primitiva es 2x³/3; evaluando entre 0 y 1: 2/3."
+      "answer": 1,
+      "why": "(8−2)/(3−1)=3.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
     },
     {
-      "id": 75,
-      "course": "Cálculo II",
-      "subject": "Integrales definidas",
-      "difficulty": "Básico",
-      "topic": "Integrales definidas",
-      "q": "Calcula ∫₀¹ 3x² dx.",
+      "id": 1053,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Vértice de f(x)=x²−4x+3:",
       "options": [
-        "3",
-        "3/2",
-        "3/3",
-        "9"
-      ],
-      "answer": 2,
-      "why": "La primitiva es 3x³/3; evaluando entre 0 y 1: 3/3."
-    },
-    {
-      "id": 76,
-      "course": "Cálculo II",
-      "subject": "Integrales definidas",
-      "difficulty": "Básico",
-      "topic": "Integrales definidas",
-      "q": "Calcula ∫₀¹ 4x² dx.",
-      "options": [
-        "4",
-        "4/2",
-        "4/3",
-        "12"
+        "(−2,−1)",
+        "(2,1)",
+        "(2,−1)",
+        "(4,3)"
       ],
       "answer": 2,
-      "why": "La primitiva es 4x³/3; evaluando entre 0 y 1: 4/3."
+      "why": "xv=−b/(2a)=2, f(2)=−1.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
     },
     {
-      "id": 77,
-      "course": "Cálculo II",
-      "subject": "Integrales definidas",
-      "difficulty": "Básico",
-      "topic": "Integrales definidas",
-      "q": "Calcula ∫₀¹ 5x² dx.",
+      "id": 1054,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "¿Qué prueba determina si una gráfica representa una función y=f(x)?",
       "options": [
-        "5",
-        "5/2",
-        "5/3",
-        "15"
-      ],
-      "answer": 2,
-      "why": "La primitiva es 5x³/3; evaluando entre 0 y 1: 5/3."
-    },
-    {
-      "id": 78,
-      "course": "Cálculo II",
-      "subject": "Integrales definidas",
-      "difficulty": "Básico",
-      "topic": "Integrales definidas",
-      "q": "Calcula ∫₀¹ 6x² dx.",
-      "options": [
-        "6",
-        "6/2",
-        "6/3",
-        "18"
-      ],
-      "answer": 2,
-      "why": "La primitiva es 6x³/3; evaluando entre 0 y 1: 6/3."
-    },
-    {
-      "id": 79,
-      "course": "Cálculo II",
-      "subject": "Integrales definidas",
-      "difficulty": "Básico",
-      "topic": "Integrales definidas",
-      "q": "Calcula ∫₀¹ 7x² dx.",
-      "options": [
-        "7",
-        "7/2",
-        "7/3",
-        "21"
-      ],
-      "answer": 2,
-      "why": "La primitiva es 7x³/3; evaluando entre 0 y 1: 7/3."
-    },
-    {
-      "id": 80,
-      "course": "Cálculo II",
-      "subject": "Integrales definidas",
-      "difficulty": "Básico",
-      "topic": "Integrales definidas",
-      "q": "Calcula ∫₀¹ 8x² dx.",
-      "options": [
-        "8",
-        "8/2",
-        "8/3",
-        "24"
-      ],
-      "answer": 2,
-      "why": "La primitiva es 8x³/3; evaluando entre 0 y 1: 8/3."
-    },
-    {
-      "id": 81,
-      "course": "Cálculo II",
-      "subject": "Integrales definidas",
-      "difficulty": "Básico",
-      "topic": "Integrales definidas",
-      "q": "Calcula ∫₀¹ 9x² dx.",
-      "options": [
-        "9",
-        "9/2",
-        "9/3",
-        "27"
-      ],
-      "answer": 2,
-      "why": "La primitiva es 9x³/3; evaluando entre 0 y 1: 9/3."
-    },
-    {
-      "id": 82,
-      "course": "Cálculo III",
-      "subject": "Vectores",
-      "difficulty": "Básico",
-      "topic": "Vectores",
-      "q": "Si u=(2,3) y v=(2,−1), calcula u·v.",
-      "options": [
-        "7",
-        "1",
-        "5",
-        "9"
+        "Recta horizontal",
+        "Recta vertical",
+        "Pendiente constante",
+        "Simetría axial"
       ],
       "answer": 1,
-      "why": "Producto escalar: 2·2 + 3(−1)=1."
+      "why": "Toda recta vertical debe cortarla a lo sumo una vez.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
     },
     {
-      "id": 83,
-      "course": "Cálculo III",
-      "subject": "Vectores",
-      "difficulty": "Básico",
-      "topic": "Vectores",
-      "q": "Si u=(3,3) y v=(2,−1), calcula u·v.",
+      "id": 1055,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Para f={(−1,4),(0,2),(2,4)}, ¿cuál es f(0)?",
       "options": [
-        "9",
-        "3",
-        "7",
-        "11"
-      ],
-      "answer": 1,
-      "why": "Producto escalar: 3·2 + 3(−1)=3."
-    },
-    {
-      "id": 84,
-      "course": "Cálculo III",
-      "subject": "Vectores",
-      "difficulty": "Básico",
-      "topic": "Vectores",
-      "q": "Si u=(4,3) y v=(2,−1), calcula u·v.",
-      "options": [
-        "11",
-        "5",
-        "9",
-        "13"
-      ],
-      "answer": 1,
-      "why": "Producto escalar: 4·2 + 3(−1)=5."
-    },
-    {
-      "id": 85,
-      "course": "Cálculo III",
-      "subject": "Vectores",
-      "difficulty": "Básico",
-      "topic": "Vectores",
-      "q": "Si u=(5,3) y v=(2,−1), calcula u·v.",
-      "options": [
-        "13",
-        "7",
-        "11",
-        "15"
-      ],
-      "answer": 1,
-      "why": "Producto escalar: 5·2 + 3(−1)=7."
-    },
-    {
-      "id": 86,
-      "course": "Cálculo III",
-      "subject": "Vectores",
-      "difficulty": "Básico",
-      "topic": "Vectores",
-      "q": "Si u=(6,3) y v=(2,−1), calcula u·v.",
-      "options": [
-        "15",
-        "9",
-        "13",
-        "17"
-      ],
-      "answer": 1,
-      "why": "Producto escalar: 6·2 + 3(−1)=9."
-    },
-    {
-      "id": 87,
-      "course": "Cálculo III",
-      "subject": "Vectores",
-      "difficulty": "Básico",
-      "topic": "Vectores",
-      "q": "Si u=(7,3) y v=(2,−1), calcula u·v.",
-      "options": [
-        "17",
-        "11",
-        "15",
-        "19"
-      ],
-      "answer": 1,
-      "why": "Producto escalar: 7·2 + 3(−1)=11."
-    },
-    {
-      "id": 88,
-      "course": "Cálculo III",
-      "subject": "Vectores",
-      "difficulty": "Básico",
-      "topic": "Vectores",
-      "q": "Si u=(8,3) y v=(2,−1), calcula u·v.",
-      "options": [
-        "19",
-        "13",
-        "17",
-        "21"
-      ],
-      "answer": 1,
-      "why": "Producto escalar: 8·2 + 3(−1)=13."
-    },
-    {
-      "id": 89,
-      "course": "Cálculo III",
-      "subject": "Vectores",
-      "difficulty": "Básico",
-      "topic": "Vectores",
-      "q": "Si u=(9,3) y v=(2,−1), calcula u·v.",
-      "options": [
-        "21",
-        "15",
-        "19",
-        "23"
-      ],
-      "answer": 1,
-      "why": "Producto escalar: 9·2 + 3(−1)=15."
-    },
-    {
-      "id": 90,
-      "course": "Cálculo III",
-      "subject": "Derivadas parciales",
-      "difficulty": "Intermedio",
-      "topic": "Derivadas parciales",
-      "q": "Para f(x,y)=2x²y + 3y², calcula ∂f/∂x.",
-      "options": [
-        "2xy",
-        "4xy",
-        "2x² + 6y",
-        "4x + 6y"
-      ],
-      "answer": 1,
-      "why": "Al derivar respecto de x, y es constante: 4xy."
-    },
-    {
-      "id": 91,
-      "course": "Cálculo III",
-      "subject": "Derivadas parciales",
-      "difficulty": "Intermedio",
-      "topic": "Derivadas parciales",
-      "q": "Para f(x,y)=3x²y + 3y², calcula ∂f/∂x.",
-      "options": [
-        "3xy",
-        "6xy",
-        "3x² + 6y",
-        "6x + 6y"
-      ],
-      "answer": 1,
-      "why": "Al derivar respecto de x, y es constante: 6xy."
-    },
-    {
-      "id": 92,
-      "course": "Cálculo III",
-      "subject": "Derivadas parciales",
-      "difficulty": "Intermedio",
-      "topic": "Derivadas parciales",
-      "q": "Para f(x,y)=4x²y + 3y², calcula ∂f/∂x.",
-      "options": [
-        "4xy",
-        "8xy",
-        "4x² + 6y",
-        "8x + 6y"
-      ],
-      "answer": 1,
-      "why": "Al derivar respecto de x, y es constante: 8xy."
-    },
-    {
-      "id": 93,
-      "course": "Cálculo III",
-      "subject": "Derivadas parciales",
-      "difficulty": "Intermedio",
-      "topic": "Derivadas parciales",
-      "q": "Para f(x,y)=5x²y + 3y², calcula ∂f/∂x.",
-      "options": [
-        "5xy",
-        "10xy",
-        "5x² + 6y",
-        "10x + 6y"
-      ],
-      "answer": 1,
-      "why": "Al derivar respecto de x, y es constante: 10xy."
-    },
-    {
-      "id": 94,
-      "course": "Cálculo III",
-      "subject": "Derivadas parciales",
-      "difficulty": "Intermedio",
-      "topic": "Derivadas parciales",
-      "q": "Para f(x,y)=6x²y + 3y², calcula ∂f/∂x.",
-      "options": [
-        "6xy",
-        "12xy",
-        "6x² + 6y",
-        "12x + 6y"
-      ],
-      "answer": 1,
-      "why": "Al derivar respecto de x, y es constante: 12xy."
-    },
-    {
-      "id": 95,
-      "course": "Cálculo III",
-      "subject": "Derivadas parciales",
-      "difficulty": "Intermedio",
-      "topic": "Derivadas parciales",
-      "q": "Para f(x,y)=7x²y + 3y², calcula ∂f/∂x.",
-      "options": [
-        "7xy",
-        "14xy",
-        "7x² + 6y",
-        "14x + 6y"
-      ],
-      "answer": 1,
-      "why": "Al derivar respecto de x, y es constante: 14xy."
-    },
-    {
-      "id": 96,
-      "course": "Cálculo III",
-      "subject": "Derivadas parciales",
-      "difficulty": "Intermedio",
-      "topic": "Derivadas parciales",
-      "q": "Para f(x,y)=8x²y + 3y², calcula ∂f/∂x.",
-      "options": [
-        "8xy",
-        "16xy",
-        "8x² + 6y",
-        "16x + 6y"
-      ],
-      "answer": 1,
-      "why": "Al derivar respecto de x, y es constante: 16xy."
-    },
-    {
-      "id": 97,
-      "course": "Cálculo III",
-      "subject": "Derivadas parciales",
-      "difficulty": "Intermedio",
-      "topic": "Derivadas parciales",
-      "q": "Para f(x,y)=9x²y + 3y², calcula ∂f/∂x.",
-      "options": [
-        "9xy",
-        "18xy",
-        "9x² + 6y",
-        "18x + 6y"
-      ],
-      "answer": 1,
-      "why": "Al derivar respecto de x, y es constante: 18xy."
-    },
-    {
-      "id": 98,
-      "course": "Cálculo III",
-      "subject": "Integrales dobles",
-      "difficulty": "Intermedio",
-      "topic": "Integrales dobles",
-      "q": "Calcula ∫₀¹∫₀¹ 2xy dx dy.",
-      "options": [
+        "−1",
+        "0",
         "2",
-        "2/2",
-        "2/4",
-        "2/3"
-      ],
-      "answer": 2,
-      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 2/4."
-    },
-    {
-      "id": 99,
-      "course": "Cálculo III",
-      "subject": "Integrales dobles",
-      "difficulty": "Intermedio",
-      "topic": "Integrales dobles",
-      "q": "Calcula ∫₀¹∫₀¹ 3xy dx dy.",
-      "options": [
-        "3",
-        "3/2",
-        "3/4",
-        "3/3"
-      ],
-      "answer": 2,
-      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 3/4."
-    },
-    {
-      "id": 100,
-      "course": "Cálculo III",
-      "subject": "Integrales dobles",
-      "difficulty": "Intermedio",
-      "topic": "Integrales dobles",
-      "q": "Calcula ∫₀¹∫₀¹ 4xy dx dy.",
-      "options": [
-        "4",
-        "4/2",
-        "4/4",
-        "4/3"
-      ],
-      "answer": 2,
-      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 4/4."
-    },
-    {
-      "id": 101,
-      "course": "Cálculo III",
-      "subject": "Integrales dobles",
-      "difficulty": "Intermedio",
-      "topic": "Integrales dobles",
-      "q": "Calcula ∫₀¹∫₀¹ 5xy dx dy.",
-      "options": [
-        "5",
-        "5/2",
-        "5/4",
-        "5/3"
-      ],
-      "answer": 2,
-      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 5/4."
-    },
-    {
-      "id": 102,
-      "course": "Cálculo III",
-      "subject": "Integrales dobles",
-      "difficulty": "Intermedio",
-      "topic": "Integrales dobles",
-      "q": "Calcula ∫₀¹∫₀¹ 6xy dx dy.",
-      "options": [
-        "6",
-        "6/2",
-        "6/4",
-        "6/3"
-      ],
-      "answer": 2,
-      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 6/4."
-    },
-    {
-      "id": 103,
-      "course": "Cálculo III",
-      "subject": "Integrales dobles",
-      "difficulty": "Intermedio",
-      "topic": "Integrales dobles",
-      "q": "Calcula ∫₀¹∫₀¹ 7xy dx dy.",
-      "options": [
-        "7",
-        "7/2",
-        "7/4",
-        "7/3"
-      ],
-      "answer": 2,
-      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 7/4."
-    },
-    {
-      "id": 104,
-      "course": "Cálculo III",
-      "subject": "Integrales dobles",
-      "difficulty": "Intermedio",
-      "topic": "Integrales dobles",
-      "q": "Calcula ∫₀¹∫₀¹ 8xy dx dy.",
-      "options": [
-        "8",
-        "8/2",
-        "8/4",
-        "8/3"
-      ],
-      "answer": 2,
-      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 8/4."
-    },
-    {
-      "id": 105,
-      "course": "Cálculo III",
-      "subject": "Integrales dobles",
-      "difficulty": "Intermedio",
-      "topic": "Integrales dobles",
-      "q": "Calcula ∫₀¹∫₀¹ 9xy dx dy.",
-      "options": [
-        "9",
-        "9/2",
-        "9/4",
-        "9/3"
-      ],
-      "answer": 2,
-      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 9/4."
-    },
-    {
-      "id": 106,
-      "course": "Álgebra Lineal",
-      "subject": "Matrices y determinantes",
-      "difficulty": "Intermedio",
-      "topic": "Matrices y determinantes",
-      "q": "Determinante de [[2,1],[2,3]]:",
-      "options": [
-        "6",
-        "5",
-        "4",
-        "3"
-      ],
-      "answer": 2,
-      "why": "Determinante = 2·3 − 1·2 = 4."
-    },
-    {
-      "id": 107,
-      "course": "Álgebra Lineal",
-      "subject": "Matrices y determinantes",
-      "difficulty": "Intermedio",
-      "topic": "Matrices y determinantes",
-      "q": "Determinante de [[3,1],[2,3]]:",
-      "options": [
-        "9",
-        "8",
-        "7",
         "4"
       ],
       "answer": 2,
-      "why": "Determinante = 3·3 − 1·2 = 7."
+      "why": "El par con entrada 0 tiene imagen 2.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
     },
     {
-      "id": 108,
-      "course": "Álgebra Lineal",
-      "subject": "Matrices y determinantes",
-      "difficulty": "Intermedio",
-      "topic": "Matrices y determinantes",
-      "q": "Determinante de [[4,1],[2,3]]:",
+      "id": 1056,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "¿Cuál expresión representa una función de ℝ en ℝ?",
       "options": [
+        "x²+y²=1",
+        "y²=x+1",
+        "y=|x|",
+        "x=y²"
+      ],
+      "answer": 2,
+      "why": "y=|x| asigna una sola salida real por cada x real.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1057,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "En una función, dos entradas diferentes pueden tener:",
+      "options": [
+        "La misma imagen",
+        "Dos imágenes cada una",
+        "Ninguna imagen",
+        "Infinitas imágenes por entrada"
+      ],
+      "answer": 0,
+      "why": "Dos entradas distintas pueden tener una imagen común.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1058,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Si f(x)=3x−5, ¿qué punto está en su gráfica?",
+      "options": [
+        "(2,2)",
+        "(2,1)",
+        "(1,1)",
+        "(0,5)"
+      ],
+      "answer": 1,
+      "why": "f(2)=6−5=1.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1059,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Dominio real de f(x)=1/(x−5):",
+      "options": [
+        "ℝ",
+        "ℝ menos {0}",
+        "ℝ menos {5}",
+        "[5,+∞)"
+      ],
+      "answer": 2,
+      "why": "El denominador no puede anularse: x≠5.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1060,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Rango de f(x)=x²+2 para x real:",
+      "options": [
+        "ℝ",
+        "[2,+∞)",
+        "(2,+∞)",
+        "(−∞,2]"
+      ],
+      "answer": 1,
+      "why": "x²≥0 y alcanza 0 cuando x=0.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1061,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Dominio de f(x)=√(7−x):",
+      "options": [
+        "[7,+∞)",
+        "(−∞,7]",
+        "(−∞,7)",
+        "ℝ"
+      ],
+      "answer": 1,
+      "why": "7−x≥0 implica x≤7.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1062,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Rango de f(x)=−(x−1)²+4:",
+      "options": [
+        "[4,+∞)",
+        "ℝ",
+        "(−∞,4]",
+        "(−∞,4)"
+      ],
+      "answer": 2,
+      "why": "La parábola abre hacia abajo y alcanza el máximo 4.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1063,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Dominio real de f(x)=√(x+2)/(x−1):",
+      "options": [
+        "[−2,+∞)",
+        "[−2,+∞) menos {1}",
+        "(−2,+∞) menos {1}",
+        "ℝ menos {1}"
+      ],
+      "answer": 1,
+      "why": "Se requiere x≥−2 y x≠1.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1064,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Si f(x)=x²−2x, ¿cuánto vale f(3)?",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "−3"
+      ],
+      "answer": 0,
+      "why": "f(3)=9−6=3.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1065,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Si f(x)=4−x y g(x)=2x, ¿cuánto vale f(g(3))?",
+      "options": [
+        "2",
+        "−2",
+        "6",
+        "10"
+      ],
+      "answer": 1,
+      "why": "g(3)=6 y f(6)=−2.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1066,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Si f(x)=x+1, ¿cuánto es f(a+2)?",
+      "options": [
+        "a+1",
+        "a+2",
+        "a+3",
+        "2a+1"
+      ],
+      "answer": 2,
+      "why": "Sustituir x por a+2 da a+3.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1067,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Si f(x)=3x², ¿cuánto vale f(−1)+f(2)?",
+      "options": [
+        "9",
         "12",
-        "11",
-        "10",
-        "5"
-      ],
-      "answer": 2,
-      "why": "Determinante = 4·3 − 1·2 = 10."
-    },
-    {
-      "id": 109,
-      "course": "Álgebra Lineal",
-      "subject": "Matrices y determinantes",
-      "difficulty": "Intermedio",
-      "topic": "Matrices y determinantes",
-      "q": "Determinante de [[5,1],[2,3]]:",
-      "options": [
         "15",
-        "14",
-        "13",
-        "6"
+        "−9"
       ],
       "answer": 2,
-      "why": "Determinante = 5·3 − 1·2 = 13."
+      "why": "3·1+3·4=15.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
     },
     {
-      "id": 110,
-      "course": "Álgebra Lineal",
-      "subject": "Matrices y determinantes",
-      "difficulty": "Intermedio",
-      "topic": "Matrices y determinantes",
-      "q": "Determinante de [[6,1],[2,3]]:",
+      "id": 1068,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Si f(x)=2x−7 y f(a)=5, ¿cuál es a?",
       "options": [
-        "18",
-        "17",
-        "16",
+        "4",
+        "5",
+        "6",
         "7"
       ],
       "answer": 2,
-      "why": "Determinante = 6·3 − 1·2 = 16."
+      "why": "2a−7=5 implica a=6.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
     },
     {
-      "id": 111,
-      "course": "Álgebra Lineal",
-      "subject": "Matrices y determinantes",
-      "difficulty": "Intermedio",
-      "topic": "Matrices y determinantes",
-      "q": "Determinante de [[7,1],[2,3]]:",
+      "id": 1069,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Para f(x)=−2x+7, ¿cuál es la pendiente?",
       "options": [
-        "21",
-        "20",
-        "19",
-        "8"
+        "−2",
+        "2",
+        "7",
+        "−7"
+      ],
+      "answer": 0,
+      "why": "La pendiente es el coeficiente de x: −2.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1070,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "¿Dónde corta al eje y la recta y=3x−4?",
+      "options": [
+        "(−4,0)",
+        "(0,−4)",
+        "(0,3)",
+        "(4,0)"
+      ],
+      "answer": 1,
+      "why": "En x=0 la ordenada es −4.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1071,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Ceros de f(x)=x²−5x+6:",
+      "options": [
+        "1 y 6",
+        "−2 y −3",
+        "2 y 3",
+        "−1 y −6"
       ],
       "answer": 2,
-      "why": "Determinante = 7·3 − 1·2 = 19."
+      "why": "Factorizar (x−2)(x−3).",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
     },
     {
-      "id": 112,
-      "course": "Álgebra Lineal",
-      "subject": "Matrices y determinantes",
-      "difficulty": "Intermedio",
-      "topic": "Matrices y determinantes",
-      "q": "Determinante de [[8,1],[2,3]]:",
+      "id": 1072,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "Eje de simetría de y=2x²+8x+1:",
       "options": [
-        "24",
-        "23",
-        "22",
-        "9"
+        "x=2",
+        "x=−2",
+        "x=−4",
+        "x=4"
+      ],
+      "answer": 1,
+      "why": "x=−b/(2a)=−8/4=−2.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 1073,
+      "topic": "Función real de variable real (semanas 13-14)",
+      "q": "¿Cuál es la intersección con el eje x de y=2x−6?",
+      "options": [
+        "(0,−6)",
+        "(0,3)",
+        "(3,0)",
+        "(−3,0)"
       ],
       "answer": 2,
-      "why": "Determinante = 8·3 − 1·2 = 22."
+      "why": "Con y=0 se obtiene x=3.",
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Función real de variable real (semanas 13-14)",
+      "difficulty": "Intermedio"
     },
     {
-      "id": 113,
-      "course": "Álgebra Lineal",
-      "subject": "Matrices y determinantes",
-      "difficulty": "Intermedio",
-      "topic": "Matrices y determinantes",
-      "q": "Determinante de [[9,1],[2,3]]:",
-      "options": [
-        "27",
-        "26",
-        "25",
-        "10"
-      ],
-      "answer": 2,
-      "why": "Determinante = 9·3 − 1·2 = 25."
-    },
-    {
-      "id": 114,
-      "course": "Matemática Discreta",
-      "subject": "Conjuntos",
+      "id": 1074,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de conjuntos",
       "difficulty": "Básico",
-      "topic": "Conjuntos",
+      "topic": "Teoría de conjuntos",
       "q": "Si A={1,2,…,4} y B={1,2}, ¿cuántos elementos tiene A\\B?",
       "options": [
         "1",
@@ -1825,11 +1201,11 @@
       "why": "El conjunto A tiene 4 elementos y B contiene 2 de ellos; quedan 2."
     },
     {
-      "id": 115,
-      "course": "Matemática Discreta",
-      "subject": "Conjuntos",
+      "id": 1075,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de conjuntos",
       "difficulty": "Básico",
-      "topic": "Conjuntos",
+      "topic": "Teoría de conjuntos",
       "q": "Si A={1,2,…,5} y B={1,2}, ¿cuántos elementos tiene A\\B?",
       "options": [
         "2",
@@ -1841,11 +1217,11 @@
       "why": "El conjunto A tiene 5 elementos y B contiene 2 de ellos; quedan 3."
     },
     {
-      "id": 116,
-      "course": "Matemática Discreta",
-      "subject": "Conjuntos",
+      "id": 1076,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de conjuntos",
       "difficulty": "Básico",
-      "topic": "Conjuntos",
+      "topic": "Teoría de conjuntos",
       "q": "Si A={1,2,…,6} y B={1,2}, ¿cuántos elementos tiene A\\B?",
       "options": [
         "3",
@@ -1857,11 +1233,11 @@
       "why": "El conjunto A tiene 6 elementos y B contiene 2 de ellos; quedan 4."
     },
     {
-      "id": 117,
-      "course": "Matemática Discreta",
-      "subject": "Conjuntos",
+      "id": 1077,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de conjuntos",
       "difficulty": "Básico",
-      "topic": "Conjuntos",
+      "topic": "Teoría de conjuntos",
       "q": "Si A={1,2,…,7} y B={1,2}, ¿cuántos elementos tiene A\\B?",
       "options": [
         "4",
@@ -1873,11 +1249,11 @@
       "why": "El conjunto A tiene 7 elementos y B contiene 2 de ellos; quedan 5."
     },
     {
-      "id": 118,
-      "course": "Matemática Discreta",
-      "subject": "Conjuntos",
+      "id": 1078,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de conjuntos",
       "difficulty": "Básico",
-      "topic": "Conjuntos",
+      "topic": "Teoría de conjuntos",
       "q": "Si A={1,2,…,8} y B={1,2}, ¿cuántos elementos tiene A\\B?",
       "options": [
         "5",
@@ -1889,11 +1265,11 @@
       "why": "El conjunto A tiene 8 elementos y B contiene 2 de ellos; quedan 6."
     },
     {
-      "id": 119,
-      "course": "Matemática Discreta",
-      "subject": "Conjuntos",
+      "id": 1079,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de conjuntos",
       "difficulty": "Básico",
-      "topic": "Conjuntos",
+      "topic": "Teoría de conjuntos",
       "q": "Si A={1,2,…,9} y B={1,2}, ¿cuántos elementos tiene A\\B?",
       "options": [
         "6",
@@ -1905,11 +1281,11 @@
       "why": "El conjunto A tiene 9 elementos y B contiene 2 de ellos; quedan 7."
     },
     {
-      "id": 120,
-      "course": "Matemática Discreta",
-      "subject": "Conjuntos",
+      "id": 1080,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de conjuntos",
       "difficulty": "Básico",
-      "topic": "Conjuntos",
+      "topic": "Teoría de conjuntos",
       "q": "Si A={1,2,…,10} y B={1,2}, ¿cuántos elementos tiene A\\B?",
       "options": [
         "7",
@@ -1921,11 +1297,11 @@
       "why": "El conjunto A tiene 10 elementos y B contiene 2 de ellos; quedan 8."
     },
     {
-      "id": 121,
-      "course": "Matemática Discreta",
-      "subject": "Conjuntos",
+      "id": 1081,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de conjuntos",
       "difficulty": "Básico",
-      "topic": "Conjuntos",
+      "topic": "Teoría de conjuntos",
       "q": "Si A={1,2,…,11} y B={1,2}, ¿cuántos elementos tiene A\\B?",
       "options": [
         "8",
@@ -1937,11 +1313,11 @@
       "why": "El conjunto A tiene 11 elementos y B contiene 2 de ellos; quedan 9."
     },
     {
-      "id": 122,
-      "course": "Matemática Discreta",
-      "subject": "Grafos",
+      "id": 1082,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de Grafos",
       "difficulty": "Intermedio",
-      "topic": "Grafos",
+      "topic": "Teoría de Grafos",
       "q": "¿Cuántas aristas tiene un grafo completo simple K₍3₎?",
       "options": [
         "9",
@@ -1953,11 +1329,11 @@
       "why": "Kₙ tiene n(n−1)/2 aristas; 3(3−1)/2=3."
     },
     {
-      "id": 123,
-      "course": "Matemática Discreta",
-      "subject": "Grafos",
+      "id": 1083,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de Grafos",
       "difficulty": "Intermedio",
-      "topic": "Grafos",
+      "topic": "Teoría de Grafos",
       "q": "¿Cuántas aristas tiene un grafo completo simple K₍4₎?",
       "options": [
         "16",
@@ -1969,11 +1345,11 @@
       "why": "Kₙ tiene n(n−1)/2 aristas; 4(4−1)/2=6."
     },
     {
-      "id": 124,
-      "course": "Matemática Discreta",
-      "subject": "Grafos",
+      "id": 1084,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de Grafos",
       "difficulty": "Intermedio",
-      "topic": "Grafos",
+      "topic": "Teoría de Grafos",
       "q": "¿Cuántas aristas tiene un grafo completo simple K₍5₎?",
       "options": [
         "25",
@@ -1985,11 +1361,11 @@
       "why": "Kₙ tiene n(n−1)/2 aristas; 5(5−1)/2=10."
     },
     {
-      "id": 125,
-      "course": "Matemática Discreta",
-      "subject": "Grafos",
+      "id": 1085,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de Grafos",
       "difficulty": "Intermedio",
-      "topic": "Grafos",
+      "topic": "Teoría de Grafos",
       "q": "¿Cuántas aristas tiene un grafo completo simple K₍6₎?",
       "options": [
         "36",
@@ -2001,11 +1377,11 @@
       "why": "Kₙ tiene n(n−1)/2 aristas; 6(6−1)/2=15."
     },
     {
-      "id": 126,
-      "course": "Matemática Discreta",
-      "subject": "Grafos",
+      "id": 1086,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de Grafos",
       "difficulty": "Intermedio",
-      "topic": "Grafos",
+      "topic": "Teoría de Grafos",
       "q": "¿Cuántas aristas tiene un grafo completo simple K₍7₎?",
       "options": [
         "49",
@@ -2017,11 +1393,11 @@
       "why": "Kₙ tiene n(n−1)/2 aristas; 7(7−1)/2=21."
     },
     {
-      "id": 127,
-      "course": "Matemática Discreta",
-      "subject": "Grafos",
+      "id": 1087,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de Grafos",
       "difficulty": "Intermedio",
-      "topic": "Grafos",
+      "topic": "Teoría de Grafos",
       "q": "¿Cuántas aristas tiene un grafo completo simple K₍8₎?",
       "options": [
         "64",
@@ -2033,11 +1409,11 @@
       "why": "Kₙ tiene n(n−1)/2 aristas; 8(8−1)/2=28."
     },
     {
-      "id": 128,
-      "course": "Matemática Discreta",
-      "subject": "Grafos",
+      "id": 1088,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de Grafos",
       "difficulty": "Intermedio",
-      "topic": "Grafos",
+      "topic": "Teoría de Grafos",
       "q": "¿Cuántas aristas tiene un grafo completo simple K₍9₎?",
       "options": [
         "81",
@@ -2049,11 +1425,11 @@
       "why": "Kₙ tiene n(n−1)/2 aristas; 9(9−1)/2=36."
     },
     {
-      "id": 129,
-      "course": "Matemática Discreta",
-      "subject": "Grafos",
+      "id": 1089,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Teoría de Grafos",
       "difficulty": "Intermedio",
-      "topic": "Grafos",
+      "topic": "Teoría de Grafos",
       "q": "¿Cuántas aristas tiene un grafo completo simple K₍10₎?",
       "options": [
         "100",
@@ -2063,6 +1439,518 @@
       ],
       "answer": 2,
       "why": "Kₙ tiene n(n−1)/2 aristas; 10(10−1)/2=45."
+    },
+    {
+      "id": 1090,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Coordenadas y vectores en R2 y R3",
+      "difficulty": "Básico",
+      "topic": "Coordenadas y vectores en R2 y R3",
+      "q": "Si u=(2,3) y v=(2,−1), calcula u·v.",
+      "options": [
+        "7",
+        "1",
+        "5",
+        "9"
+      ],
+      "answer": 1,
+      "why": "Producto escalar: 2·2 + 3(−1)=1."
+    },
+    {
+      "id": 1091,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Coordenadas y vectores en R2 y R3",
+      "difficulty": "Básico",
+      "topic": "Coordenadas y vectores en R2 y R3",
+      "q": "Si u=(3,3) y v=(2,−1), calcula u·v.",
+      "options": [
+        "9",
+        "3",
+        "7",
+        "11"
+      ],
+      "answer": 1,
+      "why": "Producto escalar: 3·2 + 3(−1)=3."
+    },
+    {
+      "id": 1092,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Coordenadas y vectores en R2 y R3",
+      "difficulty": "Básico",
+      "topic": "Coordenadas y vectores en R2 y R3",
+      "q": "Si u=(4,3) y v=(2,−1), calcula u·v.",
+      "options": [
+        "11",
+        "5",
+        "9",
+        "13"
+      ],
+      "answer": 1,
+      "why": "Producto escalar: 4·2 + 3(−1)=5."
+    },
+    {
+      "id": 1093,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Coordenadas y vectores en R2 y R3",
+      "difficulty": "Básico",
+      "topic": "Coordenadas y vectores en R2 y R3",
+      "q": "Si u=(5,3) y v=(2,−1), calcula u·v.",
+      "options": [
+        "13",
+        "7",
+        "11",
+        "15"
+      ],
+      "answer": 1,
+      "why": "Producto escalar: 5·2 + 3(−1)=7."
+    },
+    {
+      "id": 1094,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Coordenadas y vectores en R2 y R3",
+      "difficulty": "Básico",
+      "topic": "Coordenadas y vectores en R2 y R3",
+      "q": "Si u=(6,3) y v=(2,−1), calcula u·v.",
+      "options": [
+        "15",
+        "9",
+        "13",
+        "17"
+      ],
+      "answer": 1,
+      "why": "Producto escalar: 6·2 + 3(−1)=9."
+    },
+    {
+      "id": 1095,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Coordenadas y vectores en R2 y R3",
+      "difficulty": "Básico",
+      "topic": "Coordenadas y vectores en R2 y R3",
+      "q": "Si u=(7,3) y v=(2,−1), calcula u·v.",
+      "options": [
+        "17",
+        "11",
+        "15",
+        "19"
+      ],
+      "answer": 1,
+      "why": "Producto escalar: 7·2 + 3(−1)=11."
+    },
+    {
+      "id": 1096,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Coordenadas y vectores en R2 y R3",
+      "difficulty": "Básico",
+      "topic": "Coordenadas y vectores en R2 y R3",
+      "q": "Si u=(8,3) y v=(2,−1), calcula u·v.",
+      "options": [
+        "19",
+        "13",
+        "17",
+        "21"
+      ],
+      "answer": 1,
+      "why": "Producto escalar: 8·2 + 3(−1)=13."
+    },
+    {
+      "id": 1097,
+      "course": "Matemática Discreta y Geometría Analítica (CIIN1300P)",
+      "subject": "Coordenadas y vectores en R2 y R3",
+      "difficulty": "Básico",
+      "topic": "Coordenadas y vectores en R2 y R3",
+      "q": "Si u=(9,3) y v=(2,−1), calcula u·v.",
+      "options": [
+        "21",
+        "15",
+        "19",
+        "23"
+      ],
+      "answer": 1,
+      "why": "Producto escalar: 9·2 + 3(−1)=15."
+    },
+    {
+      "id": 1098,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Derivadas parciales (semana 3)",
+      "difficulty": "Intermedio",
+      "topic": "Derivadas parciales (semana 3)",
+      "q": "Para f(x,y)=2x²y + 3y², calcula ∂f/∂x.",
+      "options": [
+        "2xy",
+        "4xy",
+        "2x² + 6y",
+        "4x + 6y"
+      ],
+      "answer": 1,
+      "why": "Al derivar respecto de x, y es constante: 4xy."
+    },
+    {
+      "id": 1099,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Derivadas parciales (semana 3)",
+      "difficulty": "Intermedio",
+      "topic": "Derivadas parciales (semana 3)",
+      "q": "Para f(x,y)=3x²y + 3y², calcula ∂f/∂x.",
+      "options": [
+        "3xy",
+        "6xy",
+        "3x² + 6y",
+        "6x + 6y"
+      ],
+      "answer": 1,
+      "why": "Al derivar respecto de x, y es constante: 6xy."
+    },
+    {
+      "id": 1100,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Derivadas parciales (semana 3)",
+      "difficulty": "Intermedio",
+      "topic": "Derivadas parciales (semana 3)",
+      "q": "Para f(x,y)=4x²y + 3y², calcula ∂f/∂x.",
+      "options": [
+        "4xy",
+        "8xy",
+        "4x² + 6y",
+        "8x + 6y"
+      ],
+      "answer": 1,
+      "why": "Al derivar respecto de x, y es constante: 8xy."
+    },
+    {
+      "id": 1101,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Derivadas parciales (semana 3)",
+      "difficulty": "Intermedio",
+      "topic": "Derivadas parciales (semana 3)",
+      "q": "Para f(x,y)=5x²y + 3y², calcula ∂f/∂x.",
+      "options": [
+        "5xy",
+        "10xy",
+        "5x² + 6y",
+        "10x + 6y"
+      ],
+      "answer": 1,
+      "why": "Al derivar respecto de x, y es constante: 10xy."
+    },
+    {
+      "id": 1102,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Derivadas parciales (semana 3)",
+      "difficulty": "Intermedio",
+      "topic": "Derivadas parciales (semana 3)",
+      "q": "Para f(x,y)=6x²y + 3y², calcula ∂f/∂x.",
+      "options": [
+        "6xy",
+        "12xy",
+        "6x² + 6y",
+        "12x + 6y"
+      ],
+      "answer": 1,
+      "why": "Al derivar respecto de x, y es constante: 12xy."
+    },
+    {
+      "id": 1103,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Derivadas parciales (semana 3)",
+      "difficulty": "Intermedio",
+      "topic": "Derivadas parciales (semana 3)",
+      "q": "Para f(x,y)=7x²y + 3y², calcula ∂f/∂x.",
+      "options": [
+        "7xy",
+        "14xy",
+        "7x² + 6y",
+        "14x + 6y"
+      ],
+      "answer": 1,
+      "why": "Al derivar respecto de x, y es constante: 14xy."
+    },
+    {
+      "id": 1104,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Derivadas parciales (semana 3)",
+      "difficulty": "Intermedio",
+      "topic": "Derivadas parciales (semana 3)",
+      "q": "Para f(x,y)=8x²y + 3y², calcula ∂f/∂x.",
+      "options": [
+        "8xy",
+        "16xy",
+        "8x² + 6y",
+        "16x + 6y"
+      ],
+      "answer": 1,
+      "why": "Al derivar respecto de x, y es constante: 16xy."
+    },
+    {
+      "id": 1105,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Derivadas parciales (semana 3)",
+      "difficulty": "Intermedio",
+      "topic": "Derivadas parciales (semana 3)",
+      "q": "Para f(x,y)=9x²y + 3y², calcula ∂f/∂x.",
+      "options": [
+        "9xy",
+        "18xy",
+        "9x² + 6y",
+        "18x + 6y"
+      ],
+      "answer": 1,
+      "why": "Al derivar respecto de x, y es constante: 18xy."
+    },
+    {
+      "id": 1106,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Integrales dobles y áreas (semana 9)",
+      "difficulty": "Intermedio",
+      "topic": "Integrales dobles y áreas (semana 9)",
+      "q": "Calcula ∫₀¹∫₀¹ 2xy dx dy.",
+      "options": [
+        "2",
+        "2/2",
+        "2/4",
+        "2/3"
+      ],
+      "answer": 2,
+      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 2/4."
+    },
+    {
+      "id": 1107,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Integrales dobles y áreas (semana 9)",
+      "difficulty": "Intermedio",
+      "topic": "Integrales dobles y áreas (semana 9)",
+      "q": "Calcula ∫₀¹∫₀¹ 3xy dx dy.",
+      "options": [
+        "3",
+        "3/2",
+        "3/4",
+        "3/3"
+      ],
+      "answer": 2,
+      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 3/4."
+    },
+    {
+      "id": 1108,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Integrales dobles y áreas (semana 9)",
+      "difficulty": "Intermedio",
+      "topic": "Integrales dobles y áreas (semana 9)",
+      "q": "Calcula ∫₀¹∫₀¹ 4xy dx dy.",
+      "options": [
+        "4",
+        "4/2",
+        "4/4",
+        "4/3"
+      ],
+      "answer": 2,
+      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 4/4."
+    },
+    {
+      "id": 1109,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Integrales dobles y áreas (semana 9)",
+      "difficulty": "Intermedio",
+      "topic": "Integrales dobles y áreas (semana 9)",
+      "q": "Calcula ∫₀¹∫₀¹ 5xy dx dy.",
+      "options": [
+        "5",
+        "5/2",
+        "5/4",
+        "5/3"
+      ],
+      "answer": 2,
+      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 5/4."
+    },
+    {
+      "id": 1110,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Integrales dobles y áreas (semana 9)",
+      "difficulty": "Intermedio",
+      "topic": "Integrales dobles y áreas (semana 9)",
+      "q": "Calcula ∫₀¹∫₀¹ 6xy dx dy.",
+      "options": [
+        "6",
+        "6/2",
+        "6/4",
+        "6/3"
+      ],
+      "answer": 2,
+      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 6/4."
+    },
+    {
+      "id": 1111,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Integrales dobles y áreas (semana 9)",
+      "difficulty": "Intermedio",
+      "topic": "Integrales dobles y áreas (semana 9)",
+      "q": "Calcula ∫₀¹∫₀¹ 7xy dx dy.",
+      "options": [
+        "7",
+        "7/2",
+        "7/4",
+        "7/3"
+      ],
+      "answer": 2,
+      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 7/4."
+    },
+    {
+      "id": 1112,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Integrales dobles y áreas (semana 9)",
+      "difficulty": "Intermedio",
+      "topic": "Integrales dobles y áreas (semana 9)",
+      "q": "Calcula ∫₀¹∫₀¹ 8xy dx dy.",
+      "options": [
+        "8",
+        "8/2",
+        "8/4",
+        "8/3"
+      ],
+      "answer": 2,
+      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 8/4."
+    },
+    {
+      "id": 1113,
+      "course": "Cálculo 3 (MATH1203)",
+      "subject": "Integrales dobles y áreas (semana 9)",
+      "difficulty": "Intermedio",
+      "topic": "Integrales dobles y áreas (semana 9)",
+      "q": "Calcula ∫₀¹∫₀¹ 9xy dx dy.",
+      "options": [
+        "9",
+        "9/2",
+        "9/4",
+        "9/3"
+      ],
+      "answer": 2,
+      "why": "∫₀¹ x dx=1/2 y ∫₀¹ y dy=1/2; resultado 9/4."
+    },
+    {
+      "id": 1114,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Matrices (semana 6)",
+      "difficulty": "Intermedio",
+      "topic": "Matrices (semana 6)",
+      "q": "Determinante de [[2,1],[2,3]]:",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "3"
+      ],
+      "answer": 2,
+      "why": "Determinante = 2·3 − 1·2 = 4."
+    },
+    {
+      "id": 1115,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Matrices (semana 6)",
+      "difficulty": "Intermedio",
+      "topic": "Matrices (semana 6)",
+      "q": "Determinante de [[3,1],[2,3]]:",
+      "options": [
+        "9",
+        "8",
+        "7",
+        "4"
+      ],
+      "answer": 2,
+      "why": "Determinante = 3·3 − 1·2 = 7."
+    },
+    {
+      "id": 1116,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Matrices (semana 6)",
+      "difficulty": "Intermedio",
+      "topic": "Matrices (semana 6)",
+      "q": "Determinante de [[4,1],[2,3]]:",
+      "options": [
+        "12",
+        "11",
+        "10",
+        "5"
+      ],
+      "answer": 2,
+      "why": "Determinante = 4·3 − 1·2 = 10."
+    },
+    {
+      "id": 1117,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Matrices (semana 6)",
+      "difficulty": "Intermedio",
+      "topic": "Matrices (semana 6)",
+      "q": "Determinante de [[5,1],[2,3]]:",
+      "options": [
+        "15",
+        "14",
+        "13",
+        "6"
+      ],
+      "answer": 2,
+      "why": "Determinante = 5·3 − 1·2 = 13."
+    },
+    {
+      "id": 1118,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Matrices (semana 6)",
+      "difficulty": "Intermedio",
+      "topic": "Matrices (semana 6)",
+      "q": "Determinante de [[6,1],[2,3]]:",
+      "options": [
+        "18",
+        "17",
+        "16",
+        "7"
+      ],
+      "answer": 2,
+      "why": "Determinante = 6·3 − 1·2 = 16."
+    },
+    {
+      "id": 1119,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Matrices (semana 6)",
+      "difficulty": "Intermedio",
+      "topic": "Matrices (semana 6)",
+      "q": "Determinante de [[7,1],[2,3]]:",
+      "options": [
+        "21",
+        "20",
+        "19",
+        "8"
+      ],
+      "answer": 2,
+      "why": "Determinante = 7·3 − 1·2 = 19."
+    },
+    {
+      "id": 1120,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Matrices (semana 6)",
+      "difficulty": "Intermedio",
+      "topic": "Matrices (semana 6)",
+      "q": "Determinante de [[8,1],[2,3]]:",
+      "options": [
+        "24",
+        "23",
+        "22",
+        "9"
+      ],
+      "answer": 2,
+      "why": "Determinante = 8·3 − 1·2 = 22."
+    },
+    {
+      "id": 1121,
+      "course": "Complementos de Matemática (MATH2501)",
+      "subject": "Matrices (semana 6)",
+      "difficulty": "Intermedio",
+      "topic": "Matrices (semana 6)",
+      "q": "Determinante de [[9,1],[2,3]]:",
+      "options": [
+        "27",
+        "26",
+        "25",
+        "10"
+      ],
+      "answer": 2,
+      "why": "Determinante = 9·3 − 1·2 = 25."
     }
   ]
 }

@@ -1,0 +1,401 @@
+{
+  "fuentes": {
+    "Cálculo (CIIN1030P)": "Silabo_CALCULO-CIIN1030P.pdf",
+    "Matemática Discreta y Geometría Analítica (CIIN1300P)": "Silabo_MATEMATICA DISCRETA  Y GEO ANALITICA-CIIN1300P (1).pdf",
+    "Taller de Pensamiento Numérico (UAEG1008P)": "Silabo_TALLER DE PENSAMIENTO NUMERICO-UAEG1008P.pdf",
+    "Complementos de Matemática (MATH2501)": "Silabo_COMMA-226434MATH2501 (1).pdf",
+    "Cálculo 3 (MATH1203)": "Silabo-CALCULO 3-226434MATH1203.pdf"
+  },
+  "cursos": {
+    "Cálculo (CIIN1030P)": [
+      {
+        "tema": "Conjuntos y lógica proposicional",
+        "subtemas": [
+          "Conjuntos: clasificación y operaciones",
+          "Relaciones entre conjuntos y diagramas de Venn",
+          "Conectores lógicos y tablas de verdad",
+          "Razonamientos válidos y equivalencias"
+        ]
+      },
+      {
+        "tema": "Geometría analítica",
+        "subtemas": [
+          "Plano cartesiano, distancia entre dos puntos y punto medio",
+          "Pendiente, ecuaciones y gráficas de una recta",
+          "Posiciones relativas entre rectas",
+          "Aplicaciones geométricas"
+        ]
+      },
+      {
+        "tema": "Cónicas",
+        "subtemas": [
+          "Clasificación de cónicas a partir de su ecuación",
+          "Ecuaciones canónicas: obtención y elementos principales",
+          "Conversión de la ecuación general a ordinaria y gráficas",
+          "Aplicaciones de las cónicas en ingeniería"
+        ]
+      },
+      {
+        "tema": "Fundamentos de trigonometría",
+        "subtemas": [
+          "Razones trigonométricas en triángulos rectángulos",
+          "Círculo unitario y funciones trigonométricas",
+          "Identidades fundamentales",
+          "Aplicaciones en problemas de ingeniería"
+        ]
+      },
+      {
+        "tema": "Función real de variable real",
+        "subtemas": [
+          "Concepto de función y representación gráfica",
+          "Dominio, rango y tipos de relaciones",
+          "Evaluación y notación de funciones",
+          "Funciones lineales y cuadráticas"
+        ]
+      },
+      {
+        "tema": "Funciones polinómicas y racionales",
+        "subtemas": [
+          "Funciones polinómicas: dominio, rango y gráficas",
+          "Funciones racionales: dominio, rango y gráficas",
+          "Intersecciones y asíntotas",
+          "Aplicaciones al campo de la ingeniería"
+        ]
+      },
+      {
+        "tema": "Funciones exponenciales y logarítmicas",
+        "subtemas": [
+          "Definición y leyes de exponentes y logaritmos",
+          "Dominio, rango y gráfica de funciones exponenciales y logarítmicas",
+          "Transformaciones de funciones exponenciales y logarítmicas",
+          "Aplicaciones en crecimiento y decaimiento"
+        ]
+      }
+    ],
+    "Matemática Discreta y Geometría Analítica (CIIN1300P)": [
+      {
+        "tema": "Teoría de conjuntos",
+        "subtemas": [
+          "Definición, diagramas y tipos de conjuntos",
+          "Cardinalidad",
+          "Subconjuntos y conjunto potencia",
+          "Operaciones y leyes con conjuntos"
+        ]
+      },
+      {
+        "tema": "Relaciones",
+        "subtemas": [
+          "Definición y representación",
+          "Composición y tipos de relaciones",
+          "Relaciones de equivalencia",
+          "Relación de orden parcial"
+        ]
+      },
+      {
+        "tema": "Lógica y Álgebra de Boole",
+        "subtemas": [
+          "Proposiciones, conectores y equivalencias",
+          "Aplicaciones a circuitos y principios de inducción matemática",
+          "Operaciones, leyes y propiedades del álgebra de Boole",
+          "Funciones booleanas"
+        ]
+      },
+      {
+        "tema": "Teoría de Grafos",
+        "subtemas": [
+          "Definiciones y propiedades básicas de grafos",
+          "Grafos simples y multigrafos",
+          "Isomorfismo de grafos",
+          "Grafos eulerianos y hamiltonianos"
+        ]
+      },
+      {
+        "tema": "Coordenadas y vectores en R2 y R3",
+        "subtemas": [
+          "Espacio 2D y 3D: representación, norma y posiciones relativas",
+          "Producto escalar, ángulo entre vectores y producto vectorial",
+          "Triple producto escalar y proyección ortogonal",
+          "Visualización y cálculo con software de geometría dinámica"
+        ]
+      },
+      {
+        "tema": "Cónicas",
+        "subtemas": [
+          "La recta: ecuaciones, gráficas y aplicaciones",
+          "La parábola: ecuaciones, gráficas y aplicaciones",
+          "Circunferencia y elipse: ecuaciones, gráficas y aplicaciones",
+          "Modelos funcionales: lineales y cuadráticos"
+        ]
+      },
+      {
+        "tema": "Rectas, planos y superficies en 3D",
+        "subtemas": [
+          "Ecuación de la recta en 3D: vectorial, paramétrica y simétrica",
+          "Ecuación del plano en 3D: vectorial, paramétrica, normal y cartesiana",
+          "Distancias y posiciones relativas entre rectas y planos",
+          "Superficies: definición, clasificación y gráficas"
+        ]
+      }
+    ],
+    "Taller de Pensamiento Numérico (UAEG1008P)": [
+      {
+        "tema": "Aplicaciones de la potenciación y radicación en contextos reales",
+        "subtemas": [
+          "Potencias en procesos de crecimiento y escalamiento",
+          "Raíces en el análisis de medidas y proporciones",
+          "Uso combinado de potencias y raíces en fórmulas aplicadas",
+          "Problemas con exponentes fraccionarios y radicales"
+        ]
+      },
+      {
+        "tema": "Análisis de razones y proporciones en situaciones cuantitativas",
+        "subtemas": [
+          "Comparación proporcional en economía y salud",
+          "Escalas, mapas y maquetas",
+          "Razones equivalentes y relaciones múltiples",
+          "Mezclas y soluciones"
+        ]
+      },
+      {
+        "tema": "Resolución de problemas con regla de tres simple y compuesta",
+        "subtemas": [
+          "Relación directa en distribución y consumo",
+          "Relación inversa en velocidad, tiempo y trabajo",
+          "Casos mixtos de proporcionalidad",
+          "Análisis proporcional compuesto"
+        ]
+      },
+      {
+        "tema": "Análisis y solución de problemas con porcentajes",
+        "subtemas": [
+          "Descuentos, aumentos y precios finales",
+          "Interés simple",
+          "Estadísticas y gráficos",
+          "Porcentajes encadenados"
+        ]
+      },
+      {
+        "tema": "Modelación de situaciones mediante ecuaciones lineales",
+        "subtemas": [
+          "Problemas verbales a lenguaje algebraico",
+          "Ecuaciones con fracciones, decimales y coeficientes negativos",
+          "Modelos administrativos y científicos",
+          "Representación de soluciones en recta numérica"
+        ]
+      },
+      {
+        "tema": "Resolución de inecuaciones en la toma de decisiones",
+        "subtemas": [
+          "Restricciones reales",
+          "Inecuaciones con una y dos operaciones",
+          "Representación de rangos",
+          "Presupuestos, límites y metas"
+        ]
+      },
+      {
+        "tema": "Integración de herramientas matemáticas en escenarios aplicados",
+        "subtemas": [
+          "Casos con múltiples operaciones numéricas",
+          "Situaciones comerciales y logísticas",
+          "Datos reales y simulaciones numéricas",
+          "Evaluación y ajuste de estrategias"
+        ]
+      }
+    ],
+    "Complementos de Matemática (MATH2501)": [
+      {
+        "tema": "Productos notables (semana 1)",
+        "subtemas": [
+          "Binomio al cuadrado",
+          "Suma por diferencia",
+          "Producto de binomios con término común",
+          "Aplicaciones"
+        ]
+      },
+      {
+        "tema": "Factorización (semana 2)",
+        "subtemas": [
+          "Factor común",
+          "Diferencia de cuadrados",
+          "Aspa simple",
+          "Completar cuadrados"
+        ]
+      },
+      {
+        "tema": "Ecuaciones lineales y cuadráticas (semana 3)",
+        "subtemas": [
+          "Ecuaciones lineales",
+          "Ecuaciones cuadráticas",
+          "Aplicaciones contextuales"
+        ]
+      },
+      {
+        "tema": "Inecuaciones lineales y cuadráticas (semana 4)",
+        "subtemas": [
+          "Inecuaciones lineales",
+          "Inecuaciones cuadráticas",
+          "Aplicaciones contextuales"
+        ]
+      },
+      {
+        "tema": "Ecuaciones exponenciales y logarítmicas (semana 5)",
+        "subtemas": [
+          "Propiedades de exponentes y logaritmos",
+          "Ecuaciones exponenciales",
+          "Ecuaciones logarítmicas",
+          "Aplicaciones"
+        ]
+      },
+      {
+        "tema": "Matrices (semana 6)",
+        "subtemas": [
+          "Suma y resta de matrices",
+          "Multiplicación de matrices",
+          "Multiplicación por escalar",
+          "Aplicaciones"
+        ]
+      },
+      {
+        "tema": "Sistemas de ecuaciones lineales (semana 7)",
+        "subtemas": [
+          "Sistemas de dos y tres variables",
+          "Regla de Cramer",
+          "Problemas de aplicación"
+        ]
+      },
+      {
+        "tema": "La recta (semana 8)",
+        "subtemas": [
+          "Pendiente y ecuaciones",
+          "Gráficas",
+          "Distancia de punto a recta",
+          "Aplicaciones"
+        ]
+      },
+      {
+        "tema": "Parábola y circunferencia (semanas 9-10)",
+        "subtemas": [
+          "Formas canónica, ordinaria y general",
+          "Elementos y gráficas",
+          "Aplicaciones"
+        ]
+      },
+      {
+        "tema": "Elipse e hipérbola (semanas 11-12)",
+        "subtemas": [
+          "Formas canónica y ordinaria",
+          "Elementos y gráficas",
+          "Aplicaciones"
+        ]
+      },
+      {
+        "tema": "Función real de variable real (semanas 13-14)",
+        "subtemas": [
+          "Definición, dominio y rango",
+          "Evaluación de funciones",
+          "Representación gráfica",
+          "Modelos funcionales"
+        ]
+      }
+    ],
+    "Cálculo 3 (MATH1203)": [
+      {
+        "tema": "Funciones de varias variables (semana 1)",
+        "subtemas": [
+          "Dominio y rango",
+          "Curvas de nivel",
+          "Trazas y gráficas"
+        ]
+      },
+      {
+        "tema": "Modelos de varias variables (semana 2)",
+        "subtemas": [
+          "Construcción de modelos matemáticos"
+        ]
+      },
+      {
+        "tema": "Derivadas parciales (semana 3)",
+        "subtemas": [
+          "Interpretación geométrica y física",
+          "Primer orden y orden superior",
+          "Plano tangente y recta normal"
+        ]
+      },
+      {
+        "tema": "Gradiente (semana 4)",
+        "subtemas": [
+          "Gradiente en dos y n variables",
+          "Aplicaciones del gradiente"
+        ]
+      },
+      {
+        "tema": "Derivada direccional (semana 5)",
+        "subtemas": [
+          "Derivada direccional",
+          "Aplicaciones"
+        ]
+      },
+      {
+        "tema": "Diferencial total y regla de la cadena (semana 6)",
+        "subtemas": [
+          "Diferencial total",
+          "Regla de la cadena",
+          "Aplicaciones"
+        ]
+      },
+      {
+        "tema": "Optimización sin restricciones (semana 7)",
+        "subtemas": [
+          "Puntos críticos y extremos de varias variables"
+        ]
+      },
+      {
+        "tema": "Optimización con restricciones (semana 8)",
+        "subtemas": [
+          "Extremos con restricciones"
+        ]
+      },
+      {
+        "tema": "Integrales dobles y áreas (semana 9)",
+        "subtemas": [
+          "Integración iterada",
+          "Cálculo de áreas"
+        ]
+      },
+      {
+        "tema": "Integrales dobles y volúmenes (semana 10)",
+        "subtemas": [
+          "Cálculo de volúmenes"
+        ]
+      },
+      {
+        "tema": "Cambio de variable y Jacobiano (semana 11)",
+        "subtemas": [
+          "Cálculo del Jacobiano",
+          "Cambio de variable en integrales dobles"
+        ]
+      },
+      {
+        "tema": "Integrales dobles en coordenadas polares (semana 12)",
+        "subtemas": [
+          "Integrales dobles en polares",
+          "Aplicaciones"
+        ]
+      },
+      {
+        "tema": "Integrales triples (semana 14)",
+        "subtemas": [
+          "Integrales triples",
+          "Aplicaciones"
+        ]
+      },
+      {
+        "tema": "Coordenadas cilíndricas y esféricas (semana 15)",
+        "subtemas": [
+          "Integrales triples en coordenadas cilíndricas",
+          "Integrales triples en coordenadas esféricas"
+        ]
+      }
+    ]
+  }
+}

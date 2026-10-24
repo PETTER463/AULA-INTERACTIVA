@@ -10,10 +10,14 @@ const ROOT = path.join(__dirname, 'public');
 const rooms = new Map();
 const BANKFILE=path.join(__dirname,'preguntas.json');
 let BANK=JSON.parse(fs.readFileSync(BANKFILE,'utf8')).preguntas;
+const SYLLABI=JSON.parse(fs.readFileSync(path.join(__dirname,'silabos_2026_2.json'),'utf8'));
+
 const ADMIN_PIN=process.env.ADMIN_PIN||'';
 function poolFor(course,subject,difficulty){return BANK.filter(q=>q.course===course&&q.subject===subject&&(difficulty==='Todos'||q.difficulty===difficulty));}
 function sampleQuestions(pool,n){const copy=[...pool];for(let i=copy.length-1;i>0;i--){const j=crypto.randomInt(i+1);[copy[i],copy[j]]=[copy[j],copy[i]];}return copy.slice(0,n);}
-function catalog(){const result={};for(const q of BANK){if(!result[q.course])result[q.course]={};result[q.course][q.subject]=(result[q.course][q.subject]||0)+1;}return result;}
+function catalog(){const result={};for(const [course,topics] of Object.entries(SYLLABI.cursos)){result[course]={};for(const item of topics)result[course][item.tema]=0;}for(const q of BANK){if(!result[q.course])result[q.course]={};result[q.course][q.subject]=(result[q.course][q.subject]||0)+1;}return result;}
+function syllabusDetails(){const details={};for(const [course,topics] of Object.entries(SYLLABI.cursos)){details[course]={};for(const t of topics)details[course][t.tema]=t.subtemas;}return details;}
+
 function admin(b){return ADMIN_PIN.length>=6&&b.pin===ADMIN_PIN;}
 
 const publicQuestions = qs => qs.map(({id,topic,q,options})=>({id,topic,q,options}));
@@ -42,7 +46,7 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8',
 const server=http.createServer(async(req,res)=>{
  const url=new URL(req.url,'http://localhost');
  try{
-  if(url.pathname==='/api/catalog'&&req.method==='GET')return respond(res,200,{catalog:catalog(),editorEnabled:ADMIN_PIN.length>=6});
+  if(url.pathname==='/api/catalog'&&req.method==='GET')return respond(res,200,{catalog:catalog(),details:syllabusDetails(),editorEnabled:ADMIN_PIN.length>=6});
   if(url.pathname==='/api/events'&&req.method==='GET'){
    const room=lookup(url.searchParams.get('code'));if(!room)return fail(res,404,'Sala no encontrada.');
    const key=url.searchParams.get('token');if(key!==room.hostToken&&!person(room,key))return fail(res,403,'Acceso no autorizado.');

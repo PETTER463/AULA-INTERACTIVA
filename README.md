@@ -1,25 +1,24 @@
-# Matemática Challenge 3.0 — AULA INTERACTIVA
+# MATEMÁTICA CHALLENGE 4.0 — SÍLABOS 2026-2
 
-## Novedades
-- Cursos: Matemática Básica, Cálculo I, Cálculo II, Cálculo III, Álgebra Lineal y Matemática Discreta.
-- Selección de temas y entre 5, 10, 15 o 20 preguntas según banco disponible.
-- Cinco niveles/opciones de duración y filtro de dificultad. Los temas precargados contienen niveles Básico e Intermedio; el nivel Avanzado se puede incorporar desde el editor.
-- Multijugador, salas de 6 dígitos, ranking en vivo, cronómetro y reporte CSV conservados.
-- Editor web para agregar preguntas con PIN del docente (variable de entorno ADMIN_PIN).
+## Cambios
+- Incluye **los cinco cursos** de los sílabos PDF suministrados.
+- El selector **Curso → Tema** presenta la estructura académica, y muestra los subtemas correspondientes.
+- Preserva las salas multijugador, cronómetro, respuestas, ranking en vivo, resultado sobre 20 y descarga de CSV.
+- Reutiliza preguntas de la versión 3 solo en temas compatibles. La incorporación de un tema al sílabo **no implica** que tenga un banco suficiente.
+- Temas sin cinco preguntas quedan visibles, pero impiden crear competencias hasta completar el banco.
+- En `silabos_2026_2.json` están los cursos, temas, subtemas y el documento fuente; en `preguntas.json` los ejercicios existentes asignados.
 
-## Actualizar GitHub y Render
-1. Descomprime el ZIP.
-2. En GitHub, repositorio PETTER463/AULA-INTERACTIVA, **Add file > Upload files**.
-3. Arrastra **el contenido de la carpeta Matematica_Challenge_v3**, no la carpeta externa. Deben quedar en la raíz `server.js`, `package.json`, `preguntas.json`, `Dockerfile` y dentro de `public`: `app.js`, `index.html`, `style.css`.
-4. Confirma los cambios. Render debería iniciar automáticamente el despliegue, o ejecuta **Manual Deploy > Deploy latest commit**.
-5. Verifica **Live** y abre https://aula-interactiva-sr9y.onrender.com. Actualiza con Ctrl+F5.
-6. Para habilitar **Administrar preguntas**, en Render > tu servicio > **Environment**, agrega `ADMIN_PIN` con una clave privada de **6 o más caracteres**, guarda y redepliega. No compartas el PIN con estudiantes.
+## Para actualizar GitHub y Render
+1. Guarda una copia de tu repositorio actual.
+2. Descomprime este ZIP.
+3. En GitHub, repositorio `PETTER463/AULA-INTERACTIVA`, reemplaza `server.js`, `package.json`, `preguntas.json`, `Dockerfile`, y los archivos de `public/`; **agrega `silabos_2026_2.json`**.
+4. Usa **Agregar archivo → Cargar archivos** en la raíz (no subas la carpeta contenedora). Haz **Commit changes**.
+5. En Render, verifica el despliegue automático o **Manual Deploy → Deploy latest commit**. Espera estado **Live**.
+6. Abre `https://aula-interactiva-sr9y.onrender.com` y pulsa Ctrl+F5. Verifica selector de los cinco cursos.
 
-## Advertencia esencial sobre persistencia
-En Render Free, los cambios que agregues con el editor se guardan en `preguntas.json` del contenedor **temporal**. Pueden desaparecer al reiniciar el servicio o publicar una nueva versión. Para uso prolongado, copia regularmente las preguntas al `preguntas.json` de GitHub o incorpora base de datos persistente (la edición web actual es demostrativa, no almacenamiento duradero). Las salas y respuestas también están en memoria. Usa una sola instancia del servidor.
-
-## Consejos
-- Cada sala recibe una selección aleatoria; todos los participantes de esa sala reciben las mismas preguntas.
-- Si eliges más preguntas de las disponibles en un tema/nivel, el programa informa el límite.
-- Para una prueba local: `node server.js` y visita http://localhost:3000.
-- El banco inicial tiene ejercicios comprobables de nivel básico/intermedio. Revisa y adapta el material antes de usarlo en evaluaciones oficiales.
+## Importante
+- El sílabo de Cálculo 3 es de **16 semanas**; el de Taller de Pensamiento Numérico corresponde a **8 semanas**.
+- El banco existente se reutiliza como material de práctica, no como preguntas emitidas por la universidad. Revisar su pertinencia matemática antes de evaluaciones oficiales.
+- Editor requiere variable `ADMIN_PIN` de 6+ caracteres en Render. Persistencia en disco local **no durable** en Render Free; exporta o incorpora los cambios al archivo JSON de GitHub.
+- Las salas y resultados en memoria desaparecen al reiniciar; no lo uses como registro oficial de notas.
+- No reemplaza las rúbricas ni evaluaciones institucionales del sílabo.
