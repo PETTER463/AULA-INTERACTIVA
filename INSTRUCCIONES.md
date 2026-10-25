@@ -1,15 +1,26 @@
-# Matemática Challenge 8.0 — GitHub y Render
+# Matemática Challenge 8.1
 
-1. Descarga una copia de seguridad de tu repositorio actual.
-2. Descomprime este ZIP. En GitHub reemplaza `server.js`, `package.json`, `public/app.js`, `public/index.html`, `public/style.css` y conserva/sube `public/backgrounds/`, `lib/qr/`, `preguntas.json`, `silabos_2026_2.json`, `Dockerfile`.
-3. Confirma el commit en `main`. En Render verifica `Live` y actualiza con Ctrl+F5.
-4. Prueba en dos navegadores diferentes: docente crea sala, estudiante entra con enlace/QR y avatar, docente inicia, pausa y reanuda, responde, activa ronda sorpresa y finaliza.
-5. Torneos: el campo «Torneo / sección» etiqueta las salas y el historial; agrupa salas archivadas dentro del historial docente y muestra promedio por sección. No es un sistema permanente de ligas, y requiere conservar el historial.
-6. Las preguntas con gráfica permiten explorar puntos; la respuesta evaluada sigue siendo de opción múltiple.
-7. Los premios no cambian la nota académica de 20; las preguntas sorpresa son anuncios visuales, no preguntas extra.
-8. Las soluciones se muestran por bloques tras finalizar, según las explicaciones existentes.
-9. Render Free guarda salas en memoria e historial local efímero. Descarga el CSV al finalizar; para conservar historial permanente necesitarás base de datos.
-10. Chrome puede exigir pulsar «Activar música» antes de reproducirla; el navegador del docente puede entrar en pantalla completa.
+Versión 8.1 basada en 8.0, con mejoras visuales para la pantalla docente en vivo:
 
-## Comprobación
-`node --check server.js` y `node --check public/app.js`, después `node server.js` y visita `http://localhost:3000`.
+- vista tipo **game-show** para sala de espera y ejecución
+- código de sala destacado y panel estilo proyección
+- **música de fondo con control de volumen**
+- pestañas en ejecución: **Marcador, Dificultades, Equipos**
+- conservación de: 5 cursos, bancos de preguntas, QR, multijugador, GitHub y Render
+
+## Instalación
+1. Reemplaza el contenido del repositorio por estos archivos.
+2. Confirma los cambios en GitHub.
+3. Render detectará el despliegue automático.
+4. Si deseas historial persistente, configura `HISTORY_FILE` y `ADMIN_PIN`.
+
+## Pruebas recomendadas
+1. Crear una sala docente.
+2. Ingresar al menos 2 estudiantes.
+3. Iniciar la competencia.
+4. Verificar: inicio, cronómetro, música, volumen, ranking y QR.
+5. Probar pausa, reanudar y finalizar.
+
+## Notas
+- La música se sintetiza localmente en el navegador, por lo que no usa archivos de audio externos.
+- El control de volumen aparece en la pantalla de ejecución del docente.
