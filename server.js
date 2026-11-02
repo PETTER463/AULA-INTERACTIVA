@@ -27,7 +27,17 @@ const SYLLABI=JSON.parse(fs.readFileSync(path.join(__dirname,'silabos_2026_2.jso
 
 const ADMIN_PIN=process.env.ADMIN_PIN||'';
 function poolFor(course,subject,difficulty){return BANK.filter(q=>q.course===course&&q.subject===subject&&(difficulty==='Todos'||q.difficulty===difficulty));}
-function sampleQuestions(pool,n){const copy=[...pool];for(let i=copy.length-1;i>0;i--){const j=crypto.randomInt(i+1);[copy[i],copy[j]]=[copy[j],copy[i]];}return copy.slice(0,n);}
+function sampleQuestions(pool,n){
+ const copy=[...pool];for(let i=copy.length-1;i>0;i--){const j=crypto.randomInt(i+1);[copy[i],copy[j]]=[copy[j],copy[i]];}
+ // Prioritize unique procedure/model AND a healthy mix of difficulty levels.
+ copy.sort((a,b)=>Number(String(b.model||'').startsWith('curated-')||String(b.model||'').startsWith('targeted-'))-Number(String(a.model||'').startsWith('curated-')||String(a.model||'').startsWith('targeted-')));
+ const seen=new Set(),chosen=[],remaining=[];
+ for(const q of copy){const model=String(q.model||q.q).replace(/\d+(?:[.,]\d+)?/g,'N');
+  if(!seen.has(model)){seen.add(model);chosen.push(q);}else remaining.push(q);
+ }
+ // Only use parameter variations as a last resort, after all distinct models.
+ return chosen.concat(remaining).slice(0,n);
+}
 function catalog(){const result={};for(const [course,topics] of Object.entries(SYLLABI.cursos)){result[course]={};for(const item of topics)result[course][item.tema]=0;}for(const q of BANK){if(!result[q.course])result[q.course]={};result[q.course][q.subject]=(result[q.course][q.subject]||0)+1;}return result;}
 function syllabusDetails(){const details={};for(const [course,topics] of Object.entries(SYLLABI.cursos)){details[course]={};for(const t of topics)details[course][t.tema]=t.subtemas;}return details;}
 

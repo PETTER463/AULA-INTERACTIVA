@@ -1,26 +1,10 @@
-# Matemática Challenge 8.1
+# Instalar Matemática Challenge 8.2
 
-Versión 8.1 basada en 8.0, con mejoras visuales para la pantalla docente en vivo:
+1. Descarga y extrae el ZIP.
+2. Haz copia de seguridad de tu repositorio GitHub desde Code → Download ZIP.
+3. Sube o sustituye `server.js`, `preguntas.json`, `package.json`, `public/app.js` y `public/index.html`. Los demás archivos se mantienen.
+4. Confirma con Commit changes; espera al despliegue Live en Render.
+5. Actualiza Chrome con Ctrl+F5 y crea una sala de prueba.
+6. Prueba varias preguntas y escucha la nueva música; ajusta el deslizador de volumen en la pantalla docente.
 
-- vista tipo **game-show** para sala de espera y ejecución
-- código de sala destacado y panel estilo proyección
-- **música de fondo con control de volumen**
-- pestañas en ejecución: **Marcador, Dificultades, Equipos**
-- conservación de: 5 cursos, bancos de preguntas, QR, multijugador, GitHub y Render
-
-## Instalación
-1. Reemplaza el contenido del repositorio por estos archivos.
-2. Confirma los cambios en GitHub.
-3. Render detectará el despliegue automático.
-4. Si deseas historial persistente, configura `HISTORY_FILE` y `ADMIN_PIN`.
-
-## Pruebas recomendadas
-1. Crear una sala docente.
-2. Ingresar al menos 2 estudiantes.
-3. Iniciar la competencia.
-4. Verificar: inicio, cronómetro, música, volumen, ranking y QR.
-5. Probar pausa, reanudar y finalizar.
-
-## Notas
-- La música se sintetiza localmente en el navegador, por lo que no usa archivos de audio externos.
-- El control de volumen aparece en la pantalla de ejecución del docente.
+La música depende de las políticas del navegador: inicia después de interactuar con Empezar y no usa música protegida de terceros.
